@@ -2878,6 +2878,28 @@ a.tag:hover,a.tag.is-active {
 	z-index: 2
 }
 
+.new-badge-text {
+	font-size: 8px;
+	line-height: normal;
+	text-shadow: none
+}
+
+.menu-collapsible>a .new-badge-text {
+	position: absolute;
+	right: -6px;
+	top: 6px
+}
+.submenu-nav-list>a .new-badge-text {
+	left: -2px;
+	position: relative;
+	top: -8px
+}
+
+.page-footer .new-badge-text {
+	position: absolute;
+	right: -14px;
+	top: -4px
+}
 .btn,.btn-watchnow,.btn-facebook {
 	background: #fefefe;
 	border: 1px solid #ccc;
@@ -4665,7 +4687,7 @@ cite {
 	text-transform: lowercase
 }
 
-.uppercase,.caps,.search-results-action,.submenu-thumb .thumb-heading,.explore-heading a,.fan-badge-inner,.new-badge,.btn-more-alt,.mod-action,.submenu-thumb .thumb-more,.btn-next,.btn-popover-next,.btn-prev,.btn-popover-prev,.knob-switch-body,.country,.thumb-desc .thumb-country,.mod-ads .mod-ft,.vikipass-trial-heading,a.btn-pitch-upgrade
+.uppercase,.caps,.search-results-action,.submenu-thumb .thumb-heading,.explore-heading a,.fan-badge-inner,.new-badge,.new-badge-text,.btn-more-alt,.mod-action,.submenu-thumb .thumb-more,.btn-next,.btn-popover-next,.btn-prev,.btn-popover-prev,.knob-switch-body,.country,.thumb-desc .thumb-country,.mod-ads .mod-ft,.vikipass-trial-heading,a.btn-pitch-upgrade
 	{
 	text-transform: uppercase
 }
@@ -9021,6 +9043,15 @@ html[lang="es"] .modal-journey.first-step .modal-action {
 
 html[lang="es"] .modal-journey.first-step .modal-body {
 	padding: 13px 120px
+}
+
+html[lang="es"] .menu-collapsible>a .new-badge-text {
+	right: -2px
+}
+
+html[lang="es"] .page-footer .new-badge-text {
+	right: -6px;
+	top: -6px
 }
 
 html[lang="es"] .sprite-vikipass {
