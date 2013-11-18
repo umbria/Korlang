@@ -5,16 +5,16 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"  data-cast-api-enabled="true"> <!--<![endif]-->
 
 <head>
-  <title>Korean Drama, Taiwanese Drama, Anime and Telenovelas free online with subtitles. - Viki</title>
+  <title>Entertainment news from Korea and Hollywood with subtitles - Viki</title>
   <meta charset="utf-8" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <meta http-equiv="Content-Language" content="en"/>
-  <meta name="description" content="Watch korean dramas. korean shows, kdrama. Watch global TV shows, movies, music videos, entertainment news, Splash TV and more, subtitled in English, Spanish, Portuguese, French, Arabic and many more languages by fan subbers"/>
+  <meta name="description" content="Get breaking Entertainment, Celebrity and Music news subtitled in English, Spanish, Korean and many more languages."/>
   
-  <link rel='canonical' href='http://www.viki.com/'/>
-  <link rel="alternate" media="handheld" href="http://www.viki.com/m"/>
+  <link rel='canonical' href='http://www.viki.com/news'/>
+  <link rel="alternate" media="handheld" href="http://www.viki.com/m/news"/>
 
-  <link rel='alternate' href='http://www.viki.mx/' hreflang='es' /><link rel='alternate' href='http://www.viki.com/' hreflang='en' /><link rel='alternate' href='http://www.viki.com/' hreflang='x-default' />
+  <link rel='alternate' href='http://www.viki.mx/news' hreflang='es' /><link rel='alternate' href='http://www.viki.com/news' hreflang='en' /><link rel='alternate' href='http://www.viki.com/news' hreflang='x-default' />
   <meta property="fb:app_id" content="145730428798132"/>
   <!-- future proof IE browsers -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -32,8 +32,7 @@
   </script>
   <![endif]-->
   <link href="//0.viki.io/a/favicon-ccba0ff4bb7ea075ceb183324859a599.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
-  <!-- <link href="//0.viki.io/a/application-d026fb834b484ab7f7401f37af9fbed8.css" media="all" rel="stylesheet" type="text/css" /> -->
-  <link href="/css/vikimain${date}.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="//1.viki.io/a/application-d7e4dd648bc8ed67cf64f971b318b24c.css" media="all" rel="stylesheet" type="text/css" />
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script type="text/javascript">
@@ -43,7 +42,7 @@
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-1670373-2']);
     _gaq.push(['_trackPageview']);
-    _gaq.push(['_setCustomVar', 1, 'rails_action', 'home_show']);
+    _gaq.push(['_setCustomVar', 1, 'rails_action', 'news_landing_index']);
 
     (function () {
       var ga = document.createElement('script');
@@ -77,6 +76,7 @@
   raynor.session = {};
   window.vikiDomain = "www.viki.com";
   window.vikiUriSSL = "https://www.viki.com"
+  window.vikiGeoCode = "DE"
 </script>
 
 <script src="//0.viki.io/a/utility-0c2f623e30c1d6fea35e9fc15b9e3a72.js" type="text/javascript"></script>
@@ -118,15 +118,32 @@
   
   <script src="//cdn.optimizely.com/js/360160327.js"></script>
   
-  <meta name="twitter:card" content="app">
-  <meta name="twitter:description" content="Watch the best TV shows, movies, music videos, variety selection of Korean dramas, and other premium content in high quality, translated into more than 150 languages by a community of avid fans.">
-  <meta name="twitter:app:id:iphone" content="445553058">
-  <meta name="twitter:app:id:ipad" content="445553058">
-  <meta name="twitter:app:id:googleplay" content="com.viki.android"/>
-  <meta name="twitter:app:url:googleplay" content="https://play.google.com/store/apps/details?id=com.viki.android"/>
+      <script type='text/javascript'>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+        (function () {
+          var gads = document.createElement('script');
+          gads.async = true;
+          gads.type = 'text/javascript';
+          var useSSL = 'https:' == document.location.protocol;
+          gads.src = (useSSL ? 'https:' : 'http:') +
+            '//www.googletagservices.com/tag/js/gpt.js';
+          var node = document.getElementsByTagName('script')[0];
+          node.parentNode.insertBefore(gads, node);
+        })();
+      </script>
+
+      <script type='text/javascript'>
+        googletag.cmd.push(function () {
+          googletag.defineSlot('/50449293/Display.News.Landing.1.300x250', [300, 250], 'div-gpt-ad-1374619953643-0').addService(googletag.pubads());
+          googletag.pubads().enableSingleRequest();
+          googletag.pubads().collapseEmptyDivs();
+          googletag.enableServices();
+        });
+      </script>
 
 </head>
-<body class="">
+<body class="theme-news">
   <div id="lang_suggest" class="alert alert-fix alert-fix-top hidden">
   <i class="icon-info-alt pull-left"></i>
   <div class="alert-body strong">
@@ -142,15 +159,15 @@
 
   <nav id="menubar" class="menubar menubar-fixed">
   <div class="container">
-      <h1 class="brand pull-left">
+      <div class="brand pull-left">
         <a href="/" class="icon-viki-logotype">
           <span>Viki - Global TV Powered by Fans</span>
         </a>
-      </h1>
+      </div>
 
     <div class="menus pull-left mll" data-menus="1">
       <div id="menu-tv" class="menu menu-collapsible menu-tv">
-        <a href="/tv">TV <i class="icon-caret-down"></i> <small class="new-badge-text">New</small></a>
+        <a href="/tv">TV <small class="new-badge-text">New</small></a>
         <div class="mega-menu">
           <ul class="submenu-nav" data-block-track="headerTvSideLinks">
             <li class="submenu-nav-list">
@@ -179,7 +196,7 @@
       </div>
 
       <div id="menu-movies" class="menu menu-collapsible menu-movies">
-        <a href="/movies">Movies <i class="icon-caret-down"></i></a>
+        <a href="/movies">Movies</a>
         <div class="mega-menu">
           <ul class="submenu-nav" data-block-track="headerMoviesSideLinks">
             <li class="submenu-nav-list">
@@ -202,7 +219,7 @@
       </div>
 
       <div id="menu-music" class="menu menu-collapsible menu-music">
-        <a href="/music">Music <i class="icon-caret-down"></i></a>
+        <a href="/music">Music</a>
         <div class="mega-menu">
           <ul class="submenu-nav" data-block-track="headerMusicSideLinks">
             <li class="submenu-nav-list">
@@ -225,7 +242,7 @@
       </div>
 
       <div id="menu-news" class="menu menu-collapsible menu-news">
-        <a href="/news">News <i class="icon-caret-down"></i></a>
+        <a href="/news">News</a>
         <div class="mega-menu">
           <ul class="submenu-nav" data-block-track="headerNewsSideLinks">
             <li class="submenu-nav-list">
@@ -245,7 +262,7 @@
       </div>
 
       <div id="menu-explore" class="menu menu-collapsible menu-explore">
-        <a href="/explore">Explore <i class="icon-caret-down"></i></a>
+        <a href="/explore">Explore</a>
         <div class="mega-menu" data-block-track="headerExplore">
           <div class="submenu-col first-col">
             <div class="explore-heading movies-genres"><a href="/genres">TV &amp; Movie Genres</a></div>
@@ -313,7 +330,7 @@
         </div>
       </div>
       <div class="menu menu-collapsible menu-community">
-        <a href="/community">Community<i class="icon-caret-down"></i></a>
+        <a href="/community">Community</a>
         <ul class="reg-menu">
           <li class="reg-menu-item">
             <a href="http://discussions.viki.com">Discussions
@@ -328,7 +345,10 @@
             </a>
           </li>
         </ul>
-       </div>
+      </div>
+      <div class="menu menu-collapsible menu-vikipass">
+        <a href="https://www.viki.com/pass?origin=header" class="hidden" data-viewable="non-ps">Viki Pass</a>
+      </div>
     </div>
 
     <div id="header-actions" class="hidden">
@@ -400,703 +420,49 @@
       <div class="page-container container">
         <div id="flash_messages"></div>
 
-          <nav class="nav-ter">
-            <div class="social-share pull-right">
-              <div class="item fb-item">
-                <div class="fb-like" data-href="http://facebook.com/viki" data-show-faces="false" data-send="false" data-layout="button_count"></div>
-
-              </div>
-              <div class="item">
-                <a href="http://www.facebook.com/viki" class="social-facebook" title="Follow Viki on Facebook" target="_blank">
-                  <i class="icon-facebook"></i>
-                </a>
-              </div>
-              <div class="item">
-                <a href="http://twitter.com/Viki" class="social-twitter" title="Follow Viki on Twitter" target="_blank">
-                  <i class="icon-twitter"></i>
-                </a>
-              </div>
-              <div class="item">
-                <a href="https://plus.google.com/116835588807092168489/posts" class="social-google" title="Follow Viki on Google Plus" target="_blank">
-                  <i class="icon-gplus"></i>
-                </a>
-              </div>
-              <div class="item">
-                <a href="http://www.pinterest.com/viki/" class="social-pinterest" title="Follow Viki on Pinterest" target="_blank">
-                  <i class="icon-pinterest-2"></i>
-                </a>
-              </div>
-            </div>
-
-            <ul class="tickers" data-ticker="1">
-
-      <li class="ticker-item active">
-        <a href="http://live.viki.com" target="_blank">
-          <i class="icon-viki-favicon"></i> Check out what the world is watching now at Viki Live!
-</a>      </li>
-      <li class="ticker-item active">
-        <a href="/about">
-          <i class="icon-viki-favicon"></i>
-          Global TV Powered by Fans
-</a>      </li>
-
-    <li class="ticker-item">
-      <img alt="username0" class="ticker-thumb pull-left" height="20" src="http://1.viki.io/u/616014/343506a84007bb3d9e267f8aedfcb70b98949ac6.jpg?s=20x20" width="20" />
-      <span class="ticker-body">
-        <a href="/users/missrya">missrya</a>
-        <span class="muted">is subtitling</span>
-        Kimi Kiss - Episode 1
-      </span>
-    </li>
-
-    <li class="ticker-item">
-      <img alt="username1" class="ticker-thumb pull-left" height="20" src="http://1.viki.io/u/01a/874/b39/hyekyo9.png?s=20x20" width="20" />
-      <span class="ticker-body">
-        <a href="/users/jazminhallyu">jazminhallyu</a>
-        <span class="muted">is subtitling</span>
-        The A-Team - Episode 9
-      </span>
-    </li>
-
-    <li class="ticker-item">
-      <img alt="username2" class="ticker-thumb pull-left" height="20" src="http://1.viki.io/u/428436/627b69d84ef4aa844a47d1a229a3405967697411.jpg?s=20x20" width="20" />
-      <span class="ticker-body">
-        <a href="/users/skrim">skrim</a>
-        <span class="muted">is subtitling</span>
-        Dear Brother - Episode 35
-      </span>
-    </li>
-
-    <li class="ticker-item">
-      <img alt="username3" class="ticker-thumb pull-left" height="20" src="http://1.viki.io/u/767/32a/ac0/lee_jun_ki_-1.jpg?s=20x20" width="20" />
-      <span class="ticker-body">
-        <a href="/users/alex2jen">alex2jen</a>
-        <span class="muted">is subtitling</span>
-        KARADAYI - Episode 10
-      </span>
-    </li>
-      <li class="ticker-item ">
-        <a href="http://live.viki.com" target="_blank">
-          <i class="icon-viki-favicon"></i> Check out what the world is watching now at Viki Live!
-</a>      </li>
-      <li class="ticker-item ">
-        <a href="/about">
-          <i class="icon-viki-favicon"></i>
-          Global TV Powered by Fans
-</a>      </li>
-
-    <li class="ticker-item">
-      <img alt="username4" class="ticker-thumb pull-left" height="20" src="http://1.viki.io/u/e04/a6a/f4f/241_-_Copy.jpg?s=20x20" width="20" />
-      <span class="ticker-body">
-        <a href="/users/heyheybee">heyheybee</a>
-        <span class="muted">is subtitling</span>
-        Kangen Band - Jangan Bertengkar Lagi
-      </span>
-    </li>
-
-    <li class="ticker-item">
-      <img alt="username5" class="ticker-thumb pull-left" height="20" src="http://1.viki.io/u/492455/4dc261a3cd27e689eadec7a18bdaa0daba3102b5.jpg?s=20x20" width="20" />
-      <span class="ticker-body">
-        <a href="/users/Joy_cha">Joy_cha</a>
-        <span class="muted">is subtitling</span>
-        Full House Take 2 - Episode 29
-      </span>
-    </li>
-
-    <li class="ticker-item">
-      <img alt="username6" class="ticker-thumb pull-left" height="20" src="http://1.viki.io/u/381/aa8/19e/252131279109358190_IKbxzOj5_c-1.jpg?s=20x20" width="20" />
-      <span class="ticker-body">
-        <a href="/users/Hesto">Hesto</a>
-        <span class="muted">is subtitling</span>
-        Entertainment News - Korea  - [YS] Secret Had a Rollover Accident on a Slippery Road 
-      </span>
-    </li>
-
-    <li class="ticker-item">
-      <img alt="username7" class="ticker-thumb pull-left" height="20" src="http://1.viki.io/u/352081/1d18062f5c6d2a6c72e2a5bcbbb3d6c7fc00118a.jpg?s=20x20" width="20" />
-      <span class="ticker-body">
-        <a href="/users/terata1">terata1</a>
-        <span class="muted">is subtitling</span>
-        Heaven&#x27;s Wedding Gown - Episode 13
-      </span>
-    </li>
-      <li class="ticker-item ">
-        <a href="http://live.viki.com" target="_blank">
-          <i class="icon-viki-favicon"></i> Check out what the world is watching now at Viki Live!
-</a>      </li>
-      <li class="ticker-item ">
-        <a href="/about">
-          <i class="icon-viki-favicon"></i>
-          Global TV Powered by Fans
-</a>      </li>
-
-    <li class="ticker-item">
-      <img alt="username8" class="ticker-thumb pull-left" height="20" src="http://1.viki.io/u/9a9/634/0bb/Untitled-1.png?s=20x20" width="20" />
-      <span class="ticker-body">
-        <a href="/users/marykarmelina">marykarmelina</a>
-        <span class="muted">is subtitling</span>
-        Love, Now - Episode 19
-      </span>
-    </li>
-
-    <li class="ticker-item">
-      <img alt="username9" class="ticker-thumb pull-left" height="20" src="http://1.viki.io/u/1933/1933.43539e1339e38c21ba3893843ff427fa2022b628.jpg?s=20x20" width="20" />
-      <span class="ticker-body">
-        <a href="/users/jennyo88">jennyo88</a>
-        <span class="muted">is subtitling</span>
-        Flower Boy Next Door - Teaser 3
-      </span>
-    </li>
-
-    <li class="ticker-item">
-      <img alt="username10" class="ticker-thumb pull-left" height="20" src="http://1.viki.io/u/843/96c/cc9/Jamie-Campbell-Bower-jamie-campbell-bower-11658300-1022-573.jpg?s=20x20" width="20" />
-      <span class="ticker-body">
-        <a href="/users/nanami27">nanami27</a>
-        <span class="muted">is subtitling</span>
-        Virgin
-      </span>
-    </li>
-
-    <li class="ticker-item">
-      <img alt="username11" class="ticker-thumb pull-left" height="20" src="http://1.viki.io/u/1d4/38c/844/cute-folipops-lucky-star-origami-paper-rainbow-star-Favim.com-46730_large.jpg?s=20x20" width="20" />
-      <span class="ticker-body">
-        <a href="/users/rkoo1">rkoo1</a>
-        <span class="muted">is subtitling</span>
-        Full House Take 2 - Episode 32
-      </span>
-    </li>
-      <li class="ticker-item ">
-        <a href="http://live.viki.com" target="_blank">
-          <i class="icon-viki-favicon"></i> Check out what the world is watching now at Viki Live!
-</a>      </li>
-      <li class="ticker-item ">
-        <a href="/about">
-          <i class="icon-viki-favicon"></i>
-          Global TV Powered by Fans
-</a>      </li>
-
-    <li class="ticker-item">
-      <img alt="username12" class="ticker-thumb pull-left" height="20" src="http://1.viki.io/u/117/c0d/76f/tumblr_m4es7p6OiG1r3gchto6_250.jpg?s=20x20" width="20" />
-      <span class="ticker-body">
-        <a href="/users/bong">bong</a>
-        <span class="muted">is subtitling</span>
-        Love, Now - Episode 15
-      </span>
-    </li>
-
-    <li class="ticker-item">
-      <img alt="username13" class="ticker-thumb pull-left" height="20" src="http://1.viki.io/u/532942/80b3efba25bddb4ead2b9d61c3c3e3361fa8ee33.jpg?s=20x20" width="20" />
-      <span class="ticker-body">
-        <a href="/users/timeinthegray">timeinthegray</a>
-        <span class="muted">is subtitling</span>
-        When Love Walked In - Episode 28
-      </span>
-    </li>
-
-    <li class="ticker-item">
-      <img alt="username14" class="ticker-thumb pull-left" height="20" src="http://1.viki.io/u/720638/fdc3117603cbf2eb476dde92ff8d0e1137d4215a.jpg?s=20x20" width="20" />
-      <span class="ticker-body">
-        <a href="/users/fanna86">fanna86</a>
-        <span class="muted">is subtitling</span>
-        Summer Fever - Episode 2
-      </span>
-    </li>
-
-    <li class="ticker-item">
-      <img alt="username15" class="ticker-thumb pull-left" height="20" src="http://1.viki.io/u/532977/8c5c6e16c8ca6e99a3412f1cc4e73179caa5a2ba.jpg?s=20x20" width="20" />
-      <span class="ticker-body">
-        <a href="/users/MXOVER">MXOVER</a>
-        <span class="muted">is subtitling</span>
-        Unruly Qiao (Royal Johnson Medical / Physician) - Episode 38
-      </span>
-    </li>
-</ul>
-
-          </nav>
 
         
 
 
 
+<h1 class='semantic'>Browse Entertainment News Online</h1>
 
-<section data-block-track="carousel">
-    <div class="carousel carousel-featured" data-carousel="big" data-block-track="carousel">
-  <ul class="carousel-list" data-carousel-items='1'>
-    <li class="item active">
-  <img alt="The Suspicious Housemaid" class="thumbnail-feature" height="330" src="http://a01.hc05.viki.io/carousel/ec696270-2987-0131-8bbc-002590827160-The-suspicious-Housemaid_09_950x330.png?x=b&amp;s=950x330&amp;q=h&amp;cb=1" width="950" />
-  <div class="carousel-details">
-      <span class="country">Korea</span>
-
-    <h2 class="carousel-title"><a href="/tv/20759c-the-suspicious-housemaid">The Suspicious Housemaid</a></h2>
-
-
-      <p class="summary">A mysterious housekeeper who goes to any length to serve her employer arrives at the Eun household of a widower and his four troubled kids.</p>
-
-      <div class="counter pull-right"
-           data-tooltip="languages_tooltip"
-           data-tooltip-src='/container_languages_tooltips/20759c.json'>
-        <i class="icon-viki-symbol">
-          <span>27</span>
-        </i>
-        <em>languages</em>
-        <div class="info-tooltip-wrapper pos-left invisible" data-tooltip-wrapper='1'>
-          <div class="info-tooltip">
-            <div class="info-tooltip-title">
-                27
-                languages
-            </div>
-            <div class="spinner-wrapper"><i class="spinner"></i></div>
-            <div class="tooltip-arrow"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="media mvn pbn">
-        <a href="/users/iPoshie" class="pull-left" title="iPoshie">
-          <img alt="iPoshie" class="thumbnail-avatar thumbnail-avatar-tiny" height="20" src="http://0.viki.io/u/262573u/2ea2395a90.jpg?s=20x20&amp;f=t&amp;cb=1" width="20" />
-        </a>
-        <p class="media-body mvn">
-          <a href="/users/iPoshie" title="Channel Manager">Channel Manager</a>
-        </p>
-      </div>
-  </div>
-
-  <a href="/videos/1021488v-the-suspicious-housemaid-episode-14" class="carousel-play-action">
-      <i class="thumb-play-poster"></i>
-  </a>
-</li>
-<li class="item">
-  <img alt="Love Family" class="thumbnail-feature" height="330" src="http://a01.hc05.viki.io/carousel/a28f5350-2829-0131-bb7d-0025902e13a0-lovefamily_ep1_950by330.jpg?x=b&amp;s=950x330&amp;q=h&amp;cb=1" width="950" />
-  <div class="carousel-details">
-      <span class="country">Taiwan</span>
-
-    <h2 class="carousel-title"><a href="/videos/1020770v-love-family-episode-1">Love Family</a></h2>
-
-
-      <p class="summary">Can a young man being pressured to marry find the ‘little angel’ from his childhood with only a handkerchief as a clue to her identity?</p>
-
-      <div class="counter pull-right"
-           data-tooltip="languages_tooltip"
-           data-tooltip-src='/video_languages_tooltips/1020770v.json'>
-        <i class="icon-viki-symbol">
-          <span>7</span>
-        </i>
-        <em>languages</em>
-        <div class="info-tooltip-wrapper pos-left invisible" data-tooltip-wrapper='1'>
-          <div class="info-tooltip">
-            <div class="info-tooltip-title">
-                7
-                languages
-            </div>
-            <div class="spinner-wrapper"><i class="spinner"></i></div>
-            <div class="tooltip-arrow"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="media mvn pbn">
-        <a href="/users/AmyPun" class="pull-left" title="AmyPun">
-          <img alt="AmyPun" class="thumbnail-avatar thumbnail-avatar-tiny" height="20" src="http://1.viki.io/u/661243u/8a6f518bd4.jpg?s=20x20&amp;f=t&amp;cb=1" width="20" />
-        </a>
-        <p class="media-body mvn">
-          <a href="/users/AmyPun" title="Channel Manager">Channel Manager</a>
-        </p>
-      </div>
-  </div>
-
-  <a href="/videos/1020770v-love-family-episode-1" class="carousel-play-action">
-      <i class="thumb-play-poster"></i>
-  </a>
-</li>
-<li class="item">
-  <img alt="Eva Luna" class="thumbnail-feature" data-real="http://a01.hc05.viki.io/carousel/52ca66d0-27e7-0131-bb7d-0025902e13a0-Eva-Luna-Ep15_950by330.jpg?x=b&amp;s=950x330&amp;q=h&amp;cb=1" height="330" src="//1.viki.io/a/pixel-ffc07b3e7e8c5f18d20c9046df3b22d9.gif" width="950" />
-  <div class="carousel-details">
-      <span class="country">Venezuela</span>
-
-    <h2 class="carousel-title"><a href="/videos/227572v-eva-luna-episode-15">Eva Luna</a></h2>
-
-
-      <p class="summary">When Debora goes to the Arismendi mansion to talk to her sister-in-law, Matilde, will she finally discover Eva’s real identity?</p>
-
-      <div class="counter pull-right"
-           data-tooltip="languages_tooltip"
-           data-tooltip-src='/video_languages_tooltips/227572v.json'>
-        <i class="icon-viki-symbol">
-          <span>5</span>
-        </i>
-        <em>languages</em>
-        <div class="info-tooltip-wrapper pos-left invisible" data-tooltip-wrapper='1'>
-          <div class="info-tooltip">
-            <div class="info-tooltip-title">
-                5
-                languages
-            </div>
-            <div class="spinner-wrapper"><i class="spinner"></i></div>
-            <div class="tooltip-arrow"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="media mvn pbn">
-        <a href="/users/marjorielcu" class="pull-left" title="marjorielcu">
-          <img alt="marjorielcu" class="thumbnail-avatar thumbnail-avatar-tiny" height="20" src="http://0.viki.io/u/1032413u/1644acf9ed.jpg?s=20x20&amp;f=t&amp;cb=1" width="20" />
-        </a>
-        <p class="media-body mvn">
-          <a href="/users/marjorielcu" title="Channel Manager">Channel Manager</a>
-        </p>
-      </div>
-  </div>
-
-  <a href="/videos/227572v-eva-luna-episode-15" class="carousel-play-action">
-      <i class="thumb-play-poster"></i>
-  </a>
-</li>
-<li class="item">
-  <img alt="Rooftop Prince" class="thumbnail-feature" data-real="http://a01.hc05.viki.io/carousel/35ed5580-282a-0131-bb7d-0025902e13a0-Rooftop-prince_8_library-title-950x330.png?x=b&amp;s=950x330&amp;q=h&amp;cb=1" height="330" src="//1.viki.io/a/pixel-ffc07b3e7e8c5f18d20c9046df3b22d9.gif" width="950" />
-  <div class="carousel-details">
-      <span class="country">Korea</span>
-
-    <h2 class="carousel-title"><a href="/videos/180952v-rooftop-prince-episode-8">Rooftop Prince</a></h2>
-
-
-      <p class="summary">A Chosun Dynasty prince is transported to modern-day Seoul, but can he solve the mystery of his wife&#x27;s death and return to his own time period?</p>
-
-      <div class="counter pull-right"
-           data-tooltip="languages_tooltip"
-           data-tooltip-src='/video_languages_tooltips/180952v.json'>
-        <i class="icon-viki-symbol">
-          <span>18</span>
-        </i>
-        <em>languages</em>
-        <div class="info-tooltip-wrapper pos-left invisible" data-tooltip-wrapper='1'>
-          <div class="info-tooltip">
-            <div class="info-tooltip-title">
-                18
-                languages
-            </div>
-            <div class="spinner-wrapper"><i class="spinner"></i></div>
-            <div class="tooltip-arrow"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="media mvn pbn">
-        <a href="/users/Celint" class="pull-left" title="Celint">
-          <img alt="Celint" class="thumbnail-avatar thumbnail-avatar-tiny" height="20" src="http://0.viki.io/u/139677/198f13465818c21e329fa12d0ebd124c7c170eb1.gif?s=20x20&amp;f=t&amp;cb=1" width="20" />
-        </a>
-        <p class="media-body mvn">
-          <a href="/users/Celint" title="Channel Manager">Channel Manager</a>
-        </p>
-      </div>
-  </div>
-
-  <a href="/videos/180952v-rooftop-prince-episode-8" class="carousel-play-action">
-      <i class="thumb-play-poster"></i>
-  </a>
-</li>
-<li class="item">
-  <img alt="Just You" class="thumbnail-feature" data-real="http://a01.hc05.viki.io/carousel/9ce29df0-2829-0131-bb7d-0025902e13a0-just-you_november5_950by330.jpg?x=b&amp;s=950x330&amp;q=h&amp;cb=1" height="330" src="//1.viki.io/a/pixel-ffc07b3e7e8c5f18d20c9046df3b22d9.gif" width="950" />
-  <div class="carousel-details">
-      <span class="country">Taiwan</span>
-
-    <h2 class="carousel-title"><a href="/tv/20292c-just-you">Just You</a></h2>
-
-
-      <p class="summary">When Qi Yi makes the shocking announcement that he is stepping down as CEO, will the employees hold their tongues?</p>
-
-      <div class="counter pull-right"
-           data-tooltip="languages_tooltip"
-           data-tooltip-src='/container_languages_tooltips/20292c.json'>
-        <i class="icon-viki-symbol">
-          <span>44</span>
-        </i>
-        <em>languages</em>
-        <div class="info-tooltip-wrapper pos-left invisible" data-tooltip-wrapper='1'>
-          <div class="info-tooltip">
-            <div class="info-tooltip-title">
-                44
-                languages
-            </div>
-            <div class="spinner-wrapper"><i class="spinner"></i></div>
-            <div class="tooltip-arrow"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="media mvn pbn">
-        <a href="/users/iJUSTloveYOU" class="pull-left" title="iJUSTloveYOU">
-          <img alt="iJUSTloveYOU" class="thumbnail-avatar thumbnail-avatar-tiny" height="20" src="http://0.viki.io/u/378038u/22eb8a2af3.jpg?s=20x20&amp;f=t&amp;cb=1" width="20" />
-        </a>
-        <p class="media-body mvn">
-          <a href="/users/iJUSTloveYOU" title="Channel Manager">Channel Manager</a>
-        </p>
-      </div>
-  </div>
-
-  <a href="/videos/1021062v-just-you-episode-20" class="carousel-play-action">
-      <i class="thumb-play-poster"></i>
-  </a>
-</li>
-<li class="item">
-  <img alt="My Girlfriend Is a Gumiho" class="thumbnail-feature" data-real="http://a01.hc05.viki.io/carousel/58cebf90-24fc-0131-8baa-002590827160-My-Girlfriend-is-Gumiho-02_950x330.png?x=b&amp;s=950x330&amp;q=h&amp;cb=1" height="330" src="//1.viki.io/a/pixel-ffc07b3e7e8c5f18d20c9046df3b22d9.gif" width="950" />
-  <div class="carousel-details">
-      <span class="country">Korea</span>
-
-    <h2 class="carousel-title"><a href="/videos/83115v-my-girlfriend-is-a-gumiho-episode-2">My Girlfriend Is a Gumiho</a></h2>
-
-
-      <p class="summary">A man accidentally frees a gumiho, a nine-tailed fox from Korean mythology, who takes the form of a beautiful woman and tries to remain human.</p>
-
-      <div class="counter pull-right"
-           data-tooltip="languages_tooltip"
-           data-tooltip-src='/video_languages_tooltips/83115v.json'>
-        <i class="icon-viki-symbol">
-          <span>28</span>
-        </i>
-        <em>languages</em>
-        <div class="info-tooltip-wrapper pos-left invisible" data-tooltip-wrapper='1'>
-          <div class="info-tooltip">
-            <div class="info-tooltip-title">
-                28
-                languages
-            </div>
-            <div class="spinner-wrapper"><i class="spinner"></i></div>
-            <div class="tooltip-arrow"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="media mvn pbn">
-        <a href="/users/kazenai" class="pull-left" title="kazenai">
-          <img alt="kazenai" class="thumbnail-avatar thumbnail-avatar-tiny" height="20" src="http://0.viki.io/u/10317/c36d9ed9ea88fa79abdf2f25d2f269990f830b65.jpg?s=20x20&amp;f=t&amp;cb=1" width="20" />
-        </a>
-        <p class="media-body mvn">
-          <a href="/users/kazenai" title="Channel Manager">Channel Manager</a>
-        </p>
-      </div>
-  </div>
-
-  <a href="/videos/83115v-my-girlfriend-is-a-gumiho-episode-2" class="carousel-play-action">
-      <i class="thumb-play-poster"></i>
-  </a>
-</li>
-<li class="item">
-  <img alt="Innocent Lilies" class="thumbnail-feature" data-real="http://a01.hc05.viki.io/carousel/894c2440-27f7-0131-8bb3-002590827160-8.jpg?x=b&amp;s=950x330&amp;q=h&amp;cb=1" height="330" src="//1.viki.io/a/pixel-ffc07b3e7e8c5f18d20c9046df3b22d9.gif" width="950" />
-  <div class="carousel-details">
-      <span class="country">Japan</span>
-
-    <h2 class="carousel-title"><a href="/videos/1014849v-innocent-lilies-episode-9">Innocent Lilies</a></h2>
-
-
-      <p class="summary">As their newly acquired witchcraft powers begin to transform the freshman girls, which two will confront their pain in a tragic battle?</p>
-
-      <div class="counter pull-right"
-           data-tooltip="languages_tooltip"
-           data-tooltip-src='/video_languages_tooltips/1014849v.json'>
-        <i class="icon-viki-symbol">
-          <span>17</span>
-        </i>
-        <em>languages</em>
-        <div class="info-tooltip-wrapper pos-left invisible" data-tooltip-wrapper='1'>
-          <div class="info-tooltip">
-            <div class="info-tooltip-title">
-                17
-                languages
-            </div>
-            <div class="spinner-wrapper"><i class="spinner"></i></div>
-            <div class="tooltip-arrow"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="media mvn pbn">
-        <a href="/users/miliefleurie" class="pull-left" title="miliefleurie">
-          <img alt="miliefleurie" class="thumbnail-avatar thumbnail-avatar-tiny" height="20" src="http://1.viki.io/u/1505270u/9107bee243.jpg?s=20x20&amp;f=t&amp;cb=1" width="20" />
-        </a>
-        <p class="media-body mvn">
-          <a href="/users/miliefleurie" title="Channel Manager">Channel Manager</a>
-        </p>
-      </div>
-  </div>
-
-  <a href="/videos/1014849v-innocent-lilies-episode-9" class="carousel-play-action">
-      <i class="thumb-play-poster"></i>
-  </a>
-</li>
-<li class="item">
-  <img alt="Amaya" class="thumbnail-feature" data-real="http://a01.hc05.viki.io/carousel/6f0d9250-2817-0131-8bb3-002590827160-amaya_950x330.jpg?x=b&amp;s=950x330&amp;q=h&amp;cb=1" height="330" src="//1.viki.io/a/pixel-ffc07b3e7e8c5f18d20c9046df3b22d9.gif" width="950" />
-  <div class="carousel-details">
-      <span class="country">Philippines</span>
-
-    <h2 class="carousel-title"><a href="/tv/3306c-amaya">Amaya</a></h2>
-
-
-      <p class="summary">A young princess raised in secrecy must fulfill her prophesy to become the most powerful woman in Philippine history.</p>
-
-      <div class="counter pull-right"
-           data-tooltip="languages_tooltip"
-           data-tooltip-src='/container_languages_tooltips/3306c.json'>
-        <i class="icon-viki-symbol">
-          <span>13</span>
-        </i>
-        <em>languages</em>
-        <div class="info-tooltip-wrapper pos-left invisible" data-tooltip-wrapper='1'>
-          <div class="info-tooltip">
-            <div class="info-tooltip-title">
-                13
-                languages
-            </div>
-            <div class="spinner-wrapper"><i class="spinner"></i></div>
-            <div class="tooltip-arrow"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="media mvn pbn">
-        <a href="/users/kapatid01" class="pull-left" title="kapatid01">
-          <img alt="kapatid01" class="thumbnail-avatar thumbnail-avatar-tiny" height="20" src="http://1.viki.io/u/447682u/7bfc90d8e8.jpg?s=20x20&amp;f=t&amp;cb=1" width="20" />
-        </a>
-        <p class="media-body mvn">
-          <a href="/users/kapatid01" title="Channel Manager">Channel Manager</a>
-        </p>
-      </div>
-  </div>
-
-  <a href="/videos/132004v-amaya-episode-1" class="carousel-play-action">
-      <i class="thumb-play-poster"></i>
-  </a>
-</li>
-
-  </ul>
-  <div class="carousel-actions invisible">
-    <a href="#" class="action-prev" data-carousel-action="prev"><i class="icon-chevron-left"></i></a>
-    <a href="#" class="action-next" data-carousel-action="next"><i class="icon-chevron-right"></i></a>
-  </div>
-  <div class="carousel-pagination" data-carousel-bullets='1'>
-      <a href="#" title="Slide 1" class="active">1</a>
-      <a href="#" title="Slide 2" class="">2</a>
-      <a href="#" title="Slide 3" class="">3</a>
-      <a href="#" title="Slide 4" class="">4</a>
-      <a href="#" title="Slide 5" class="">5</a>
-      <a href="#" title="Slide 6" class="">6</a>
-      <a href="#" title="Slide 7" class="">7</a>
-      <a href="#" title="Slide 8" class="">8</a>
-  </div>
-</div>
-
-</section>
-
-<!-- Viki Pass Banner Display.Home.950x92 -->
-<div class="hidden" data-viewable='non-ps'>
-  <a href="https://www.viki.com/pass?origin=banners" class="vikipass-banner vikipass-leaderboard-v3 mbl" title="Upgrade to Viki Pass">Upgrade to Viki Pass</a>
-</div>
-
+<ul class="breadcrumb">
+  <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+    <a itemprop='url' href="/"><i class="icon-home" itemprop="title"></i></a>
+  </li>
+    <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+      <span itemprop="title">News</span>
+    </li>
+</ul>
 
 <section class="row">
   <div class="unit size15">
-    <div data-lazy-component="1" data-block-track="favorites" data-component-url="/preferences/favorites.json" data-component-templ="favorites">
-      <div data-component-canvas="1"></div>
-    </div>
-
-      <div class="mod">
+      <div class="mod mbm">
         <div class="mod-hd">
-          <h3 class="nekto">A Collection to Kick-Back, Relax and Laugh</h3>
+          <h3 class="nekto">Trending</h3>
         </div>
         <div class="mod-bd">
-          <ul class="thumb-grid" data-block-track="recommendations">
+          <ul class="thumb-grid">
             <li><div class="thumbnail-wrapper">
-  <div class="thumbnail-tooltip"
-       data-tooltip="video_tooltip"
-       data-tooltip-src="/tooltips/tv/20320.json">
-    <a href="/videos/1006388v-you-and-me-episode-1" class="thumbnail">
-      <img alt="You and Me" height="107" src="http://1.viki.io/c/20320c/9a4d2395a7.jpg?x=b&amp;s=190x107&amp;e=t&amp;f=t&amp;cb=1" width="190" />
-        <i class="thumb-play"></i>
+  <div class="thumbnail-tooltip" data-tooltip="video_tooltip" data-tooltip-src="/tooltips/videos/195834.json">
+    <a href="/videos/195834v-m-boa-yu-ah-in-becomes-a-couple-in-her-new-mv" class="thumbnail-large">
+      <img alt="[M] Boa &amp; Yu Ah In Becomes a Couple in Her New M/V" height="225" src="http://1.viki.io/v/195834/d9ac5065d59c9e5f322caa05b5f9af502ab89a19.png?x=b&amp;s=390x225&amp;e=t&amp;f=t&amp;cb=1" width="390" />
+        <i class="thumb-play-large"></i>
       <div class="thumb-desc">
-        <div class="thumb-country">Venezuela</div>
-        <div class="thumb-title">You and Me</div>
+        <div class="thumb-country">Korea</div>
+        <div class="thumb-title">[M] Boa &amp; Yu Ah In Becomes a Couple in Her New M/V</div>
       </div>
     </a>
     <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
       <div class="info-tooltip">
-        <a href="/tv/20320c-you-and-me" class="info-tooltip-title">You and Me</a>
+        <a href="/videos/195834v-m-boa-yu-ah-in-becomes-a-couple-in-her-new-mv" class="info-tooltip-title">[M] Boa &amp; Yu Ah In Becomes a Couple in Her New M/V</a>
         <div class="spinner-wrapper"><i class="spinner"></i></div>
         <div class="tooltip-arrow"></div>
-      </div>
+       </div>
     </div>
   </div>
-  <div class="thumbnail-tooltip-lang" data-tooltip="languages_tooltip" data-tooltip-src="/container_languages_tooltips/20320c.json">
-    <i class="icon-viki-symbol">
-      <span>4</span>
-    </i>
-    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
-      <div class="info-tooltip">
-        <div class="info-tooltip-title">
-            4
-            languages
-        </div>
-        <div class="spinner-wrapper"><i class="spinner"></i></div>
-        <div class="tooltip-arrow"></div>
-      </div>
-    </div>
-  </div>
-</div>
-</li><li><div class="thumbnail-wrapper">
-  <div class="thumbnail-tooltip"
-       data-tooltip="video_tooltip"
-       data-tooltip-src="/tooltips/tv/20423.json">
-    <a href="/videos/1003072v-latin-angels-hollywood-episode-1" class="thumbnail">
-      <img alt="Latin Angels" height="107" src="http://1.viki.io/c/20423c/e8941b674a.jpg?x=b&amp;s=190x107&amp;e=t&amp;f=t&amp;cb=1" width="190" />
-        <i class="thumb-play"></i>
-      <div class="thumb-desc">
-        <div class="thumb-country">Venezuela</div>
-        <div class="thumb-title">Latin Angels</div>
-      </div>
-    </a>
-    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
-      <div class="info-tooltip">
-        <a href="/tv/20423c-latin-angels" class="info-tooltip-title">Latin Angels</a>
-        <div class="spinner-wrapper"><i class="spinner"></i></div>
-        <div class="tooltip-arrow"></div>
-      </div>
-    </div>
-  </div>
-  <div class="thumbnail-tooltip-lang" data-tooltip="languages_tooltip" data-tooltip-src="/container_languages_tooltips/20423c.json">
-    <i class="icon-viki-symbol">
-      <span>6</span>
-    </i>
-    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
-      <div class="info-tooltip">
-        <div class="info-tooltip-title">
-            6
-            languages
-        </div>
-        <div class="spinner-wrapper"><i class="spinner"></i></div>
-        <div class="tooltip-arrow"></div>
-      </div>
-    </div>
-  </div>
-</div>
-</li><li><div class="thumbnail-wrapper">
-  <div class="thumbnail-tooltip"
-       data-tooltip="video_tooltip"
-       data-tooltip-src="/tooltips/movies/2962.json">
-    <a href="/videos/201160v-troops-of-dreamers" class="thumbnail">
-      <img alt="The Troops of Dreamers" height="107" src="http://0.viki.io/c/2962c/ceaa4771fa.jpg?x=b&amp;s=190x107&amp;e=t&amp;f=t&amp;cb=1" width="190" />
-        <i class="thumb-play"></i>
-      <div class="thumb-desc">
-        <div class="thumb-country">Indonesia</div>
-        <div class="thumb-title">The Troops of Dreamers</div>
-      </div>
-    </a>
-    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
-      <div class="info-tooltip">
-        <a href="/movies/2962c-the-troops-of-dreamers" class="info-tooltip-title">The Troops of Dreamers</a>
-        <div class="spinner-wrapper"><i class="spinner"></i></div>
-        <div class="tooltip-arrow"></div>
-      </div>
-    </div>
-  </div>
-  <div class="thumbnail-tooltip-lang" data-tooltip="languages_tooltip" data-tooltip-src="/container_languages_tooltips/2962c.json">
+  <div class="thumbnail-tooltip-lang" data-tooltip="languages_tooltip" data-tooltip-src="/video_languages_tooltips/195834v.json">
     <i class="icon-viki-symbol">
       <span>5</span>
     </i>
@@ -1113,72 +479,34 @@
   </div>
 </div>
 </li>
-
-            <li><div class="thumbnail-wrapper">
-  <div class="thumbnail-tooltip" data-tooltip="video_tooltip" data-tooltip-src="/tooltips/tv/5841.json">
-    <a href="/videos/165882v-the-new-adventures-of-kimba-the-white-lion-the-birth-episode-1" class="thumbnail-large">
-      <img alt="The New Adventures of Kimba the White Lion" height="225" src="http://0.viki.io/c/5841c/48079afb27.jpg?x=b&amp;s=390x225&amp;e=t&amp;f=t&amp;cb=1" width="390" />
-        <i class="thumb-play-large"></i>
-      <div class="thumb-desc">
-        <div class="thumb-country">Japan</div>
-        <div class="thumb-title">The New Adventures of Kimba the White Lion</div>
-      </div>
-    </a>
-    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
-      <div class="info-tooltip">
-        <a href="/tv/5841c-the-new-adventures-of-kimba-the-white-lion" class="info-tooltip-title">The New Adventures of Kimba the White Lion</a>
-        <div class="spinner-wrapper"><i class="spinner"></i></div>
-        <div class="tooltip-arrow"></div>
-       </div>
-    </div>
-  </div>
-  <div class="thumbnail-tooltip-lang" data-tooltip="languages_tooltip" data-tooltip-src="/container_languages_tooltips/5841c.json">
-    <i class="icon-viki-symbol">
-      <span>14</span>
-    </i>
-    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
-      <div class="info-tooltip">
-        <div class="info-tooltip-title">
-            14
-            languages
-        </div>
-        <div class="spinner-wrapper"><i class="spinner"></i></div>
-        <div class="tooltip-arrow"></div>
-      </div>
-    </div>
-  </div>
-</div>
-</li>
-
             <li><div class="thumbnail-wrapper">
   <div class="thumbnail-tooltip"
        data-tooltip="video_tooltip"
-       data-tooltip-src="/tooltips/tv/21702.json">
-    <a href="/videos/1021306v-never-give-up-dodo-episode-3" class="thumbnail">
-      <img alt="Never Give Up, Dodo" height="107" src="http://1.viki.io/c/21702c/89441ed663.jpg?x=b&amp;s=190x107&amp;e=t&amp;f=t&amp;cb=1" width="190" />
+       data-tooltip-src="/tooltips/videos/192323.json">
+    <a href="/videos/192323v-hollywoods-most-expensive-divorces" class="thumbnail">
+      <img alt="Hollywood&#x27;s Most Expensive Divorces" height="107" src="http://0.viki.io/v/192323/d13f30ae2cc5a2bf21cba94a26a52dde915f5086.jpg?s=190x107&amp;e=t&amp;f=t&amp;cb=1" width="190" />
         <i class="thumb-play"></i>
       <div class="thumb-desc">
-        <div class="thumb-country">China</div>
-        <div class="thumb-title">Never Give Up, Dodo</div>
+        <div class="thumb-country">United States</div>
+        <div class="thumb-title">Hollywood&#x27;s Most Expensive Divorces</div>
       </div>
     </a>
     <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
       <div class="info-tooltip">
-        <a href="/tv/21702c-never-give-up-dodo" class="info-tooltip-title">Never Give Up, Dodo</a>
+        <a href="/videos/192323v-hollywoods-most-expensive-divorces" class="info-tooltip-title">Hollywood&#x27;s Most Expensive Divorces</a>
         <div class="spinner-wrapper"><i class="spinner"></i></div>
         <div class="tooltip-arrow"></div>
       </div>
     </div>
   </div>
-  <div class="thumbnail-tooltip-lang" data-tooltip="languages_tooltip" data-tooltip-src="/container_languages_tooltips/21702c.json">
+  <div class="thumbnail-tooltip-lang" data-tooltip="languages_tooltip" data-tooltip-src="/video_languages_tooltips/192323v.json">
     <i class="icon-viki-symbol">
-      <span>19</span>
+      <span>V</span>
     </i>
     <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
       <div class="info-tooltip">
         <div class="info-tooltip-title">
-            19
-            languages
+            Viki subtitles are written by fans just like you!
         </div>
         <div class="spinner-wrapper"><i class="spinner"></i></div>
         <div class="tooltip-arrow"></div>
@@ -1189,31 +517,31 @@
 </li><li><div class="thumbnail-wrapper">
   <div class="thumbnail-tooltip"
        data-tooltip="video_tooltip"
-       data-tooltip-src="/tooltips/tv/20313.json">
-    <a href="/videos/227476v-love-contract-episode-1" class="thumbnail">
-      <img alt="Love Contract" height="107" src="http://0.viki.io/c/20313c/81b2aff9ad.jpg?x=b&amp;s=190x107&amp;e=t&amp;f=t&amp;cb=1" width="190" />
+       data-tooltip-src="/tooltips/videos/157849.json">
+    <a href="/videos/157849v-m-moon-geun-young-returned-to-korea" class="thumbnail">
+      <img alt="[M] Moon Geun Young returned to Korea." height="107" src="http://1.viki.io/v/157849/d34d3d5eaa63da4eb696239ee3698f678ec664cb.png?x=b&amp;s=190x107&amp;e=t&amp;f=t&amp;cb=1" width="190" />
         <i class="thumb-play"></i>
       <div class="thumb-desc">
-        <div class="thumb-country">Venezuela</div>
-        <div class="thumb-title">Love Contract</div>
+        <div class="thumb-country">Korea</div>
+        <div class="thumb-title">[M] Moon Geun Young returned to Korea.</div>
       </div>
     </a>
     <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
       <div class="info-tooltip">
-        <a href="/tv/20313c-love-contract" class="info-tooltip-title">Love Contract</a>
+        <a href="/videos/157849v-m-moon-geun-young-returned-to-korea" class="info-tooltip-title">[M] Moon Geun Young returned to Korea.</a>
         <div class="spinner-wrapper"><i class="spinner"></i></div>
         <div class="tooltip-arrow"></div>
       </div>
     </div>
   </div>
-  <div class="thumbnail-tooltip-lang" data-tooltip="languages_tooltip" data-tooltip-src="/container_languages_tooltips/20313c.json">
+  <div class="thumbnail-tooltip-lang" data-tooltip="languages_tooltip" data-tooltip-src="/video_languages_tooltips/157849v.json">
     <i class="icon-viki-symbol">
-      <span>7</span>
+      <span>6</span>
     </i>
     <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
       <div class="info-tooltip">
         <div class="info-tooltip-title">
-            7
+            6
             languages
         </div>
         <div class="spinner-wrapper"><i class="spinner"></i></div>
@@ -1226,494 +554,35 @@
           </ul>
         </div>
       </div>
-
-    <div class="mod">
-        <div class="mod-hd">
-          <a href="/tv" class="mod-action pull-right">More</a>
-          <h3 class="nekto">Popular Shows</h3>
-        </div>
-        <div class="mod-bd">
-          <ul class="thumb-grid" data-block-track="popularList">
-            <li><div class="thumbnail-wrapper">
-  <div class="thumbnail-tooltip" data-tooltip="video_tooltip" data-tooltip-src="/tooltips/tv/12699.json">
-    <a href="/videos/1021826v-heirs-episode-10" class="thumbnail-large">
-      <img alt="Heirs" height="225" src="http://1.viki.io/c/12699c/ffd6b2b99c.jpg?x=b&amp;s=390x225&amp;e=t&amp;f=t&amp;cb=1" width="390" />
-        <i class="thumb-play-large"></i>
-      <div class="thumb-desc">
-        <div class="thumb-country">Korea</div>
-        <div class="thumb-title">Heirs</div>
-      </div>
-    </a>
-    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
-      <div class="info-tooltip">
-        <a href="/tv/12699c-heirs" class="info-tooltip-title">Heirs</a>
-        <div class="spinner-wrapper"><i class="spinner"></i></div>
-        <div class="tooltip-arrow"></div>
-       </div>
-    </div>
   </div>
-  <div class="thumbnail-tooltip-lang" data-tooltip="languages_tooltip" data-tooltip-src="/container_languages_tooltips/12699c.json">
-    <i class="icon-viki-symbol">
-      <span>65</span>
-    </i>
-    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
-      <div class="info-tooltip">
-        <div class="info-tooltip-title">
-            65
-            languages
-        </div>
-        <div class="spinner-wrapper"><i class="spinner"></i></div>
-        <div class="tooltip-arrow"></div>
-      </div>
-    </div>
-  </div>
-</div>
-</li>
-            <li><div class="thumbnail-wrapper">
-  <div class="thumbnail-tooltip"
-       data-tooltip="video_tooltip"
-       data-tooltip-src="/tooltips/tv/50.json">
-    <a href="/videos/44699v-boys-over-flowers-episode-1" class="thumbnail">
-      <img alt="Boys Over Flowers" height="107" src="http://0.viki.io/c/ed0/16e/06d/boys-over-flowers_590x330.jpg?x=b&amp;s=190x107&amp;e=t&amp;f=t&amp;cb=1" width="190" />
-        <i class="thumb-play"></i>
-      <div class="thumb-desc">
-        <div class="thumb-country">Korea</div>
-        <div class="thumb-title">Boys Over Flowers</div>
-      </div>
-    </a>
-    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
-      <div class="info-tooltip">
-        <a href="/tv/50c-boys-over-flowers" class="info-tooltip-title">Boys Over Flowers</a>
-        <div class="spinner-wrapper"><i class="spinner"></i></div>
-        <div class="tooltip-arrow"></div>
-      </div>
-    </div>
-  </div>
-  <div class="thumbnail-tooltip-lang" data-tooltip="languages_tooltip" data-tooltip-src="/container_languages_tooltips/50c.json">
-    <i class="icon-viki-symbol">
-      <span>60</span>
-    </i>
-    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
-      <div class="info-tooltip">
-        <div class="info-tooltip-title">
-            60
-            languages
-        </div>
-        <div class="spinner-wrapper"><i class="spinner"></i></div>
-        <div class="tooltip-arrow"></div>
-      </div>
-    </div>
-  </div>
-</div>
-</li><li><div class="thumbnail-wrapper">
-  <div class="thumbnail-tooltip"
-       data-tooltip="video_tooltip"
-       data-tooltip-src="/tooltips/tv/20570.json">
-    <a href="/videos/1014847v-innocent-lilies-episode-1" class="thumbnail">
-      <img alt="Innocent Lilies " height="107" src="http://1.viki.io/c/20570c/b61bb6657b.jpg?x=b&amp;s=190x107&amp;e=t&amp;f=t&amp;cb=1" width="190" />
-        <i class="thumb-play"></i>
-      <div class="thumb-desc">
-        <div class="thumb-country">Japan</div>
-        <div class="thumb-title">Innocent Lilies </div>
-      </div>
-    </a>
-    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
-      <div class="info-tooltip">
-        <a href="/tv/20570c-innocent-lilies" class="info-tooltip-title">Innocent Lilies </a>
-        <div class="spinner-wrapper"><i class="spinner"></i></div>
-        <div class="tooltip-arrow"></div>
-      </div>
-    </div>
-  </div>
-  <div class="thumbnail-tooltip-lang" data-tooltip="languages_tooltip" data-tooltip-src="/container_languages_tooltips/20570c.json">
-    <i class="icon-viki-symbol">
-      <span>29</span>
-    </i>
-    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
-      <div class="info-tooltip">
-        <div class="info-tooltip-title">
-            29
-            languages
-        </div>
-        <div class="spinner-wrapper"><i class="spinner"></i></div>
-        <div class="tooltip-arrow"></div>
-      </div>
-    </div>
-  </div>
-</div>
-</li><li><div class="thumbnail-wrapper">
-  <div class="thumbnail-tooltip"
-       data-tooltip="video_tooltip"
-       data-tooltip-src="/tooltips/tv/1820.json">
-    <a href="/videos/123735v-city-hunter-episode-1" class="thumbnail">
-      <img alt="City Hunter" height="107" src="http://0.viki.io/c/73b/8e3/248/city-hunter_590x330.jpg?x=b&amp;s=190x107&amp;e=t&amp;f=t&amp;cb=1" width="190" />
-        <i class="thumb-play"></i>
-      <div class="thumb-desc">
-        <div class="thumb-country">Korea</div>
-        <div class="thumb-title">City Hunter</div>
-      </div>
-    </a>
-    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
-      <div class="info-tooltip">
-        <a href="/tv/1820c-city-hunter" class="info-tooltip-title">City Hunter</a>
-        <div class="spinner-wrapper"><i class="spinner"></i></div>
-        <div class="tooltip-arrow"></div>
-      </div>
-    </div>
-  </div>
-  <div class="thumbnail-tooltip-lang" data-tooltip="languages_tooltip" data-tooltip-src="/container_languages_tooltips/1820c.json">
-    <i class="icon-viki-symbol">
-      <span>41</span>
-    </i>
-    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
-      <div class="info-tooltip">
-        <div class="info-tooltip-title">
-            41
-            languages
-        </div>
-        <div class="spinner-wrapper"><i class="spinner"></i></div>
-        <div class="tooltip-arrow"></div>
-      </div>
-    </div>
-  </div>
-</div>
-</li><li><div class="thumbnail-wrapper">
-  <div class="thumbnail-tooltip"
-       data-tooltip="video_tooltip"
-       data-tooltip-src="/tooltips/tv/20292.json">
-    <a href="/videos/1021062v-just-you-episode-20" class="thumbnail">
-      <img alt="Just You" height="107" src="http://0.viki.io/c/20292c/a27f33f194.jpg?x=b&amp;s=190x107&amp;e=t&amp;f=t&amp;cb=1" width="190" />
-        <i class="thumb-play"></i>
-      <div class="thumb-desc">
-        <div class="thumb-country">Taiwan</div>
-        <div class="thumb-title">Just You</div>
-      </div>
-    </a>
-    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
-      <div class="info-tooltip">
-        <a href="/tv/20292c-just-you" class="info-tooltip-title">Just You</a>
-        <div class="spinner-wrapper"><i class="spinner"></i></div>
-        <div class="tooltip-arrow"></div>
-      </div>
-    </div>
-  </div>
-  <div class="thumbnail-tooltip-lang" data-tooltip="languages_tooltip" data-tooltip-src="/container_languages_tooltips/20292c.json">
-    <i class="icon-viki-symbol">
-      <span>44</span>
-    </i>
-    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
-      <div class="info-tooltip">
-        <div class="info-tooltip-title">
-            44
-            languages
-        </div>
-        <div class="spinner-wrapper"><i class="spinner"></i></div>
-        <div class="tooltip-arrow"></div>
-      </div>
-    </div>
-  </div>
-</div>
-</li><li><div class="thumbnail-wrapper">
-  <div class="thumbnail-tooltip"
-       data-tooltip="video_tooltip"
-       data-tooltip-src="/tooltips/tv/11915.json">
-    <a href="/videos/1008739v-masters-sun-episode-1" class="thumbnail">
-      <img alt="Master’s Sun" height="107" src="http://1.viki.io/c/11915c/3397fdfb22.jpg?x=b&amp;s=190x107&amp;e=t&amp;f=t&amp;cb=1" width="190" />
-        <i class="thumb-play"></i>
-      <div class="thumb-desc">
-        <div class="thumb-country">Korea</div>
-        <div class="thumb-title">Master’s Sun</div>
-      </div>
-    </a>
-    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
-      <div class="info-tooltip">
-        <a href="/tv/11915c-masters-sun" class="info-tooltip-title">Master’s Sun</a>
-        <div class="spinner-wrapper"><i class="spinner"></i></div>
-        <div class="tooltip-arrow"></div>
-      </div>
-    </div>
-  </div>
-  <div class="thumbnail-tooltip-lang" data-tooltip="languages_tooltip" data-tooltip-src="/container_languages_tooltips/11915c.json">
-    <i class="icon-viki-symbol">
-      <span>54</span>
-    </i>
-    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
-      <div class="info-tooltip">
-        <div class="info-tooltip-title">
-            54
-            languages
-        </div>
-        <div class="spinner-wrapper"><i class="spinner"></i></div>
-        <div class="tooltip-arrow"></div>
-      </div>
-    </div>
-  </div>
-</div>
-</li>
-          </ul>
-        </div>
-    </div>
-
-    <div class="mod">
-      <div class="mod-hd">
-        <a href="/music" class="mod-action pull-right">More</a>
-        <h3 class="nekto">Latest Music Videos</h3>
-      </div>
-      <div class="mod-bd">
-        <ul class="thumb-grid">
-          <li><div class="thumbnail-wrapper">
-  <div class="thumbnail-tooltip" data-tooltip="video_tooltip" data-tooltip-src="/tooltips/videos/1010389.json">
-    <a href="/videos/1010389v-inch-chua-artful-dodger" class="thumbnail-large">
-      <img alt="Inch Chua: Artful Dodger" height="225" src="http://0.viki.io/videos/1010473v/1010473v_high_720p_1308220535_0002.jpg?x=b&amp;s=390x225&amp;e=t&amp;f=t&amp;cb=1" width="390" />
-        <i class="thumb-play-large"></i>
-      <div class="thumb-desc">
-        <div class="thumb-country">Singapore</div>
-        <div class="thumb-title">Inch Chua: Artful Dodger</div>
-      </div>
-    </a>
-    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
-      <div class="info-tooltip">
-        <a href="/videos/1010389v-inch-chua-artful-dodger" class="info-tooltip-title">Inch Chua: Artful Dodger</a>
-        <div class="spinner-wrapper"><i class="spinner"></i></div>
-        <div class="tooltip-arrow"></div>
-       </div>
-    </div>
-  </div>
-  <div class="thumbnail-tooltip-lang" data-tooltip="languages_tooltip" data-tooltip-src="/video_languages_tooltips/1010389v.json">
-    <i class="icon-viki-symbol">
-      <span>11</span>
-    </i>
-    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
-      <div class="info-tooltip">
-        <div class="info-tooltip-title">
-            11
-            languages
-        </div>
-        <div class="spinner-wrapper"><i class="spinner"></i></div>
-        <div class="tooltip-arrow"></div>
-      </div>
-    </div>
-  </div>
-</div>
-</li>
-          <li><div class="thumbnail-wrapper">
-  <div class="thumbnail-tooltip"
-       data-tooltip="video_tooltip"
-       data-tooltip-src="/tooltips/videos/1007498.json">
-    <a href="/videos/1007498v-brown-eyed-girls-kill-bill-shoutout-to-viki-fans" class="thumbnail">
-      <img alt="Brown Eyed Girls: Kill Bill + Shoutout to Viki fans" height="107" src="http://1.viki.io/videos/1007498v/1375168877-Screen_shot_2013-07-30_at_3.10.25_PM.png?x=b&amp;s=190x107&amp;e=t&amp;f=t&amp;cb=1" width="190" />
-        <i class="thumb-play"></i>
-      <div class="thumb-desc">
-        <div class="thumb-country">Korea</div>
-        <div class="thumb-title">Brown Eyed Girls: Kill Bill + Shoutout to Viki fans</div>
-      </div>
-    </a>
-    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
-      <div class="info-tooltip">
-        <a href="/videos/1007498v-brown-eyed-girls-kill-bill-shoutout-to-viki-fans" class="info-tooltip-title">Brown Eyed Girls: Kill Bill + Shoutout to Viki fans</a>
-        <div class="spinner-wrapper"><i class="spinner"></i></div>
-        <div class="tooltip-arrow"></div>
-      </div>
-    </div>
-  </div>
-  <div class="thumbnail-tooltip-lang" data-tooltip="languages_tooltip" data-tooltip-src="/video_languages_tooltips/1007498v.json">
-    <i class="icon-viki-symbol">
-      <span>17</span>
-    </i>
-    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
-      <div class="info-tooltip">
-        <div class="info-tooltip-title">
-            17
-            languages
-        </div>
-        <div class="spinner-wrapper"><i class="spinner"></i></div>
-        <div class="tooltip-arrow"></div>
-      </div>
-    </div>
-  </div>
-</div>
-</li><li><div class="thumbnail-wrapper">
-  <div class="thumbnail-tooltip"
-       data-tooltip="video_tooltip"
-       data-tooltip-src="/tooltips/videos/1007069.json">
-    <a href="/videos/1007069v-rad-thank-you" class="thumbnail">
-      <img alt="Ra.D (라디): Thank You" height="107" src="http://0.viki.io/videos/1007069v/1007069v_720p_1307250944_0000.jpg?x=b&amp;s=190x107&amp;e=t&amp;f=t&amp;cb=1" width="190" />
-        <i class="thumb-play"></i>
-      <div class="thumb-desc">
-        <div class="thumb-country">Korea</div>
-        <div class="thumb-title">Ra.D (라디): Thank You</div>
-      </div>
-    </a>
-    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
-      <div class="info-tooltip">
-        <a href="/videos/1007069v-rad-thank-you" class="info-tooltip-title">Ra.D (라디): Thank You</a>
-        <div class="spinner-wrapper"><i class="spinner"></i></div>
-        <div class="tooltip-arrow"></div>
-      </div>
-    </div>
-  </div>
-  <div class="thumbnail-tooltip-lang" data-tooltip="languages_tooltip" data-tooltip-src="/video_languages_tooltips/1007069v.json">
-    <i class="icon-viki-symbol">
-      <span>19</span>
-    </i>
-    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
-      <div class="info-tooltip">
-        <div class="info-tooltip-title">
-            19
-            languages
-        </div>
-        <div class="spinner-wrapper"><i class="spinner"></i></div>
-        <div class="tooltip-arrow"></div>
-      </div>
-    </div>
-  </div>
-</div>
-</li><li><div class="thumbnail-wrapper">
-  <div class="thumbnail-tooltip"
-       data-tooltip="video_tooltip"
-       data-tooltip-src="/tooltips/videos/1007067.json">
-    <a href="/videos/1007067v-forty-sing-the-spring" class="thumbnail">
-      <img alt="Forty: Sing The Spring" height="107" src="http://0.viki.io/videos/1007067v/1007067v_high_720p_1307250937_0000.jpg?x=b&amp;s=190x107&amp;e=t&amp;f=t&amp;cb=1" width="190" />
-        <i class="thumb-play"></i>
-      <div class="thumb-desc">
-        <div class="thumb-country">Korea</div>
-        <div class="thumb-title">Forty: Sing The Spring</div>
-      </div>
-    </a>
-    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
-      <div class="info-tooltip">
-        <a href="/videos/1007067v-forty-sing-the-spring" class="info-tooltip-title">Forty: Sing The Spring</a>
-        <div class="spinner-wrapper"><i class="spinner"></i></div>
-        <div class="tooltip-arrow"></div>
-      </div>
-    </div>
-  </div>
-  <div class="thumbnail-tooltip-lang" data-tooltip="languages_tooltip" data-tooltip-src="/video_languages_tooltips/1007067v.json">
-    <i class="icon-viki-symbol">
-      <span>21</span>
-    </i>
-    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
-      <div class="info-tooltip">
-        <div class="info-tooltip-title">
-            21
-            languages
-        </div>
-        <div class="spinner-wrapper"><i class="spinner"></i></div>
-        <div class="tooltip-arrow"></div>
-      </div>
-    </div>
-  </div>
-</div>
-</li><li><div class="thumbnail-wrapper">
-  <div class="thumbnail-tooltip"
-       data-tooltip="video_tooltip"
-       data-tooltip-src="/tooltips/videos/1007060.json">
-    <a href="/videos/1007060v-jun-guk-gu-fashion-city" class="thumbnail">
-      <img alt="Jun Guk Gu : Fashion City" height="107" src="http://0.viki.io/videos/1007060v/1007060v_720p_1307250933_0000.jpg?x=b&amp;s=190x107&amp;e=t&amp;f=t&amp;cb=1" width="190" />
-        <i class="thumb-play"></i>
-      <div class="thumb-desc">
-        <div class="thumb-country">Korea</div>
-        <div class="thumb-title">Jun Guk Gu : Fashion City</div>
-      </div>
-    </a>
-    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
-      <div class="info-tooltip">
-        <a href="/videos/1007060v-jun-guk-gu-fashion-city" class="info-tooltip-title">Jun Guk Gu : Fashion City</a>
-        <div class="spinner-wrapper"><i class="spinner"></i></div>
-        <div class="tooltip-arrow"></div>
-      </div>
-    </div>
-  </div>
-  <div class="thumbnail-tooltip-lang" data-tooltip="languages_tooltip" data-tooltip-src="/video_languages_tooltips/1007060v.json">
-    <i class="icon-viki-symbol">
-      <span>19</span>
-    </i>
-    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
-      <div class="info-tooltip">
-        <div class="info-tooltip-title">
-            19
-            languages
-        </div>
-        <div class="spinner-wrapper"><i class="spinner"></i></div>
-        <div class="tooltip-arrow"></div>
-      </div>
-    </div>
-  </div>
-</div>
-</li><li><div class="thumbnail-wrapper">
-  <div class="thumbnail-tooltip"
-       data-tooltip="video_tooltip"
-       data-tooltip-src="/tooltips/videos/1007050.json">
-    <a href="/videos/1007050v-dasoni-good-bye" class="thumbnail">
-      <img alt="Dasoni : Good Bye" height="107" src="http://0.viki.io/videos/1007050v/1007050v_high_720p_1307250914_0000.jpg?x=b&amp;s=190x107&amp;e=t&amp;f=t&amp;cb=1" width="190" />
-        <i class="thumb-play"></i>
-      <div class="thumb-desc">
-        <div class="thumb-country">Korea</div>
-        <div class="thumb-title">Dasoni : Good Bye</div>
-      </div>
-    </a>
-    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
-      <div class="info-tooltip">
-        <a href="/videos/1007050v-dasoni-good-bye" class="info-tooltip-title">Dasoni : Good Bye</a>
-        <div class="spinner-wrapper"><i class="spinner"></i></div>
-        <div class="tooltip-arrow"></div>
-      </div>
-    </div>
-  </div>
-  <div class="thumbnail-tooltip-lang" data-tooltip="languages_tooltip" data-tooltip-src="/video_languages_tooltips/1007050v.json">
-    <i class="icon-viki-symbol">
-      <span>18</span>
-    </i>
-    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
-      <div class="info-tooltip">
-        <div class="info-tooltip-title">
-            18
-            languages
-        </div>
-        <div class="spinner-wrapper"><i class="spinner"></i></div>
-        <div class="tooltip-arrow"></div>
-      </div>
-    </div>
-  </div>
-</div>
-</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
   <div class="unit size9">
     <aside class="mlm">
-      <div id="recentWatchView" class="mod hidden" data-block-track="recentWatch">
-        <div class="mod-hd">
-          <h3 class="nekto">Continue Watching</h3>
-        </div>
-        <div class="mod-bd" id="recentWatch"></div>
-      </div>
-
-      <div class="mod" data-block-track="onAir">
-        <div class="mod-hd">
-          <a href="/on_air" class="mod-action pull-right">More</a>
-          <h3 class="nekto">On Air</h3>
-        </div>
-        <div class="mod-bd">
-          <ul class="medias medias-block medias-noborder mbn">
-            <li class="media" data-tooltip="languages_tooltip" data-tooltip-src="/container_languages_tooltips/21785c.json">
-  <a href="/tv/21785c-deja-vu" class="pos_1 deja-vu">
+          <div class="mod mod-news-related">
+            <div class="mod-hd">
+              <h3 class="nekto">Popular news this week</h3>
+            </div>
+            <div class="mod-bd">
+                <div class="slides-scrollbar">
+    <div class="slides-vertical" data-slider="videos">
+      <div class="slides-wrapper">
+        <ul class="medias medias-block medias-noborder" data-slider-items="1">
+          <li class="media" data-tooltip="languages_tooltip" data-tooltip-src="/video_languages_tooltips/1020452v.json">
+  <a href="/videos/1020452v-miranda-kerr-is-a-belieber" class="pos_1 miranda-kerr-is-a-belieber">
     <div class="thumbnail-small pull-left">
-      <img alt="Deja Vu " class="media-object" height="63" src="http://1.viki.io/c/21785c/33208406e5.jpg?x=b&amp;s=110x63&amp;e=t&amp;f=t&amp;cb=1" width="110" />
+      <img alt="Miranda Kerr Is A &#x27;Belieber&#x27;" class="media-object" height="63" src="http://0.viki.io/videos/1020452v/1020452v_1310282201_1.jpg?x=b&amp;s=110x63&amp;e=t&amp;f=t&amp;cb=1" width="110" />
+        <i class="thumb-play"></i>
     </div>
     <div class="media-body">
-      <h4 class="epsilon slide-title">Deja Vu </h4>
+      <h4 class="epsilon slide-title">Miranda Kerr Is A &#x27;Belieber&#x27;</h4>
       <div class="slide-desc">
-          When given the chance, can a woman get the same man to fall in love...
+          After last year&#x27;s Victoria&#x27;s Secret Fashion show, Miranda and Biebe...
       </div>
     </div>
   </a>
   <div class="info-tooltip-wrapper pos-left invisible" data-tooltip-wrapper='1'>
     <div class="info-tooltip">
       <div class="info-tooltip-title">
-          11
+          2
           languages
       </div>
       <div class="spinner-wrapper"><i class="spinner"></i></div>
@@ -1721,38 +590,16 @@
     </div>
   </div>
 </li>
-<li class="media" data-tooltip="languages_tooltip" data-tooltip-src="/container_languages_tooltips/21702c.json">
-  <a href="/tv/21702c-never-give-up-dodo" class="pos_2 never-give-up-dodo">
+<li class="media" data-tooltip="languages_tooltip" data-tooltip-src="/video_languages_tooltips/1022001v.json">
+  <a href="/videos/1022001v-selena-gomez-bares-cleavage-and-midriff-in-little-black-dress" class="pos_2 selena-gomez-bares-cleavage-and-midriff-in-litt">
     <div class="thumbnail-small pull-left">
-      <img alt="Never Give Up, Dodo" class="media-object" height="63" src="http://1.viki.io/c/21702c/89441ed663.jpg?x=b&amp;s=110x63&amp;e=t&amp;f=t&amp;cb=1" width="110" />
+      <img alt="Selena Gomez Bares Cleavage And Midriff In Little Black Dress" class="media-object" height="63" src="http://0.viki.io/videos/1022001v/1022001v_1311082002_1.jpg?x=b&amp;s=110x63&amp;e=t&amp;f=t&amp;cb=1" width="110" />
+        <i class="thumb-play"></i>
     </div>
     <div class="media-body">
-      <h4 class="epsilon slide-title">Never Give Up, Dodo</h4>
+      <h4 class="epsilon slide-title">Selena Gomez Bares Cleavage And Midriff In Litt...</h4>
       <div class="slide-desc">
-          “Never Give Up, Dodo,” also known as “Duo Duo’s Love Story” is a 20...
-      </div>
-    </div>
-  </a>
-  <div class="info-tooltip-wrapper pos-left invisible" data-tooltip-wrapper='1'>
-    <div class="info-tooltip">
-      <div class="info-tooltip-title">
-          19
-          languages
-      </div>
-      <div class="spinner-wrapper"><i class="spinner"></i></div>
-      <div class="tooltip-arrow"></div>
-    </div>
-  </div>
-</li>
-<li class="media" data-tooltip="languages_tooltip" data-tooltip-src="/container_languages_tooltips/21675c.json">
-  <a href="/tv/21675c-love-family" class="pos_3 love-family">
-    <div class="thumbnail-small pull-left">
-      <img alt="Love Family" class="media-object" height="63" src="http://0.viki.io/c/21675c/8b1fc56c8b.jpg?x=b&amp;s=110x63&amp;e=t&amp;f=t&amp;cb=1" width="110" />
-    </div>
-    <div class="media-body">
-      <h4 class="epsilon slide-title">Love Family</h4>
-      <div class="slide-desc">
-          What will a young man do when his mother has an inflexible rule tha...
+          Selena Gomez recently said she wants guys to know that she&#x27;s the ty...
       </div>
     </div>
   </a>
@@ -1767,26 +614,40 @@
     </div>
   </div>
 </li>
-
-          </ul>
-        </div>
-      </div>
-
-      <div class="mod" data-block-track="upcoming">
-        <div class="mod-hd">
-          <h3 class="nekto">Coming Soon</h3>
-        </div>
-        <div class="mod-bd">
-          <ul class="medias medias-block medias-noborder mbn">
-            <li class="media" data-tooltip="languages_tooltip" data-tooltip-src="/container_languages_tooltips/20872c.json">
-  <a href="/tv/20872c-the-woman-who-married-three-times" class="pos_1 the-woman-who-married-three-times">
+<li class="media" data-tooltip="languages_tooltip" data-tooltip-src="/video_languages_tooltips/1022002v.json">
+  <a href="/videos/1022002v-katie-holmes-left-tom-cruise-to-protect-suri-from-scientology" class="pos_3 katie-holmes-left-tom-cruise-to-protect-suri-fr">
     <div class="thumbnail-small pull-left">
-      <img alt="The Woman Who Married Three Times" class="media-object" height="63" src="http://0.viki.io/c/20872c/6a6891bcac.jpg?x=b&amp;s=110x63&amp;e=t&amp;f=t&amp;cb=1" width="110" />
+      <img alt="Katie Holmes Left Tom Cruise To Protect Suri From Scientology" class="media-object" height="63" src="http://0.viki.io/videos/1022002v/1022002v_1311082003_1.jpg?x=b&amp;s=110x63&amp;e=t&amp;f=t&amp;cb=1" width="110" />
+        <i class="thumb-play"></i>
     </div>
     <div class="media-body">
-      <h4 class="epsilon slide-title">The Woman Who Married Three Times</h4>
+      <h4 class="epsilon slide-title">Katie Holmes Left Tom Cruise To Protect Suri Fr...</h4>
       <div class="slide-desc">
-          Life can throw a lot of curve balls at you on the road to finding t...
+          Tom Cruise admitted during his deposition hearing that Katie Holmes...
+      </div>
+    </div>
+  </a>
+  <div class="info-tooltip-wrapper pos-left invisible" data-tooltip-wrapper='1'>
+    <div class="info-tooltip">
+      <div class="info-tooltip-title">
+          4
+          languages
+      </div>
+      <div class="spinner-wrapper"><i class="spinner"></i></div>
+      <div class="tooltip-arrow"></div>
+    </div>
+  </div>
+</li>
+<li class="media" data-tooltip="languages_tooltip" data-tooltip-src="/video_languages_tooltips/1022004v.json">
+  <a href="/videos/1022004v-chris-hemsworths-daughter-changed-his-outlook-on-life" class="pos_4 chris-hemsworth-s-daughter-changed-his-outlook">
+    <div class="thumbnail-small pull-left">
+      <img alt="Chris Hemsworth&#x27;s Daughter Changed His Outlook On Life" class="media-object" height="63" src="http://0.viki.io/videos/1022004v/1022004v_1311082201_1.jpg?x=b&amp;s=110x63&amp;e=t&amp;f=t&amp;cb=1" width="110" />
+        <i class="thumb-play"></i>
+    </div>
+    <div class="media-body">
+      <h4 class="epsilon slide-title">Chris Hemsworth&#x27;s Daughter Changed His Outlook ...</h4>
+      <div class="slide-desc">
+          Chris Hemsworth says being a dad certainly isn&#x27;t easy, but it&#x27;s the...
       </div>
     </div>
   </a>
@@ -1801,79 +662,48 @@
     </div>
   </div>
 </li>
-<li class="media" data-tooltip="languages_tooltip" data-tooltip-src="/container_languages_tooltips/20503c.json">
-  <a href="/tv/20503c-my-love-from-the-star" class="pos_2 my-love-from-the-star">
+<li class="media" data-tooltip="languages_tooltip" data-tooltip-src="/video_languages_tooltips/1022000v.json">
+  <a href="/videos/1022000v-lady-gaga-admits-to-habitual-marijuana-use-during-injury" class="pos_5 lady-gaga-admits-to-habitual-marijuana-use-duri">
     <div class="thumbnail-small pull-left">
-      <img alt="My Love From the Star " class="media-object" height="63" src="http://0.viki.io/c/20503c/8e42335959.png?x=b&amp;s=110x63&amp;e=t&amp;f=t&amp;cb=1" width="110" />
-    </div>
-    <div class="media-body">
-      <h4 class="epsilon slide-title">My Love From the Star </h4>
-      <div class="slide-desc">
-          An alien that arrived in Joseon Korea 400 years ago and has lived 4...
-      </div>
-    </div>
-  </a>
-  <div class="info-tooltip-wrapper pos-left invisible" data-tooltip-wrapper='1'>
-    <div class="info-tooltip">
-      <div class="info-tooltip-title">
-          Viki subtitles are written by fans just like you!
-      </div>
-      <div class="spinner-wrapper"><i class="spinner"></i></div>
-      <div class="tooltip-arrow"></div>
-    </div>
-  </div>
-</li>
-<li class="media" data-tooltip="languages_tooltip" data-tooltip-src="/container_languages_tooltips/20295c.json">
-  <a href="/tv/20295c-kind-words" class="pos_3 kind-words">
-    <div class="thumbnail-small pull-left">
-      <img alt="Kind Words" class="media-object" height="63" src="http://0.viki.io/c/20295c/661e2681c9.jpg?x=b&amp;s=110x63&amp;e=t&amp;f=t&amp;cb=1" width="110" />
-    </div>
-    <div class="media-body">
-      <h4 class="epsilon slide-title">Kind Words</h4>
-      <div class="slide-desc">
-          This is the drama described as a Desperate Housewives-ish tale abou...
-      </div>
-    </div>
-  </a>
-  <div class="info-tooltip-wrapper pos-left invisible" data-tooltip-wrapper='1'>
-    <div class="info-tooltip">
-      <div class="info-tooltip-title">
-          Viki subtitles are written by fans just like you!
-      </div>
-      <div class="spinner-wrapper"><i class="spinner"></i></div>
-      <div class="tooltip-arrow"></div>
-    </div>
-  </div>
-</li>
-
-          </ul>
-        </div>
-      </div>
-
-      <div class="mod" data-block-track="news">
-        <div class="mod-hd">
-          <a href="/news" class="mod-action pull-right">More</a>
-          <h3 class="nekto">News</h3>
-        </div>
-        <div class="mod-bd">
-          <ul class="medias medias-block medias-noborder mbn">
-            <li class="media" data-tooltip="languages_tooltip" data-tooltip-src="/video_languages_tooltips/1021804v.json">
-  <a href="/videos/1021804v-taylor-swift-looks-red-hot-at-the-cma-awards" class="pos_1 taylor-swift-looks-red-hot-at-the-cma-awards">
-    <div class="thumbnail-small pull-left">
-      <img alt="Taylor Swift Looks Red Hot at the CMA Awards" class="media-object" height="63" src="http://0.viki.io/videos/1021804v/1021804v_1311071200_1.jpg?x=b&amp;s=110x63&amp;e=t&amp;f=t&amp;cb=1" width="110" />
+      <img alt="Lady Gaga Admits to Habitual Marijuana Use During Injury" class="media-object" height="63" src="http://0.viki.io/videos/1022000v/1022000v_1311082001_1.jpg?x=b&amp;s=110x63&amp;e=t&amp;f=t&amp;cb=1" width="110" />
         <i class="thumb-play"></i>
     </div>
     <div class="media-body">
-      <h4 class="epsilon slide-title">Taylor Swift Looks Red Hot at the CMA Awards</h4>
+      <h4 class="epsilon slide-title">Lady Gaga Admits to Habitual Marijuana Use Duri...</h4>
       <div class="slide-desc">
-          Taylor Swift wows in a dramatic scarlet gown as she joins Carrie Un...
+          Lady Gaga admitted that her marijuana use turned into habitual depe...
       </div>
     </div>
   </a>
   <div class="info-tooltip-wrapper pos-left invisible" data-tooltip-wrapper='1'>
     <div class="info-tooltip">
       <div class="info-tooltip-title">
-          Viki subtitles are written by fans just like you!
+          2
+          languages
+      </div>
+      <div class="spinner-wrapper"><i class="spinner"></i></div>
+      <div class="tooltip-arrow"></div>
+    </div>
+  </div>
+</li>
+<li class="media" data-tooltip="languages_tooltip" data-tooltip-src="/video_languages_tooltips/1021995v.json">
+  <a href="/videos/1021995v-why-cameron-diaz-re-recorded-her-lines-from-the-counselor" class="pos_6 why-cameron-diaz-re-recorded-her-lines-from-the">
+    <div class="thumbnail-small pull-left">
+      <img alt="Why Cameron Diaz Re-Recorded Her Lines from The Counselor" class="media-object" height="63" src="http://0.viki.io/videos/1021995v/1021995v_1311081802_1.jpg?x=b&amp;s=110x63&amp;e=t&amp;f=t&amp;cb=1" width="110" />
+        <i class="thumb-play"></i>
+    </div>
+    <div class="media-body">
+      <h4 class="epsilon slide-title">Why Cameron Diaz Re-Recorded Her Lines from The...</h4>
+      <div class="slide-desc">
+          Cameron Diaz reportedly had to re-record her lines from The Counsel...
+      </div>
+    </div>
+  </a>
+  <div class="info-tooltip-wrapper pos-left invisible" data-tooltip-wrapper='1'>
+    <div class="info-tooltip">
+      <div class="info-tooltip-title">
+          2
+          languages
       </div>
       <div class="spinner-wrapper"><i class="spinner"></i></div>
       <div class="tooltip-arrow"></div>
@@ -1881,7 +711,7 @@
   </div>
 </li>
 <li class="media" data-tooltip="languages_tooltip" data-tooltip-src="/video_languages_tooltips/1021803v.json">
-  <a href="/videos/1021803v-heirs-cast-cheer-up-college-entrance-examinees" class="pos_2 heirs-cast-cheer-up-college-entrance-examinees">
+  <a href="/videos/1021803v-heirs-cast-cheer-up-college-entrance-examinees" class="pos_7 heirs-cast-cheer-up-college-entrance-examinees">
     <div class="thumbnail-small pull-left">
       <img alt="&#x27;Heirs&#x27; Cast Cheer up College Entrance Examinees" class="media-object" height="63" src="http://0.viki.io/videos/1021803v/1021803v_1311071020_1.jpg?x=b&amp;s=110x63&amp;e=t&amp;f=t&amp;cb=1" width="110" />
         <i class="thumb-play"></i>
@@ -1896,30 +726,80 @@
   <div class="info-tooltip-wrapper pos-left invisible" data-tooltip-wrapper='1'>
     <div class="info-tooltip">
       <div class="info-tooltip-title">
-          Viki subtitles are written by fans just like you!
+          11
+          languages
       </div>
       <div class="spinner-wrapper"><i class="spinner"></i></div>
       <div class="tooltip-arrow"></div>
     </div>
   </div>
 </li>
-<li class="media" data-tooltip="languages_tooltip" data-tooltip-src="/video_languages_tooltips/1021802v.json">
-  <a href="/videos/1021802v-will-reply-1994-jung-woo-and-his-girlfriend-show-up-together-for-a-movie-premiere" class="pos_3 will-reply-1994-jung-woo-and-his-girlfriend-s">
+<li class="media" data-tooltip="languages_tooltip" data-tooltip-src="/video_languages_tooltips/1022295v.json">
+  <a href="/videos/1022295v-miley-cyrus-lights-up-onstage-at-the-mtv-emas" class="pos_8 miley-cyrus-lights-up-onstage-at-the-mtv-emas">
     <div class="thumbnail-small pull-left">
-      <img alt="Will &#x27;Reply 1994&#x27; Jung Woo and His Girlfriend Show up Together for a Movie Premiere? " class="media-object" height="63" src="http://0.viki.io/videos/1021802v/1021802v_1311071020_1.jpg?x=b&amp;s=110x63&amp;e=t&amp;f=t&amp;cb=1" width="110" />
+      <img alt="Miley Cyrus Lights Up Onstage at the MTV EMAs" class="media-object" height="63" src="http://0.viki.io/videos/1022295v/1022295v_1311111201_1.jpg?x=b&amp;s=110x63&amp;e=t&amp;f=t&amp;cb=1" width="110" />
         <i class="thumb-play"></i>
     </div>
     <div class="media-body">
-      <h4 class="epsilon slide-title">Will &#x27;Reply 1994&#x27; Jung Woo and His Girlfriend S...</h4>
+      <h4 class="epsilon slide-title">Miley Cyrus Lights Up Onstage at the MTV EMAs</h4>
       <div class="slide-desc">
-          
+          Miley Cyrus smokes a suspicious cigarette while accepting the Best ...
       </div>
     </div>
   </a>
   <div class="info-tooltip-wrapper pos-left invisible" data-tooltip-wrapper='1'>
     <div class="info-tooltip">
       <div class="info-tooltip-title">
-          Viki subtitles are written by fans just like you!
+          2
+          languages
+      </div>
+      <div class="spinner-wrapper"><i class="spinner"></i></div>
+      <div class="tooltip-arrow"></div>
+    </div>
+  </div>
+</li>
+<li class="media" data-tooltip="languages_tooltip" data-tooltip-src="/video_languages_tooltips/1021994v.json">
+  <a href="/videos/1021994v-taylor-swifts-fans-are-what-makes-her-different" class="pos_9 taylor-swift-s-fans-are-what-makes-her-different">
+    <div class="thumbnail-small pull-left">
+      <img alt="Taylor Swift&#x27;s Fans Are What Makes Her Different" class="media-object" data-real="http://0.viki.io/videos/1021994v/1021994v_1311081802_1.jpg?x=b&amp;s=110x63&amp;e=t&amp;f=t&amp;cb=1" height="63" src="//1.viki.io/a/pixel-ffc07b3e7e8c5f18d20c9046df3b22d9.gif" width="110" />
+        <i class="thumb-play"></i>
+    </div>
+    <div class="media-body">
+      <h4 class="epsilon slide-title">Taylor Swift&#x27;s Fans Are What Makes Her Different</h4>
+      <div class="slide-desc">
+          Taylor Swift&#x27;s fans are different than other fan groups she says.
+      </div>
+    </div>
+  </a>
+  <div class="info-tooltip-wrapper pos-left invisible" data-tooltip-wrapper='1'>
+    <div class="info-tooltip">
+      <div class="info-tooltip-title">
+          2
+          languages
+      </div>
+      <div class="spinner-wrapper"><i class="spinner"></i></div>
+      <div class="tooltip-arrow"></div>
+    </div>
+  </div>
+</li>
+<li class="media" data-tooltip="languages_tooltip" data-tooltip-src="/video_languages_tooltips/1021993v.json">
+  <a href="/videos/1021993v-will-smith-wrote-about-wanting-to-get-jada-pregnant" class="pos_10 will-smith-wrote-about-wanting-to-get-jada-preg">
+    <div class="thumbnail-small pull-left">
+      <img alt="Will Smith Wrote About Wanting to Get Jada Pregnant" class="media-object" data-real="http://0.viki.io/videos/1021993v/1021993v_1311081801_1.jpg?x=b&amp;s=110x63&amp;e=t&amp;f=t&amp;cb=1" height="63" src="//1.viki.io/a/pixel-ffc07b3e7e8c5f18d20c9046df3b22d9.gif" width="110" />
+        <i class="thumb-play"></i>
+    </div>
+    <div class="media-body">
+      <h4 class="epsilon slide-title">Will Smith Wrote About Wanting to Get Jada Preg...</h4>
+      <div class="slide-desc">
+          Days before claims he allegedly cheated, Will Smith wrote on his Fa...
+      </div>
+    </div>
+  </a>
+  <div class="info-tooltip-wrapper pos-left invisible" data-tooltip-wrapper='1'>
+    <div class="info-tooltip">
+      <div class="info-tooltip-title">
+          3
+          languages
       </div>
       <div class="spinner-wrapper"><i class="spinner"></i></div>
       <div class="tooltip-arrow"></div>
@@ -1927,9 +807,923 @@
   </div>
 </li>
 
+        </ul>
+      </div>
+    </div>
+  </div>
+
+            </div>
+          </div>
+    </aside>
+  </div>
+</section>
+
+<!-- Viki Pass Banner Display.Home.950x92 -->
+<div class="hidden" data-viewable='non-ps'>
+  <a href="https://www.viki.com/pass?origin=leaderboard" class="vikipass-banner vikipass-leaderboard-v3 mbx" title="Upgrade to Viki Pass">Upgrade to Viki Pass</a>
+</div>
+
+
+<section class="row">
+  <div class="unit size15">
+
+    <ul class="tabs-flat mbm">
+      <li>
+        <a  class="active"
+           href="/news?page=1&amp;sort=latest">
+          Recently Added
+        </a>
+      </li>
+      <li>
+        <a 
+           href="/news?page=1&amp;sort=viewed">
+          Most Viewed
+        </a>
+      </li>
+    </ul>
+    <div class="tab-content">
+        <ul class="thumb-grid mbl">
+          <li><div class="thumbnail-wrapper">
+  <div class="thumbnail-tooltip"
+       data-tooltip="video_tooltip"
+       data-tooltip-src="/tooltips/videos/1022528.json">
+    <a href="/videos/1022528v-bradley-cooper-attends-his-20-year-high-school-reunion" class="thumbnail">
+      <img alt="Bradley Cooper Attends His 20 Year High School Reunion" height="107" src="http://0.viki.io/videos/1022528v/1022528v_1311131000_1.jpg?x=b&amp;s=190x107&amp;e=t&amp;f=t&amp;cb=1" width="190" />
+        <i class="thumb-play"></i>
+      <div class="thumb-desc">
+        <div class="thumb-country">United States</div>
+        <div class="thumb-title">Bradley Cooper Attends His 20 Year High School Reunion</div>
+      </div>
+    </a>
+    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
+      <div class="info-tooltip">
+        <a href="/videos/1022528v-bradley-cooper-attends-his-20-year-high-school-reunion" class="info-tooltip-title">Bradley Cooper Attends His 20 Year High School Reunion</a>
+        <div class="spinner-wrapper"><i class="spinner"></i></div>
+        <div class="tooltip-arrow"></div>
+      </div>
+    </div>
+  </div>
+  <div class="thumbnail-tooltip-lang" data-tooltip="languages_tooltip" data-tooltip-src="/video_languages_tooltips/1022528v.json">
+    <i class="icon-viki-symbol">
+      <span>V</span>
+    </i>
+    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
+      <div class="info-tooltip">
+        <div class="info-tooltip-title">
+            Viki subtitles are written by fans just like you!
+        </div>
+        <div class="spinner-wrapper"><i class="spinner"></i></div>
+        <div class="tooltip-arrow"></div>
+      </div>
+    </div>
+  </div>
+</div>
+</li><li><div class="thumbnail-wrapper">
+  <div class="thumbnail-tooltip"
+       data-tooltip="video_tooltip"
+       data-tooltip-src="/tooltips/videos/1022497.json">
+    <a href="/videos/1022497v-kate-upton-rumored-for-entourage-movie-role" class="thumbnail">
+      <img alt="Kate Upton Rumored for &#x27;Entourage&#x27; Movie Role" height="107" src="http://0.viki.io/videos/1022497v/1022497v_1311122203_1.jpg?x=b&amp;s=190x107&amp;e=t&amp;f=t&amp;cb=1" width="190" />
+        <i class="thumb-play"></i>
+      <div class="thumb-desc">
+        <div class="thumb-country">United States</div>
+        <div class="thumb-title">Kate Upton Rumored for &#x27;Entourage&#x27; Movie Role</div>
+      </div>
+    </a>
+    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
+      <div class="info-tooltip">
+        <a href="/videos/1022497v-kate-upton-rumored-for-entourage-movie-role" class="info-tooltip-title">Kate Upton Rumored for &#x27;Entourage&#x27; Movie Role</a>
+        <div class="spinner-wrapper"><i class="spinner"></i></div>
+        <div class="tooltip-arrow"></div>
+      </div>
+    </div>
+  </div>
+  <div class="thumbnail-tooltip-lang" data-tooltip="languages_tooltip" data-tooltip-src="/video_languages_tooltips/1022497v.json">
+    <i class="icon-viki-symbol">
+      <span>V</span>
+    </i>
+    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
+      <div class="info-tooltip">
+        <div class="info-tooltip-title">
+            Viki subtitles are written by fans just like you!
+        </div>
+        <div class="spinner-wrapper"><i class="spinner"></i></div>
+        <div class="tooltip-arrow"></div>
+      </div>
+    </div>
+  </div>
+</div>
+</li><li><div class="thumbnail-wrapper">
+  <div class="thumbnail-tooltip"
+       data-tooltip="video_tooltip"
+       data-tooltip-src="/tooltips/videos/1022496.json">
+    <a href="/videos/1022496v-mark-wahlberg-and-bros-to-have-wahlburger-reality-tv-show" class="thumbnail">
+      <img alt="Mark Wahlberg and Bros to Have Wahlburger Reality TV Show" height="107" src="http://0.viki.io/videos/1022496v/1022496v_1311122202_1.jpg?x=b&amp;s=190x107&amp;e=t&amp;f=t&amp;cb=1" width="190" />
+        <i class="thumb-play"></i>
+      <div class="thumb-desc">
+        <div class="thumb-country">United States</div>
+        <div class="thumb-title">Mark Wahlberg and Bros to Have Wahlburger Reality TV Show</div>
+      </div>
+    </a>
+    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
+      <div class="info-tooltip">
+        <a href="/videos/1022496v-mark-wahlberg-and-bros-to-have-wahlburger-reality-tv-show" class="info-tooltip-title">Mark Wahlberg and Bros to Have Wahlburger Reality TV Show</a>
+        <div class="spinner-wrapper"><i class="spinner"></i></div>
+        <div class="tooltip-arrow"></div>
+      </div>
+    </div>
+  </div>
+  <div class="thumbnail-tooltip-lang" data-tooltip="languages_tooltip" data-tooltip-src="/video_languages_tooltips/1022496v.json">
+    <i class="icon-viki-symbol">
+      <span>V</span>
+    </i>
+    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
+      <div class="info-tooltip">
+        <div class="info-tooltip-title">
+            Viki subtitles are written by fans just like you!
+        </div>
+        <div class="spinner-wrapper"><i class="spinner"></i></div>
+        <div class="tooltip-arrow"></div>
+      </div>
+    </div>
+  </div>
+</div>
+</li><li><div class="thumbnail-wrapper">
+  <div class="thumbnail-tooltip"
+       data-tooltip="video_tooltip"
+       data-tooltip-src="/tooltips/videos/1022495.json">
+    <a href="/videos/1022495v-alec-baldwin-loses-his-cool-outside-courthouse" class="thumbnail">
+      <img alt="Alec Baldwin Loses His Cool Outside Courthouse" height="107" src="http://0.viki.io/videos/1022495v/1022495v_1311122201_1.jpg?x=b&amp;s=190x107&amp;e=t&amp;f=t&amp;cb=1" width="190" />
+        <i class="thumb-play"></i>
+      <div class="thumb-desc">
+        <div class="thumb-country">United States</div>
+        <div class="thumb-title">Alec Baldwin Loses His Cool Outside Courthouse</div>
+      </div>
+    </a>
+    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
+      <div class="info-tooltip">
+        <a href="/videos/1022495v-alec-baldwin-loses-his-cool-outside-courthouse" class="info-tooltip-title">Alec Baldwin Loses His Cool Outside Courthouse</a>
+        <div class="spinner-wrapper"><i class="spinner"></i></div>
+        <div class="tooltip-arrow"></div>
+      </div>
+    </div>
+  </div>
+  <div class="thumbnail-tooltip-lang" data-tooltip="languages_tooltip" data-tooltip-src="/video_languages_tooltips/1022495v.json">
+    <i class="icon-viki-symbol">
+      <span>V</span>
+    </i>
+    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
+      <div class="info-tooltip">
+        <div class="info-tooltip-title">
+            Viki subtitles are written by fans just like you!
+        </div>
+        <div class="spinner-wrapper"><i class="spinner"></i></div>
+        <div class="tooltip-arrow"></div>
+      </div>
+    </div>
+  </div>
+</div>
+</li><li><div class="thumbnail-wrapper">
+  <div class="thumbnail-tooltip"
+       data-tooltip="video_tooltip"
+       data-tooltip-src="/tooltips/videos/1022494.json">
+    <a href="/videos/1022494v-kate-hudson-cant-afford-red-carpet-gowns" class="thumbnail">
+      <img alt="Kate Hudson Can&#x27;t Afford Red Carpet Gowns" height="107" src="http://0.viki.io/videos/1022494v/1022494v_1311122201_1.jpg?x=b&amp;s=190x107&amp;e=t&amp;f=t&amp;cb=1" width="190" />
+        <i class="thumb-play"></i>
+      <div class="thumb-desc">
+        <div class="thumb-country">United States</div>
+        <div class="thumb-title">Kate Hudson Can&#x27;t Afford Red Carpet Gowns</div>
+      </div>
+    </a>
+    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
+      <div class="info-tooltip">
+        <a href="/videos/1022494v-kate-hudson-cant-afford-red-carpet-gowns" class="info-tooltip-title">Kate Hudson Can&#x27;t Afford Red Carpet Gowns</a>
+        <div class="spinner-wrapper"><i class="spinner"></i></div>
+        <div class="tooltip-arrow"></div>
+      </div>
+    </div>
+  </div>
+  <div class="thumbnail-tooltip-lang" data-tooltip="languages_tooltip" data-tooltip-src="/video_languages_tooltips/1022494v.json">
+    <i class="icon-viki-symbol">
+      <span>V</span>
+    </i>
+    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
+      <div class="info-tooltip">
+        <div class="info-tooltip-title">
+            Viki subtitles are written by fans just like you!
+        </div>
+        <div class="spinner-wrapper"><i class="spinner"></i></div>
+        <div class="tooltip-arrow"></div>
+      </div>
+    </div>
+  </div>
+</div>
+</li><li><div class="thumbnail-wrapper">
+  <div class="thumbnail-tooltip"
+       data-tooltip="video_tooltip"
+       data-tooltip-src="/tooltips/videos/1022493.json">
+    <a href="/videos/1022493v-kelly-clarkson-hints-she-might-be-pregnant" class="thumbnail">
+      <img alt="Kelly Clarkson Hints She Might Be Pregnant" height="107" src="http://0.viki.io/videos/1022493v/1022493v_1311122003_1.jpg?x=b&amp;s=190x107&amp;e=t&amp;f=t&amp;cb=1" width="190" />
+        <i class="thumb-play"></i>
+      <div class="thumb-desc">
+        <div class="thumb-country">United States</div>
+        <div class="thumb-title">Kelly Clarkson Hints She Might Be Pregnant</div>
+      </div>
+    </a>
+    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
+      <div class="info-tooltip">
+        <a href="/videos/1022493v-kelly-clarkson-hints-she-might-be-pregnant" class="info-tooltip-title">Kelly Clarkson Hints She Might Be Pregnant</a>
+        <div class="spinner-wrapper"><i class="spinner"></i></div>
+        <div class="tooltip-arrow"></div>
+      </div>
+    </div>
+  </div>
+  <div class="thumbnail-tooltip-lang" data-tooltip="languages_tooltip" data-tooltip-src="/video_languages_tooltips/1022493v.json">
+    <i class="icon-viki-symbol">
+      <span>V</span>
+    </i>
+    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
+      <div class="info-tooltip">
+        <div class="info-tooltip-title">
+            Viki subtitles are written by fans just like you!
+        </div>
+        <div class="spinner-wrapper"><i class="spinner"></i></div>
+        <div class="tooltip-arrow"></div>
+      </div>
+    </div>
+  </div>
+</div>
+</li><li><div class="thumbnail-wrapper">
+  <div class="thumbnail-tooltip"
+       data-tooltip="video_tooltip"
+       data-tooltip-src="/tooltips/videos/1022492.json">
+    <a href="/videos/1022492v-jennifer-lawrence-finds-it-disgusting-miley-cyrus-and-young-sex-sells" class="thumbnail">
+      <img alt="Jennifer Lawrence Finds it &#x27;Disgusting&#x27; Miley Cyrus and Young Sex Sells" height="107" src="http://0.viki.io/videos/1022492v/1022492v_1311122002_1.jpg?x=b&amp;s=190x107&amp;e=t&amp;f=t&amp;cb=1" width="190" />
+        <i class="thumb-play"></i>
+      <div class="thumb-desc">
+        <div class="thumb-country">United States</div>
+        <div class="thumb-title">Jennifer Lawrence Finds it &#x27;Disgusting&#x27; Miley Cyrus and Young Sex Sells</div>
+      </div>
+    </a>
+    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
+      <div class="info-tooltip">
+        <a href="/videos/1022492v-jennifer-lawrence-finds-it-disgusting-miley-cyrus-and-young-sex-sells" class="info-tooltip-title">Jennifer Lawrence Finds it &#x27;Disgusting&#x27; Miley Cyrus and Young Sex Sells</a>
+        <div class="spinner-wrapper"><i class="spinner"></i></div>
+        <div class="tooltip-arrow"></div>
+      </div>
+    </div>
+  </div>
+  <div class="thumbnail-tooltip-lang" data-tooltip="languages_tooltip" data-tooltip-src="/video_languages_tooltips/1022492v.json">
+    <i class="icon-viki-symbol">
+      <span>V</span>
+    </i>
+    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
+      <div class="info-tooltip">
+        <div class="info-tooltip-title">
+            Viki subtitles are written by fans just like you!
+        </div>
+        <div class="spinner-wrapper"><i class="spinner"></i></div>
+        <div class="tooltip-arrow"></div>
+      </div>
+    </div>
+  </div>
+</div>
+</li><li><div class="thumbnail-wrapper">
+  <div class="thumbnail-tooltip"
+       data-tooltip="video_tooltip"
+       data-tooltip-src="/tooltips/videos/1022491.json">
+    <a href="/videos/1022491v-leann-rimes-and-eddie-cibrian-fall-in-love-skydiving" class="thumbnail">
+      <img alt="LeAnn Rimes and Eddie Cibrian Fall in Love Skydiving" height="107" src="http://0.viki.io/videos/1022491v/1022491v_1311122001_1.jpg?x=b&amp;s=190x107&amp;e=t&amp;f=t&amp;cb=1" width="190" />
+        <i class="thumb-play"></i>
+      <div class="thumb-desc">
+        <div class="thumb-country">United States</div>
+        <div class="thumb-title">LeAnn Rimes and Eddie Cibrian Fall in Love Skydiving</div>
+      </div>
+    </a>
+    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
+      <div class="info-tooltip">
+        <a href="/videos/1022491v-leann-rimes-and-eddie-cibrian-fall-in-love-skydiving" class="info-tooltip-title">LeAnn Rimes and Eddie Cibrian Fall in Love Skydiving</a>
+        <div class="spinner-wrapper"><i class="spinner"></i></div>
+        <div class="tooltip-arrow"></div>
+      </div>
+    </div>
+  </div>
+  <div class="thumbnail-tooltip-lang" data-tooltip="languages_tooltip" data-tooltip-src="/video_languages_tooltips/1022491v.json">
+    <i class="icon-viki-symbol">
+      <span>V</span>
+    </i>
+    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
+      <div class="info-tooltip">
+        <div class="info-tooltip-title">
+            Viki subtitles are written by fans just like you!
+        </div>
+        <div class="spinner-wrapper"><i class="spinner"></i></div>
+        <div class="tooltip-arrow"></div>
+      </div>
+    </div>
+  </div>
+</div>
+</li><li><div class="thumbnail-wrapper">
+  <div class="thumbnail-tooltip"
+       data-tooltip="video_tooltip"
+       data-tooltip-src="/tooltips/videos/1022478.json">
+    <a href="/videos/1022478v-justin-timberlake-is-not-cool" class="thumbnail">
+      <img alt="Justin Timberlake is Not Cool" height="107" src="http://0.viki.io/videos/1022478v/1022478v_1311121804_1.jpg?x=b&amp;s=190x107&amp;e=t&amp;f=t&amp;cb=1" width="190" />
+        <i class="thumb-play"></i>
+      <div class="thumb-desc">
+        <div class="thumb-country">United States</div>
+        <div class="thumb-title">Justin Timberlake is Not Cool</div>
+      </div>
+    </a>
+    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
+      <div class="info-tooltip">
+        <a href="/videos/1022478v-justin-timberlake-is-not-cool" class="info-tooltip-title">Justin Timberlake is Not Cool</a>
+        <div class="spinner-wrapper"><i class="spinner"></i></div>
+        <div class="tooltip-arrow"></div>
+      </div>
+    </div>
+  </div>
+  <div class="thumbnail-tooltip-lang" data-tooltip="languages_tooltip" data-tooltip-src="/video_languages_tooltips/1022478v.json">
+    <i class="icon-viki-symbol">
+      <span>2</span>
+    </i>
+    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
+      <div class="info-tooltip">
+        <div class="info-tooltip-title">
+            2
+            languages
+        </div>
+        <div class="spinner-wrapper"><i class="spinner"></i></div>
+        <div class="tooltip-arrow"></div>
+      </div>
+    </div>
+  </div>
+</div>
+</li><li><div class="thumbnail-wrapper">
+  <div class="thumbnail-tooltip"
+       data-tooltip="video_tooltip"
+       data-tooltip-src="/tooltips/videos/1022477.json">
+    <a href="/videos/1022477v-ryan-reynolds-talks-friendship-with-michael-j-fox" class="thumbnail">
+      <img alt="Ryan Reynolds Talks Friendship With Michael J. Fox" height="107" src="http://0.viki.io/videos/1022477v/1022477v_1311121803_1.jpg?x=b&amp;s=190x107&amp;e=t&amp;f=t&amp;cb=1" width="190" />
+        <i class="thumb-play"></i>
+      <div class="thumb-desc">
+        <div class="thumb-country">United States</div>
+        <div class="thumb-title">Ryan Reynolds Talks Friendship With Michael J. Fox</div>
+      </div>
+    </a>
+    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
+      <div class="info-tooltip">
+        <a href="/videos/1022477v-ryan-reynolds-talks-friendship-with-michael-j-fox" class="info-tooltip-title">Ryan Reynolds Talks Friendship With Michael J. Fox</a>
+        <div class="spinner-wrapper"><i class="spinner"></i></div>
+        <div class="tooltip-arrow"></div>
+      </div>
+    </div>
+  </div>
+  <div class="thumbnail-tooltip-lang" data-tooltip="languages_tooltip" data-tooltip-src="/video_languages_tooltips/1022477v.json">
+    <i class="icon-viki-symbol">
+      <span>V</span>
+    </i>
+    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
+      <div class="info-tooltip">
+        <div class="info-tooltip-title">
+            Viki subtitles are written by fans just like you!
+        </div>
+        <div class="spinner-wrapper"><i class="spinner"></i></div>
+        <div class="tooltip-arrow"></div>
+      </div>
+    </div>
+  </div>
+</div>
+</li><li><div class="thumbnail-wrapper">
+  <div class="thumbnail-tooltip"
+       data-tooltip="video_tooltip"
+       data-tooltip-src="/tooltips/videos/1022476.json">
+    <a href="/videos/1022476v-taylor-swift-teaming-up-with-victorias-secret" class="thumbnail">
+      <img alt="Taylor Swift Teaming Up with Victoria&#x27;s Secret" height="107" src="http://0.viki.io/videos/1022476v/1022476v_1311121802_1.jpg?x=b&amp;s=190x107&amp;e=t&amp;f=t&amp;cb=1" width="190" />
+        <i class="thumb-play"></i>
+      <div class="thumb-desc">
+        <div class="thumb-country">United States</div>
+        <div class="thumb-title">Taylor Swift Teaming Up with Victoria&#x27;s Secret</div>
+      </div>
+    </a>
+    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
+      <div class="info-tooltip">
+        <a href="/videos/1022476v-taylor-swift-teaming-up-with-victorias-secret" class="info-tooltip-title">Taylor Swift Teaming Up with Victoria&#x27;s Secret</a>
+        <div class="spinner-wrapper"><i class="spinner"></i></div>
+        <div class="tooltip-arrow"></div>
+      </div>
+    </div>
+  </div>
+  <div class="thumbnail-tooltip-lang" data-tooltip="languages_tooltip" data-tooltip-src="/video_languages_tooltips/1022476v.json">
+    <i class="icon-viki-symbol">
+      <span>V</span>
+    </i>
+    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
+      <div class="info-tooltip">
+        <div class="info-tooltip-title">
+            Viki subtitles are written by fans just like you!
+        </div>
+        <div class="spinner-wrapper"><i class="spinner"></i></div>
+        <div class="tooltip-arrow"></div>
+      </div>
+    </div>
+  </div>
+</div>
+</li><li><div class="thumbnail-wrapper">
+  <div class="thumbnail-tooltip"
+       data-tooltip="video_tooltip"
+       data-tooltip-src="/tooltips/videos/1022475.json">
+    <a href="/videos/1022475v-bruce-and-kris-jenner-are-great-despite-split" class="thumbnail">
+      <img alt="Bruce and Kris Jenner Are &#x27;Great&#x27; Despite Split" height="107" src="http://0.viki.io/videos/1022475v/1022475v_1311121801_1.jpg?x=b&amp;s=190x107&amp;e=t&amp;f=t&amp;cb=1" width="190" />
+        <i class="thumb-play"></i>
+      <div class="thumb-desc">
+        <div class="thumb-country">United States</div>
+        <div class="thumb-title">Bruce and Kris Jenner Are &#x27;Great&#x27; Despite Split</div>
+      </div>
+    </a>
+    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
+      <div class="info-tooltip">
+        <a href="/videos/1022475v-bruce-and-kris-jenner-are-great-despite-split" class="info-tooltip-title">Bruce and Kris Jenner Are &#x27;Great&#x27; Despite Split</a>
+        <div class="spinner-wrapper"><i class="spinner"></i></div>
+        <div class="tooltip-arrow"></div>
+      </div>
+    </div>
+  </div>
+  <div class="thumbnail-tooltip-lang" data-tooltip="languages_tooltip" data-tooltip-src="/video_languages_tooltips/1022475v.json">
+    <i class="icon-viki-symbol">
+      <span>V</span>
+    </i>
+    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
+      <div class="info-tooltip">
+        <div class="info-tooltip-title">
+            Viki subtitles are written by fans just like you!
+        </div>
+        <div class="spinner-wrapper"><i class="spinner"></i></div>
+        <div class="tooltip-arrow"></div>
+      </div>
+    </div>
+  </div>
+</div>
+</li><li><div class="thumbnail-wrapper">
+  <div class="thumbnail-tooltip"
+       data-tooltip="video_tooltip"
+       data-tooltip-src="/tooltips/videos/1022473.json">
+    <a href="/videos/1022473v-kylie-jenner-cuddles-up-as-bruce-is-honoured-with-athlete-award" class="thumbnail">
+      <img alt="Kylie Jenner Cuddles Up As Bruce Is Honoured With Athlete Award" height="107" src="http://0.viki.io/videos/1022473v/1022473v_1311121601_1.jpg?x=b&amp;s=190x107&amp;e=t&amp;f=t&amp;cb=1" width="190" />
+        <i class="thumb-play"></i>
+      <div class="thumb-desc">
+        <div class="thumb-country">United States</div>
+        <div class="thumb-title">Kylie Jenner Cuddles Up As Bruce Is Honoured With Athlete Award</div>
+      </div>
+    </a>
+    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
+      <div class="info-tooltip">
+        <a href="/videos/1022473v-kylie-jenner-cuddles-up-as-bruce-is-honoured-with-athlete-award" class="info-tooltip-title">Kylie Jenner Cuddles Up As Bruce Is Honoured With Athlete Award</a>
+        <div class="spinner-wrapper"><i class="spinner"></i></div>
+        <div class="tooltip-arrow"></div>
+      </div>
+    </div>
+  </div>
+  <div class="thumbnail-tooltip-lang" data-tooltip="languages_tooltip" data-tooltip-src="/video_languages_tooltips/1022473v.json">
+    <i class="icon-viki-symbol">
+      <span>V</span>
+    </i>
+    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
+      <div class="info-tooltip">
+        <div class="info-tooltip-title">
+            Viki subtitles are written by fans just like you!
+        </div>
+        <div class="spinner-wrapper"><i class="spinner"></i></div>
+        <div class="tooltip-arrow"></div>
+      </div>
+    </div>
+  </div>
+</div>
+</li><li><div class="thumbnail-wrapper">
+  <div class="thumbnail-tooltip"
+       data-tooltip="video_tooltip"
+       data-tooltip-src="/tooltips/videos/1022459.json">
+    <a href="/videos/1022459v-lady-gaga-looks-spooky-at-the-glamour-awards" class="thumbnail">
+      <img alt="Lady Gaga Looks Spooky at the Glamour Awards" height="107" src="http://0.viki.io/videos/1022459v/1022459v_1311121202_1.jpg?x=b&amp;s=190x107&amp;e=t&amp;f=t&amp;cb=1" width="190" />
+        <i class="thumb-play"></i>
+      <div class="thumb-desc">
+        <div class="thumb-country">United States</div>
+        <div class="thumb-title">Lady Gaga Looks Spooky at the Glamour Awards</div>
+      </div>
+    </a>
+    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
+      <div class="info-tooltip">
+        <a href="/videos/1022459v-lady-gaga-looks-spooky-at-the-glamour-awards" class="info-tooltip-title">Lady Gaga Looks Spooky at the Glamour Awards</a>
+        <div class="spinner-wrapper"><i class="spinner"></i></div>
+        <div class="tooltip-arrow"></div>
+      </div>
+    </div>
+  </div>
+  <div class="thumbnail-tooltip-lang" data-tooltip="languages_tooltip" data-tooltip-src="/video_languages_tooltips/1022459v.json">
+    <i class="icon-viki-symbol">
+      <span>V</span>
+    </i>
+    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
+      <div class="info-tooltip">
+        <div class="info-tooltip-title">
+            Viki subtitles are written by fans just like you!
+        </div>
+        <div class="spinner-wrapper"><i class="spinner"></i></div>
+        <div class="tooltip-arrow"></div>
+      </div>
+    </div>
+  </div>
+</div>
+</li><li><div class="thumbnail-wrapper">
+  <div class="thumbnail-tooltip"
+       data-tooltip="video_tooltip"
+       data-tooltip-src="/tooltips/videos/1022458.json">
+    <a href="/videos/1022458v-alessandra-ambrosio-tucks-into-fries-just-days-ahead-of-victorias-secret-show" class="thumbnail">
+      <img alt="Alessandra Ambrosio Tucks into Fries Just Days Ahead of Victoria&#x27;s Secret Show" height="107" src="http://0.viki.io/videos/1022458v/1022458v_1311121201_1.jpg?x=b&amp;s=190x107&amp;e=t&amp;f=t&amp;cb=1" width="190" />
+        <i class="thumb-play"></i>
+      <div class="thumb-desc">
+        <div class="thumb-country">United States</div>
+        <div class="thumb-title">Alessandra Ambrosio Tucks into Fries Just Days Ahead of Victoria&#x27;s Secret Show</div>
+      </div>
+    </a>
+    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
+      <div class="info-tooltip">
+        <a href="/videos/1022458v-alessandra-ambrosio-tucks-into-fries-just-days-ahead-of-victorias-secret-show" class="info-tooltip-title">Alessandra Ambrosio Tucks into Fries Just Days Ahead of Victoria&#x27;s Secret Show</a>
+        <div class="spinner-wrapper"><i class="spinner"></i></div>
+        <div class="tooltip-arrow"></div>
+      </div>
+    </div>
+  </div>
+  <div class="thumbnail-tooltip-lang" data-tooltip="languages_tooltip" data-tooltip-src="/video_languages_tooltips/1022458v.json">
+    <i class="icon-viki-symbol">
+      <span>V</span>
+    </i>
+    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
+      <div class="info-tooltip">
+        <div class="info-tooltip-title">
+            Viki subtitles are written by fans just like you!
+        </div>
+        <div class="spinner-wrapper"><i class="spinner"></i></div>
+        <div class="tooltip-arrow"></div>
+      </div>
+    </div>
+  </div>
+</div>
+</li><li><div class="thumbnail-wrapper">
+  <div class="thumbnail-tooltip"
+       data-tooltip="video_tooltip"
+       data-tooltip-src="/tooltips/videos/1022457.json">
+    <a href="/videos/1022457v-jennifer-lawrence-wows-in-white-at-the-hunger-games-premiere" class="thumbnail">
+      <img alt="Jennifer Lawrence Wows in White at the Hunger Games Premiere" height="107" src="http://0.viki.io/videos/1022457v/1022457v_1311121001_1.jpg?x=b&amp;s=190x107&amp;e=t&amp;f=t&amp;cb=1" width="190" />
+        <i class="thumb-play"></i>
+      <div class="thumb-desc">
+        <div class="thumb-country">United States</div>
+        <div class="thumb-title">Jennifer Lawrence Wows in White at the Hunger Games Premiere</div>
+      </div>
+    </a>
+    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
+      <div class="info-tooltip">
+        <a href="/videos/1022457v-jennifer-lawrence-wows-in-white-at-the-hunger-games-premiere" class="info-tooltip-title">Jennifer Lawrence Wows in White at the Hunger Games Premiere</a>
+        <div class="spinner-wrapper"><i class="spinner"></i></div>
+        <div class="tooltip-arrow"></div>
+      </div>
+    </div>
+  </div>
+  <div class="thumbnail-tooltip-lang" data-tooltip="languages_tooltip" data-tooltip-src="/video_languages_tooltips/1022457v.json">
+    <i class="icon-viki-symbol">
+      <span>V</span>
+    </i>
+    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
+      <div class="info-tooltip">
+        <div class="info-tooltip-title">
+            Viki subtitles are written by fans just like you!
+        </div>
+        <div class="spinner-wrapper"><i class="spinner"></i></div>
+        <div class="tooltip-arrow"></div>
+      </div>
+    </div>
+  </div>
+</div>
+</li><li><div class="thumbnail-wrapper">
+  <div class="thumbnail-tooltip"
+       data-tooltip="video_tooltip"
+       data-tooltip-src="/tooltips/videos/1022431.json">
+    <a href="/videos/1022431v-beyonc-sings-along-with-young-blind-fan-at-concert" class="thumbnail">
+      <img alt="Beyoncé Sings Along With Young Blind Fan At Concert" height="107" src="http://0.viki.io/videos/1022431v/1022431v_1311120001_1.jpg?x=b&amp;s=190x107&amp;e=t&amp;f=t&amp;cb=1" width="190" />
+        <i class="thumb-play"></i>
+      <div class="thumb-desc">
+        <div class="thumb-country">United States</div>
+        <div class="thumb-title">Beyoncé Sings Along With Young Blind Fan At Concert</div>
+      </div>
+    </a>
+    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
+      <div class="info-tooltip">
+        <a href="/videos/1022431v-beyonc-sings-along-with-young-blind-fan-at-concert" class="info-tooltip-title">Beyoncé Sings Along With Young Blind Fan At Concert</a>
+        <div class="spinner-wrapper"><i class="spinner"></i></div>
+        <div class="tooltip-arrow"></div>
+      </div>
+    </div>
+  </div>
+  <div class="thumbnail-tooltip-lang" data-tooltip="languages_tooltip" data-tooltip-src="/video_languages_tooltips/1022431v.json">
+    <i class="icon-viki-symbol">
+      <span>V</span>
+    </i>
+    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
+      <div class="info-tooltip">
+        <div class="info-tooltip-title">
+            Viki subtitles are written by fans just like you!
+        </div>
+        <div class="spinner-wrapper"><i class="spinner"></i></div>
+        <div class="tooltip-arrow"></div>
+      </div>
+    </div>
+  </div>
+</div>
+</li><li><div class="thumbnail-wrapper">
+  <div class="thumbnail-tooltip"
+       data-tooltip="video_tooltip"
+       data-tooltip-src="/tooltips/videos/1022410.json">
+    <a href="/videos/1022410v-joanna-krupa-wears-another-bikini-for-your-viewing-pleasure" class="thumbnail">
+      <img alt="Joanna Krupa Wears Another Bikini for Your Viewing Pleasure" height="107" src="http://0.viki.io/videos/1022410v/1022410v_1311112203_1.jpg?x=b&amp;s=190x107&amp;e=t&amp;f=t&amp;cb=1" width="190" />
+        <i class="thumb-play"></i>
+      <div class="thumb-desc">
+        <div class="thumb-country">United States</div>
+        <div class="thumb-title">Joanna Krupa Wears Another Bikini for Your Viewing Pleasure</div>
+      </div>
+    </a>
+    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
+      <div class="info-tooltip">
+        <a href="/videos/1022410v-joanna-krupa-wears-another-bikini-for-your-viewing-pleasure" class="info-tooltip-title">Joanna Krupa Wears Another Bikini for Your Viewing Pleasure</a>
+        <div class="spinner-wrapper"><i class="spinner"></i></div>
+        <div class="tooltip-arrow"></div>
+      </div>
+    </div>
+  </div>
+  <div class="thumbnail-tooltip-lang" data-tooltip="languages_tooltip" data-tooltip-src="/video_languages_tooltips/1022410v.json">
+    <i class="icon-viki-symbol">
+      <span>V</span>
+    </i>
+    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
+      <div class="info-tooltip">
+        <div class="info-tooltip-title">
+            Viki subtitles are written by fans just like you!
+        </div>
+        <div class="spinner-wrapper"><i class="spinner"></i></div>
+        <div class="tooltip-arrow"></div>
+      </div>
+    </div>
+  </div>
+</div>
+</li><li><div class="thumbnail-wrapper">
+  <div class="thumbnail-tooltip"
+       data-tooltip="video_tooltip"
+       data-tooltip-src="/tooltips/videos/1022409.json">
+    <a href="/videos/1022409v-kaley-cuoco-slams-pregnancy-rumor" class="thumbnail">
+      <img alt="Kaley Cuoco Slams Pregnancy Rumor" height="107" src="http://0.viki.io/videos/1022409v/1022409v_1311112202_1.jpg?x=b&amp;s=190x107&amp;e=t&amp;f=t&amp;cb=1" width="190" />
+        <i class="thumb-play"></i>
+      <div class="thumb-desc">
+        <div class="thumb-country">United States</div>
+        <div class="thumb-title">Kaley Cuoco Slams Pregnancy Rumor</div>
+      </div>
+    </a>
+    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
+      <div class="info-tooltip">
+        <a href="/videos/1022409v-kaley-cuoco-slams-pregnancy-rumor" class="info-tooltip-title">Kaley Cuoco Slams Pregnancy Rumor</a>
+        <div class="spinner-wrapper"><i class="spinner"></i></div>
+        <div class="tooltip-arrow"></div>
+      </div>
+    </div>
+  </div>
+  <div class="thumbnail-tooltip-lang" data-tooltip="languages_tooltip" data-tooltip-src="/video_languages_tooltips/1022409v.json">
+    <i class="icon-viki-symbol">
+      <span>V</span>
+    </i>
+    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
+      <div class="info-tooltip">
+        <div class="info-tooltip-title">
+            Viki subtitles are written by fans just like you!
+        </div>
+        <div class="spinner-wrapper"><i class="spinner"></i></div>
+        <div class="tooltip-arrow"></div>
+      </div>
+    </div>
+  </div>
+</div>
+</li><li><div class="thumbnail-wrapper">
+  <div class="thumbnail-tooltip"
+       data-tooltip="video_tooltip"
+       data-tooltip-src="/tooltips/videos/1022408.json">
+    <a href="/videos/1022408v-sacha-baron-cohen-pranks-audience-at-britannia-awards" class="thumbnail">
+      <img alt="Sacha Baron Cohen Pranks Audience at Britannia Awards" height="107" src="http://0.viki.io/videos/1022408v/1022408v_1311112201_5.jpg?x=b&amp;s=190x107&amp;e=t&amp;f=t&amp;cb=1" width="190" />
+        <i class="thumb-play"></i>
+      <div class="thumb-desc">
+        <div class="thumb-country">United States</div>
+        <div class="thumb-title">Sacha Baron Cohen Pranks Audience at Britannia Awards</div>
+      </div>
+    </a>
+    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
+      <div class="info-tooltip">
+        <a href="/videos/1022408v-sacha-baron-cohen-pranks-audience-at-britannia-awards" class="info-tooltip-title">Sacha Baron Cohen Pranks Audience at Britannia Awards</a>
+        <div class="spinner-wrapper"><i class="spinner"></i></div>
+        <div class="tooltip-arrow"></div>
+      </div>
+    </div>
+  </div>
+  <div class="thumbnail-tooltip-lang" data-tooltip="languages_tooltip" data-tooltip-src="/video_languages_tooltips/1022408v.json">
+    <i class="icon-viki-symbol">
+      <span>V</span>
+    </i>
+    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
+      <div class="info-tooltip">
+        <div class="info-tooltip-title">
+            Viki subtitles are written by fans just like you!
+        </div>
+        <div class="spinner-wrapper"><i class="spinner"></i></div>
+        <div class="tooltip-arrow"></div>
+      </div>
+    </div>
+  </div>
+</div>
+</li><li><div class="thumbnail-wrapper">
+  <div class="thumbnail-tooltip"
+       data-tooltip="video_tooltip"
+       data-tooltip-src="/tooltips/videos/1022366.json">
+    <a href="/videos/1022366v-leonardo-dicaprio-celebrates-birthday-with-kanye-west" class="thumbnail">
+      <img alt="Leonardo DiCaprio Celebrates Birthday With Kanye West" height="107" src="http://0.viki.io/videos/1022366v/1022366v_1311112002_1.jpg?x=b&amp;s=190x107&amp;e=t&amp;f=t&amp;cb=1" width="190" />
+        <i class="thumb-play"></i>
+      <div class="thumb-desc">
+        <div class="thumb-country">United States</div>
+        <div class="thumb-title">Leonardo DiCaprio Celebrates Birthday With Kanye West</div>
+      </div>
+    </a>
+    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
+      <div class="info-tooltip">
+        <a href="/videos/1022366v-leonardo-dicaprio-celebrates-birthday-with-kanye-west" class="info-tooltip-title">Leonardo DiCaprio Celebrates Birthday With Kanye West</a>
+        <div class="spinner-wrapper"><i class="spinner"></i></div>
+        <div class="tooltip-arrow"></div>
+      </div>
+    </div>
+  </div>
+  <div class="thumbnail-tooltip-lang" data-tooltip="languages_tooltip" data-tooltip-src="/video_languages_tooltips/1022366v.json">
+    <i class="icon-viki-symbol">
+      <span>V</span>
+    </i>
+    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
+      <div class="info-tooltip">
+        <div class="info-tooltip-title">
+            Viki subtitles are written by fans just like you!
+        </div>
+        <div class="spinner-wrapper"><i class="spinner"></i></div>
+        <div class="tooltip-arrow"></div>
+      </div>
+    </div>
+  </div>
+</div>
+</li><li><div class="thumbnail-wrapper">
+  <div class="thumbnail-tooltip"
+       data-tooltip="video_tooltip"
+       data-tooltip-src="/tooltips/videos/1022338.json">
+    <a href="/videos/1022338v-david-beckham-may-receive-a-knighthood-in-new-years-honors-list" class="thumbnail">
+      <img alt="David Beckham May Receive a Knighthood in New Years Honors List" height="107" src="http://0.viki.io/videos/1022338v/1022338v_1311111806_1.jpg?x=b&amp;s=190x107&amp;e=t&amp;f=t&amp;cb=1" width="190" />
+        <i class="thumb-play"></i>
+      <div class="thumb-desc">
+        <div class="thumb-country">United States</div>
+        <div class="thumb-title">David Beckham May Receive a Knighthood in New Years Honors List</div>
+      </div>
+    </a>
+    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
+      <div class="info-tooltip">
+        <a href="/videos/1022338v-david-beckham-may-receive-a-knighthood-in-new-years-honors-list" class="info-tooltip-title">David Beckham May Receive a Knighthood in New Years Honors List</a>
+        <div class="spinner-wrapper"><i class="spinner"></i></div>
+        <div class="tooltip-arrow"></div>
+      </div>
+    </div>
+  </div>
+  <div class="thumbnail-tooltip-lang" data-tooltip="languages_tooltip" data-tooltip-src="/video_languages_tooltips/1022338v.json">
+    <i class="icon-viki-symbol">
+      <span>V</span>
+    </i>
+    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
+      <div class="info-tooltip">
+        <div class="info-tooltip-title">
+            Viki subtitles are written by fans just like you!
+        </div>
+        <div class="spinner-wrapper"><i class="spinner"></i></div>
+        <div class="tooltip-arrow"></div>
+      </div>
+    </div>
+  </div>
+</div>
+</li><li><div class="thumbnail-wrapper">
+  <div class="thumbnail-tooltip"
+       data-tooltip="video_tooltip"
+       data-tooltip-src="/tooltips/videos/1022337.json">
+    <a href="/videos/1022337v-charlie-sheen-trying-to-make-amends-with-chuck-lorre" class="thumbnail">
+      <img alt="Charlie Sheen Trying to Make Amends with Chuck Lorre" height="107" src="http://0.viki.io/videos/1022337v/1022337v_1311111805_1.jpg?x=b&amp;s=190x107&amp;e=t&amp;f=t&amp;cb=1" width="190" />
+        <i class="thumb-play"></i>
+      <div class="thumb-desc">
+        <div class="thumb-country">United States</div>
+        <div class="thumb-title">Charlie Sheen Trying to Make Amends with Chuck Lorre</div>
+      </div>
+    </a>
+    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
+      <div class="info-tooltip">
+        <a href="/videos/1022337v-charlie-sheen-trying-to-make-amends-with-chuck-lorre" class="info-tooltip-title">Charlie Sheen Trying to Make Amends with Chuck Lorre</a>
+        <div class="spinner-wrapper"><i class="spinner"></i></div>
+        <div class="tooltip-arrow"></div>
+      </div>
+    </div>
+  </div>
+  <div class="thumbnail-tooltip-lang" data-tooltip="languages_tooltip" data-tooltip-src="/video_languages_tooltips/1022337v.json">
+    <i class="icon-viki-symbol">
+      <span>V</span>
+    </i>
+    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
+      <div class="info-tooltip">
+        <div class="info-tooltip-title">
+            Viki subtitles are written by fans just like you!
+        </div>
+        <div class="spinner-wrapper"><i class="spinner"></i></div>
+        <div class="tooltip-arrow"></div>
+      </div>
+    </div>
+  </div>
+</div>
+</li><li><div class="thumbnail-wrapper">
+  <div class="thumbnail-tooltip"
+       data-tooltip="video_tooltip"
+       data-tooltip-src="/tooltips/videos/1022336.json">
+    <a href="/videos/1022336v-simon-cowell-wants-a-smoking-room-when-baby-comes" class="thumbnail">
+      <img alt="Simon Cowell Wants a Smoking Room When Baby Comes" height="107" src="http://0.viki.io/videos/1022336v/1022336v_1311111804_1.jpg?x=b&amp;s=190x107&amp;e=t&amp;f=t&amp;cb=1" width="190" />
+        <i class="thumb-play"></i>
+      <div class="thumb-desc">
+        <div class="thumb-country">United States</div>
+        <div class="thumb-title">Simon Cowell Wants a Smoking Room When Baby Comes</div>
+      </div>
+    </a>
+    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
+      <div class="info-tooltip">
+        <a href="/videos/1022336v-simon-cowell-wants-a-smoking-room-when-baby-comes" class="info-tooltip-title">Simon Cowell Wants a Smoking Room When Baby Comes</a>
+        <div class="spinner-wrapper"><i class="spinner"></i></div>
+        <div class="tooltip-arrow"></div>
+      </div>
+    </div>
+  </div>
+  <div class="thumbnail-tooltip-lang" data-tooltip="languages_tooltip" data-tooltip-src="/video_languages_tooltips/1022336v.json">
+    <i class="icon-viki-symbol">
+      <span>V</span>
+    </i>
+    <div class="info-tooltip-wrapper pos-right invisible" data-tooltip-wrapper='1'>
+      <div class="info-tooltip">
+        <div class="info-tooltip-title">
+            Viki subtitles are written by fans just like you!
+        </div>
+        <div class="spinner-wrapper"><i class="spinner"></i></div>
+        <div class="tooltip-arrow"></div>
+      </div>
+    </div>
+  </div>
+</div>
+</li>
+        </ul>
+        <div class="pagination"><span class='page-link-current'>1</span><a class='page-link' href='/news?page=2'>2</a><a class='page-link' href='/news?page=3'>3</a><a class='page-link' href='/news?page=4'>4</a><a class='page-link' href='/news?page=5'>5</a><span class="page-ellipsis">&hellip;</span><a class='page-link' rel='next' href='/news?page=2'>Next &rarr;</a><a class='page-link' href='/news?page=42'>Last</a></div>
+    </div>
+  </div>
+
+  <div class="unit size9">
+    <aside class="mlm">
+      <div class="mod">
+        <div class="mod-hd bbs">
+          <h3 class="nekto pbm"><span class="translation_missing" title="translation missing: en.core.browse">Browse</span></h3>
+        </div>
+        <div class="mod-bd">
+          <ul class="nav-pills">
+            <li>
+              <a href="/news?page=1" class="active">All countries</a>
+            </li>
+              <li>
+                <a href="/news?country=kr">Korea</a>
+              </li>
+              <li>
+                <a href="/news?country=us">United States</a>
+              </li>
+              <li>
+                <a href="/news?country=id">Indonesia</a>
+              </li>
           </ul>
         </div>
       </div>
+          <!-- Viki/ROS_MPU -->
+  <div class="googleads mod mod-ads">
+    <div id='div-gpt-ad-1374619953643-0' class="mod-bd">
+      <script type='text/javascript'>
+        googletag.cmd.push(function () {
+          googletag.display('div-gpt-ad-1374619953643-0');
+        });
+      </script>
+    </div>
+    <div class="mod-ft">Sponsored</div>
+  </div>
 
       <div class="mod" data-block-track="friendsWatching">
   <div class="mod-hd">
@@ -1944,6 +1738,10 @@
       <div id="fb_invite" class="fb-invite"></div>
     </div>
   </div>
+</div>
+
+      <div class="hidden" data-viewable='non-ps'>
+  <a href="https://www.viki.com/pass?origin=sidekick" class="vikipass-banner vikipass-sidekick mbl" title="Upgrade to Viki Pass">Upgrade to Viki Pass</a>
 </div>
 
     </aside>
@@ -1991,7 +1789,7 @@
       <li><a href="/networks" title="Networks">Networks</a><small class="new-badge-text">New</small></li>
       <li><a href="http://blog.viki.com" title="Blog">Blog</a></li>
       <li><a href="/about" title="About Us">About Us</a></li>
-      <li><a href="https://www.viki.com/pass?origin=footer" class="hidden" data-viewable="non-ps" title="Viki Pass. 100% Ad-Free. Watch in HD. Start your free trial!">Viki Pass</a></li>
+      <li><a href="https://www.viki.com/pass?origin=footer" class="hidden" data-viewable="non-ps">Viki Pass</a></li>
     </ul>
   </div>
 </footer>
@@ -2010,9 +1808,9 @@
     <div class="colophon-links pull-right">
       <i class="icon-globe icon-small"></i>
       <span class="muted">Languages:</span>
-      <a href="/?locale=en" class="first-child muted" rel="nofollow" title="English">
+      <a href="/news?locale=en" class="first-child muted" rel="nofollow" title="English">
         <i class="img-flag-us"></i> English
-</a>      <a href="/?locale=es" class="muted" rel="nofollow" title="Español">
+</a>      <a href="/news?locale=es" class="muted" rel="nofollow" title="Español">
         <i class="img-flag-es"></i> Español
 </a>    </div>
   </div>
@@ -2279,14 +2077,14 @@ Jan Di is an average girl whose family owns a dry cleaning store located near th
 </div>
 
 
-  <script src="//1.viki.io/a/application-fcbde4be7992fe4c37466515fd205c72.js" type="text/javascript"></script>
+  <script src="//1.viki.io/a/application-8e8391dc189721ffda2a4f1b570960c9.js" type="text/javascript"></script>
   <script type="text/javascript">
     window.rootUrl = 'http://www.viki.com/';
     window.subscriptionsPath = '/subscriptions.json';
     window.user_locale = 'en';
-    window.appVersion = '5163.eef630edeeffb0f50b814e11604cf98641deb074';
+    window.appVersion = '5194.5c4f0264e5368971e401d5ec0d7b26a80fdd985d';
     window.appId = '100000a';
-    window.cur_a = "home_show";
+    window.cur_a = "news_landing_index";
     
     var disqus_config = function(){
       this.language = (user_locale == 'es') ? 'es_MX' : 'en';
