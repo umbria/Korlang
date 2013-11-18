@@ -3,16 +3,20 @@
 <html>
   <head><script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script>
     <title>Segment Timer</title>
-    <link href="http://3.viki.io/assets/favicon-805623f86d18c419f485869b12cb2478.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
-    <link href="/css/viki.css" media="all" rel="stylesheet" />
+    <!-- <link href="http://3.viki.io/assets/favicon-805623f86d18c419f485869b12cb2478.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" /> -->
+    <link href="/favicon/viki.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <link href="/css/subtitlers.css" media="all" rel="stylesheet" />
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="k9JnfEONrAxSaAQPZpYyDUVMmkIU7ztguOQXk5VBq58=" name="csrf-token" />
+<meta content="cMgVhtQL84KL8Vjp4t2LpTG7R+B+F8kVxYHzEVoTmiE=" name="csrf-token" />
   </head>
   <body>
 
-  <a class="brand" href="http://www.viki.com" title="Viki Home"></a>
-<a class="video-title affix-top" href="http://www.viki.com/videos/198359v-iu-sea-of-moonlight-feat-fiestar">Sea Of Moonlight (Feat. Fiestar)</a>
-<a class="close-editor" href="http://www.viki.com/videos/198359v-iu-sea-of-moonlight-feat-fiestar" title="Exit Editor">
+  <!-- <a class="brand" href="http://www.viki.com" title="Viki Home"></a> -->
+  <a class="brand" href="/" title="Viki Home"></a>
+<!-- <a class="video-title affix-top" data-event-label="show-video" href="http://www.viki.com/videos/198359v-iu-sea-of-moonlight-feat-fiestar">Sea Of Moonlight (Feat. Fiestar)</a> -->
+<a class="video-title affix-top" data-event-label="show-video" href="/198359v-iu-sea-of-moonlight-feat-fiestar">Sea Of Moonlight (Feat. Fiestar)</a>
+<!-- <a class="close-editor" data-event-label="close-segment-timer" href="http://www.viki.com/videos/198359v-iu-sea-of-moonlight-feat-fiestar" title="Exit Editor"> -->
+<a class="close-editor" data-event-label="close-segment-timer" href="/198359v-iu-sea-of-moonlight-feat-fiestar" title="Exit Editor">
   <i class="icon icon-x"></i>
 </a>
 <div class="wrapper-main">
@@ -25,33 +29,35 @@
         More <i class="icon-btn-caret"></i>
       </div>
       <ul class="dropdown-menu hidden">
-        <li><a href="/bulk_translations/198359" target="_blank">Bulk Translation</a></li>
-        <li><a href="/volunteer_finder" target="_blank">Volunteer Finder</a></li>
+        <li><a data-event-label="show-bulk-translation" href="/bulk_translations/198359" target="_blank">Bulk Translation</a></li>
+        <li><a data-event-label="show-volunteer-finder" href="/volunteer_finder" target="_blank">Volunteer Finder</a></li>
       </ul>
     </div>
   </div>
 
   <ul class="tab" data-tab-links="1">
     <li>
-      <a href="/translations/198359?end_time=0&amp;start_time=0">Subtitle Editor</a>
+      <a href="/translations/198359?end_time=0&amp;start_time=0" data-event-label='show-subtitle-editor'>Subtitle Editor</a>
     </li>
     <li>
-      <a href="javascript:void(0);" id="tool-button" class="active">Segment Timer</a>
+      <a href="javascript:void(0);" id="tool-button" class="active" data-event-label='show-segment-timer'>Segment Timer</a>
     </li>
     <li>
-      <a id="disqus-button" href="javascript:void(0);">Team Discussion</a>
+      <a id="disqus-button" href="javascript:void(0);" data-event-label='show-disqus'>Team Discussion</a>
     </li>
     <li>
-      <a id="team-note-button" href="javascript:void(0)">Team Notes</a>
+      <a id="team-note-button" href="javascript:void(0)" data-event-label='show-team-note'>Team Notes</a>
     </li>
   </ul>
 
   <div class="tab-content">
     <div id="tool-tab" class="wrapper wrapper-tool">
       <div class="video_wrapper">
-        <video id="subber_player" class="video-js vjs-default-skin" preload width="976" height="450" data-setup={&quot;key&quot;:&quot;#$8ff53c2409184340bb5&quot;,&quot;rtmp_info&quot;:{&quot;net_connection_url&quot;:&quot;rtmp://viki.fcod.llnwd.net/a7881/&quot;,&quot;url&quot;:&quot;mp4:e2/75844/75844_240p.mp4&quot;},&quot;type&quot;:&quot;rtmp&quot;,&quot;techOrder&quot;:[&quot;dailymotion&quot;,&quot;youtube&quot;,&quot;html5&quot;,&quot;flash&quot;],&quot;swf&quot;:&quot;/assets/flowplayer.swf&quot;,&quot;rtmpPluginSwf&quot;:&quot;/assets/flowplayer.rtmp-3.2.11.swf&quot;}>
-          <source src="http://v.viki.io/75844/75844_240p.mp4?end=1384431780&amp;h=48dbceb90bbacf308fb99f8653a9bf23" type='video/mp4' />
-            <source src="http://content.viki.com/75844/75844_240p.webm" type='video/webm' />
+        <video id="subber_player" class="video-js vjs-default-skin" preload width="976" height="450" data-setup={&quot;key&quot;:&quot;#$8ff53c2409184340bb5&quot;,&quot;rtmp_info&quot;:{&quot;net_connection_url&quot;:&quot;rtmp://viki.fcod.llnwd.net/a7881/&quot;,&quot;url&quot;:&quot;mp4:e2/75844/75844_240p.mp4&quot;},&quot;type&quot;:&quot;rtmp&quot;,&quot;techOrder&quot;:[&quot;dailymotion&quot;,&quot;youtube&quot;,&quot;flash&quot;,&quot;html5&quot;],&quot;swf&quot;:&quot;/assets/flowplayer.swf&quot;,&quot;rtmpPluginSwf&quot;:&quot;/assets/flowplayer.rtmp-3.2.11.swf&quot;}>
+          <!-- <source src="http://v.viki.io/75844/75844_240p.mp4?end=1384806540&amp;h=3a25f59d5b54d7d19a55808b1278552d" type='video/mp4' /> -->
+          <source src="/75844_240p.mp4?end=1384806540&amp;h=3a25f59d5b54d7d19a55808b1278552d" type='video/mp4' />
+            <!-- <source src="http://content.viki.com/75844/75844_240p.webm" type='video/webm' /> -->
+            <source src="/75844_240p.webm" type='video/webm' />
         </video>
         <ul id="subtitles" data-language-code="en" ></ul>
       </div>
@@ -68,7 +74,8 @@
       </div>
 
       <div class="bottom_pane">
-        <div id="timeframe" class="clear" data-waveform-url="http://x1.vikiassets.com/waveforms/5008a217078c7a12bfd734b2b80204d6ae9af298.json">
+        <!-- <div id="timeframe" class="clear" data-waveform-url="http://x1.vikiassets.com/waveforms/5008a217078c7a12bfd734b2b80204d6ae9af298.json"> -->
+        <div id="timeframe" class="clear" data-waveform-url="/5008a217078c7a12bfd734b2b80204d6ae9af298.json">
           <span class="needle"></span>
 
           <div class="grayframe timescale">
@@ -79,7 +86,6 @@
           </div>
           <div class="middleframe">
             <div id="waveform"></div>
-            <!-- <ul id="segments" data-url="http://www.viki.com/media_resources/198359/segments" -->
             <ul id="segments" data-url="/media_resources/198359/segments"
                 data-start-time="0"
                 >
@@ -333,10 +339,12 @@
           </ul>
 
           <ul id="setting_menu" class="menu_dropdown settings_menu_dropdown hide">
-            <li class="dropdown_list"> <a href="#" id="intro">Tutorial</a> </li>
-            <li class="dropdown_list"> <a href="http://support.viki.com/entries/21501235-Using-the-Segment-Timer" target="_blank">Frequently Asked Questions</a> </li>
-            <li class="dropdown_list"> <a href="#" id="showkeyboard">Shortcuts</a> </li>
-            <li class="dropdown_list"> <a href="http://support.viki.com/anonymous_requests/new" target="_blank">Feedback</a> </li>
+            <li class="dropdown_list"> <a data-event-label="show-tutorial" href="#" id="intro">Tutorial</a> </li>
+<!--             <li class="dropdown_list"> <a data-event-label="show-faq" href="http://support.viki.com/entries/21501235-Using-the-Segment-Timer" target="_blank">Frequently Asked Questions</a> </li> -->
+            <li class="dropdown_list"> <a data-event-label="show-faq" href="http:///21501235-Using-the-Segment-Timer" target="_blank">Frequently Asked Questions</a> </li>
+            <li class="dropdown_list"> <a data-event-label="show-shortcut" href="#" id="showkeyboard">Shortcuts</a> </li>
+            <!-- <li class="dropdown_list"> <a data-event-label="show-feedback" href="http://support.viki.com/anonymous_requests/new" target="_blank">Feedback</a> </li> -->
+            <li class="dropdown_list"> <a data-event-label="show-feedback" href="/new" target="_blank">Feedback</a> </li>
           </ul>
 
           <div id='tool-tip-container'></div>
@@ -375,6 +383,19 @@
 <div id="user_info" data-visitor=false data-new-user=false></div>
 
 
+    <script>
+//<![CDATA[
+
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-1670373-19', 'viki.com');
+    ga('send', 'pageview');
+
+//]]>
+</script>
   <script>
 //<![CDATA[
 
@@ -397,7 +418,8 @@
     </p>
   </div>
   <div class="modal-footer">
-    <a class="btn btn-small" href="http://www.viki.com/videos/198359v-iu-sea-of-moonlight-feat-fiestar">Back to video player</a>
+    <!-- <a class="btn btn-small" href="http://www.viki.com/videos/198359v-iu-sea-of-moonlight-feat-fiestar">Back to video player</a> -->
+    <a class="btn btn-small" href="/198359v-iu-sea-of-moonlight-feat-fiestar">Back to video player</a>
   </div>
 </div>
 
@@ -420,7 +442,8 @@
     </p>
   </div>
   <div class="modal-footer">
-    <a class="btn btn-small" href="http://www.viki.com/videos/198359v-iu-sea-of-moonlight-feat-fiestar">Back to video player</a>
+    <!-- <a class="btn btn-small" href="http://www.viki.com/videos/198359v-iu-sea-of-moonlight-feat-fiestar">Back to video player</a> -->
+    <a class="btn btn-small" href="/198359v-iu-sea-of-moonlight-feat-fiestar">Back to video player</a>
   </div>
 </div>
 
@@ -553,24 +576,26 @@
   <div class="modal-body"></div>
   <div class="modal-footer">
     To learn more about subtitling and segmenting,
-    <a href=" http://blog.viki.com/2013/05/welcome-to-viki-u-learn-how-to-subtitle.html" class="btn btn-primary btn-small close-btn">check out Viki U!</a>
+    <!-- <a href=" http://blog.viki.com/2013/05/welcome-to-viki-u-learn-how-to-subtitle.html" class="btn btn-primary btn-small close-btn">check out Viki U!</a> -->
+    <a href="/welcome-to-viki-u-learn-how-to-subtitle.html" class="btn btn-primary btn-small close-btn">check out Viki U!</a>
   </div>
 </div>
 
 
-  <!-- <script crossorigin="anonymous" src="http://3.viki.io/assets/subtitler-0344620099e116c52ec05aa114e18887.js"></script> -->
-  <script crossorigin="anonymous" src="/js/subtitler.js"></script>
+  <!-- <script crossorigin="anonymous" src="http://3.viki.io/assets/subtitler-4b0e5535127d8309ff4f32771193890a.js"></script> -->
+  <script crossorigin="anonymous" src="/js/subtitlers.js"></script>
   <script type="text/javascript">
     $(document).ready(function() {
       SubtitlerPage.init();
       window.subtitler = new Subtitler();
+      new AnalyticsHelper('segment-timer');
     });
   </script>
   <script>
 //<![CDATA[
 
   var disqus_config = function () {
-    this.page.remote_auth_s3 = 'eyJpZCI6NzI3NTg4MCwidXNlcm5hbWUiOiJ5b3VuZ3Nlb2tfa2ltIn0= ddf5e948d1fd980079aa6f9746a20a31ff666818 1384417440';
+    this.page.remote_auth_s3 = 'eyJpZCI6NzI3NTg4MCwidXNlcm5hbWUiOiJ5b3VuZ3Nlb2tfa2ltIn0= 7313706c29a146dc9fc42db239629b87a9fd5da9 1384792143';
     this.page.api_key = 'CgISd7nCmsbPdplcs8OQHZLPwXNbbhvfxDqnImn6UAxqkJ91Y1QrGlfAnnny5pLW';
   }
   var disqus_identifier = 'subber_3180';
@@ -611,5 +636,5 @@ if(NREUMQ.a)NREUMQ.a();
 };
 NREUMQ.a=window.onload;window.onload=NREUMQ.f;
 };
-NREUMQ.push(["nrfj","beacon-6.newrelic.com","606139402d","2066229","dl5ZR0FXXlgDS0pHEVdFXkdfXUBHSUoNWxM=",0,42,new Date().getTime(),"","","","",""]);}</script></body>
+NREUMQ.push(["nrfj","beacon-6.newrelic.com","606139402d","2066229","dl5ZR0FXXlgDS0pHEVdFXkdfXUBHSUoNWxM=",0,59,new Date().getTime(),"","","","",""]);}</script></body>
 </html>
