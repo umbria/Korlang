@@ -5,7 +5,9 @@
     <title>Segment Timer</title>
     <!-- <link href="http://3.viki.io/assets/favicon-805623f86d18c419f485869b12cb2478.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" /> -->
     <link href="/favicon/viki.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+<!--     <link href="http://4.viki.io/assets/subtitler-7c95770d6e3bd19918f58c737ed59ba8.css" media="all" rel="stylesheet" /> -->
     <link href="/css/subtitlers.css" media="all" rel="stylesheet" />
+
     <meta content="authenticity_token" name="csrf-param" />
 <meta content="cMgVhtQL84KL8Vjp4t2LpTG7R+B+F8kVxYHzEVoTmiE=" name="csrf-token" />
   </head>
@@ -53,11 +55,13 @@
   <div class="tab-content">
     <div id="tool-tab" class="wrapper wrapper-tool">
       <div class="video_wrapper">
-        <video id="subber_player" class="video-js vjs-default-skin" preload width="976" height="450" data-setup={&quot;key&quot;:&quot;#$8ff53c2409184340bb5&quot;,&quot;rtmp_info&quot;:{&quot;net_connection_url&quot;:&quot;rtmp://viki.fcod.llnwd.net/a7881/&quot;,&quot;url&quot;:&quot;mp4:e2/75844/75844_240p.mp4&quot;},&quot;type&quot;:&quot;rtmp&quot;,&quot;techOrder&quot;:[&quot;dailymotion&quot;,&quot;youtube&quot;,&quot;flash&quot;,&quot;html5&quot;],&quot;swf&quot;:&quot;/assets/flowplayer.swf&quot;,&quot;rtmpPluginSwf&quot;:&quot;/assets/flowplayer.rtmp-3.2.11.swf&quot;}>
-          <!-- <source src="http://v.viki.io/75844/75844_240p.mp4?end=1384806540&amp;h=3a25f59d5b54d7d19a55808b1278552d" type='video/mp4' /> -->
-          <source src="/75844_240p.mp4?end=1384806540&amp;h=3a25f59d5b54d7d19a55808b1278552d" type='video/mp4' />
-            <!-- <source src="http://content.viki.com/75844/75844_240p.webm" type='video/webm' /> -->
-            <source src="/75844_240p.webm" type='video/webm' />
+		<video id="subber_player" class="video-js vjs-default-skin" preload width="976" height="450" data-setup={&quot;key&quot;:&quot;#$8ff53c2409184340bb5&quot;,&quot;rtmp_info&quot;:{&quot;net_connection_url&quot;:&quot;rtmp://viki.fcod.llnwd.net/a7881/&quot;,&quot;url&quot;:&quot;mp4:e2/75844/75844_240p.mp4&quot;},&quot;type&quot;:&quot;rtmp&quot;,&quot;techOrder&quot;:[&quot;dailymotion&quot;,&quot;youtube&quot;,&quot;flash&quot;,&quot;html5&quot;],&quot;swf&quot;:&quot;/assets/flowplayer.swf&quot;,&quot;rtmpPluginSwf&quot;:&quot;/assets/flowplayer.rtmp-3.2.11.swf&quot;}>
+		<source src="http://v.viki.io/75844/75844_240p.mp4?end=1384862340&amp;h=4cf36de50db0fdfdbc90cdbc59cada02"" type='video/mp4' />
+		<source src="http://content.viki.com/75844/75844_240p.webm" type='video/webm' />
+<!-- Thie data-setup is {"key":"#$8ff53c2409184340bb5","rtmp_info":{"net_connection_url":"rtmp://viki.fcod.llnwd.net/a7881/","url":"mp4:e2/75844/75844_240p.mp4"},"type":"rtmp","techOrder":["dailymotion","youtube","flash","html5"],"swf":"/assets/flowplayer.swf","rtmpPluginSwf":"/assets/flowplayer.rtmp-3.2.11.swf"} -->
+        <!-- <video id="subber_player" class="video-js vjs-default-skin" preload width="976" height="450" data-setup={&quot;key&quot;:&quot;#$8ff53c2409184340bb5&quot;,&quot;rtmp_info&quot;:{&quot;net_connection_url&quot;:&quot;rtmp://viki.fcod.llnwd.net/a7881/&quot;,&quot;url&quot;:&quot;mp4:mp4/mov_bbb.mp4&quot;},&quot;type&quot;:&quot;rtmp&quot;,&quot;techOrder&quot;:[&quot;dailymotion&quot;,&quot;youtube&quot;,&quot;flash&quot;,&quot;html5&quot;],&quot;swf&quot;:&quot;/assets/flowplayer.swf&quot;,&quot;rtmpPluginSwf&quot;:&quot;/assets/flowplayer.rtmp-3.2.11.swf&quot;}> -->
+        <!-- <source src="/mp4/mov_bbb.mp4?end=1384806540&amp;h=3a25f59d5b54d7d19a55808b1278552d" type='video/mp4' /> -->
+<!--             <source src="/75844_240p.webm" type='video/webm' /> -->
         </video>
         <ul id="subtitles" data-language-code="en" ></ul>
       </div>
@@ -75,7 +79,7 @@
 
       <div class="bottom_pane">
         <!-- <div id="timeframe" class="clear" data-waveform-url="http://x1.vikiassets.com/waveforms/5008a217078c7a12bfd734b2b80204d6ae9af298.json"> -->
-        <div id="timeframe" class="clear" data-waveform-url="/5008a217078c7a12bfd734b2b80204d6ae9af298.json">
+        <div id="timeframe" class="clear" data-waveform-url="/waveforms/5008a217078c7a12bfd734b2b80204d6ae9af298.json">
           <span class="needle"></span>
 
           <div class="grayframe timescale">
