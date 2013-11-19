@@ -62,13 +62,33 @@ google-analytics.com
 ### Page Ruler in chrome
 
 
+### waveform.js ( http://waveformjs.org/ )
+Waveform.js makes drawing SoundCloud waveforms simple and lets you style and color them the way. You can find the source on "https://github.com/soundcloud/waveformjs" 
  
  
+### Open Graph Protocol ( http://ogp.me/ )
  
+ 
+### Debugging with javascript
+https://developers.google.com/chrome-developer-tools/
+ 
+### Google Chrome Canary 
+I'm using Version 31.0.1650.48 but if you use Canary you can use new feature of devtools
 
+### Twitter platform ( https://dev.twitter.com/ )
 
+### Soundcloud ( https://soundcloud.com )
+SoundCloud is the world’s leading social sound platform where anyone can create sounds and share them everywhere
 History
+
+### javascript refactor
+IntelliJ idea  and Netbeans has javascript refactoring feature 
+
+### Template
+http://html5boilerplate.com
 =============================
+
+### Inspectlet ( http://www.inspectlet.com/ )
 ### 12/11/2013
 Create project and make readme.md draft
 
