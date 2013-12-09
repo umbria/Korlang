@@ -428,6 +428,8 @@
     function W(t) {
         return le.isWindow(t) ? t : 9 === t.nodeType ? t.defaultView || t.parentWindow : !1
     }
+    //start point, put in address in browser
+    console.log("initializes variables");
     var q, U, K = typeof e,
         Y = t.document,
         X = t.location,
@@ -441,8 +443,9 @@
         se = Z.indexOf,
         re = J.toString,
         oe = J.hasOwnProperty,
-        ae = te.trim,
-        le = function (t, e) {
+        ae = te.trim;
+    console.log("define le");
+        var le = function (t, e) {
             return new le.fn.init(t, e, U)
         }, ue = /[+-]?(?:\d*\.|)\d+(?:[eE][+-]?\d+|)/.source,
         ce = /\S+/g,
