@@ -428,7 +428,6 @@
     function W(t) {
         return le.isWindow(t) ? t : 9 === t.nodeType ? t.defaultView || t.parentWindow : !1
     }
-    console.log("start q");
     var q, U, K = typeof e,
         Y = t.document,
         X = t.location,
