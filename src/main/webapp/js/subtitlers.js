@@ -1,4 +1,5 @@
-! function (t, e) {
+! function (windows, e) {
+    console.log("start  main function");
     function i(t) {
         var e = t.length,
             i = le.type(t);
@@ -307,13 +308,13 @@
 
     function $() {
         try {
-            return new t.XMLHttpRequest
+            return new windows.XMLHttpRequest
         } catch (e) {}
     }
 
     function j() {
         try {
-            return new t.ActiveXObject("Microsoft.XMLHTTP")
+            return new windows.ActiveXObject("Microsoft.XMLHTTP")
         } catch (e) {}
     }
 
@@ -430,19 +431,22 @@
     }
     //start point, put in address in browser
     console.log("initializes variables");
-    var q, U, K = typeof e,
-        Y = t.document,
-        X = t.location,
-        G = t.jQuery,
-        Q = t.$,
-        J = {}, Z = [],
-        te = "1.9.1",
-        ee = Z.concat,
-        ie = Z.push,
-        ne = Z.slice,
-        se = Z.indexOf,
-        re = J.toString,
-        oe = J.hasOwnProperty,
+    console.log(" t = Window\n     ");
+    var q, U, K = typeof e;
+        Y = windows.document;
+        X = windows.location;
+        G = windows.jQuery;
+        Q = windows.$;
+        J = {}; Z = [];
+        te = "1.9.1";
+        console.log("remove ee");
+        //define concat
+        ee = Z.concat;
+        ie = Z.push;
+        ne = Z.slice;
+        se = Z.indexOf;
+        re = J.toString;
+        oe = J.hasOwnProperty;
         ae = te.trim;
     console.log("define le");
         var le = function (t, e) {
@@ -463,7 +467,7 @@
         }, we = function (t) {
             (Y.addEventListener || "load" === t.type || "complete" === Y.readyState) && (xe(), le.ready())
         }, xe = function () {
-            Y.addEventListener ? (Y.removeEventListener("DOMContentLoaded", we, !1), t.removeEventListener("load", we, !1)) : (Y.detachEvent("onreadystatechange", we), t.detachEvent("onload", we))
+            Y.addEventListener ? (Y.removeEventListener("DOMContentLoaded", we, !1), windows.removeEventListener("load", we, !1)) : (Y.detachEvent("onreadystatechange", we), windows.detachEvent("onload", we))
         };
     le.fn = le.prototype = {
         jquery: te,
@@ -542,7 +546,7 @@
         return a
     }, le.extend({
         noConflict: function (e) {
-            return t.$ === le && (t.$ = Q), e && t.jQuery === le && (t.jQuery = G), le
+            return windows.$ === le && (windows.$ = Q), e && windows.jQuery === le && (windows.jQuery = G), le
         },
         isReady: !1,
         readyWait: 1,
@@ -597,13 +601,13 @@
             return n ? [e.createElement(n[1])] : (n = le.buildFragment([t], e, s), s && le(s).remove(), le.merge([], n.childNodes))
         },
         parseJSON: function (e) {
-            return t.JSON && t.JSON.parse ? t.JSON.parse(e) : null === e ? e : "string" == typeof e && (e = le.trim(e), e && fe.test(e.replace(ge, "@").replace(ve, "]").replace(me, ""))) ? new Function("return " + e)() : (le.error("Invalid JSON: " + e), void 0)
+            return windows.JSON && windows.JSON.parse ? windows.JSON.parse(e) : null === e ? e : "string" == typeof e && (e = le.trim(e), e && fe.test(e.replace(ge, "@").replace(ve, "]").replace(me, ""))) ? new Function("return " + e)() : (le.error("Invalid JSON: " + e), void 0)
         },
         parseXML: function (i) {
             var n, s;
             if (!i || "string" != typeof i) return null;
             try {
-                t.DOMParser ? (s = new DOMParser, n = s.parseFromString(i, "text/xml")) : (n = new ActiveXObject("Microsoft.XMLDOM"), n.async = "false", n.loadXML(i))
+                windows.DOMParser ? (s = new DOMParser, n = s.parseFromString(i, "text/xml")) : (n = new ActiveXObject("Microsoft.XMLDOM"), n.async = "false", n.loadXML(i))
             } catch (r) {
                 n = e
             }
@@ -611,8 +615,8 @@
         },
         noop: function () {},
         globalEval: function (e) {
-            e && le.trim(e) && (t.execScript || function (e) {
-                t.eval.call(t, e)
+            e && le.trim(e) && (windows.execScript || function (e) {
+                windows.eval.call(windows, e)
             })(e)
         },
         camelCase: function (t) {
@@ -681,7 +685,22 @@
                 for (; o > r; r++) s = e(t[r], r, n), null != s && (l[l.length] = s);
             else
                 for (r in t) s = e(t[r], r, n), null != s && (l[l.length] = s);
-            return ee.apply([], l)
+
+            
+            try{
+            
+            var returns = ee.apply([], l);
+
+            
+            }
+            catch(err)
+            {
+                console.log(err);
+            }
+            return ee.apply([], l);
+            //return l;
+            
+
         },
         guid: 1,
         proxy: function (t, i) {
@@ -709,12 +728,12 @@
     }), le.ready.promise = function (e) {
         if (!q)
             if (q = le.Deferred(), "complete" === Y.readyState) setTimeout(le.ready);
-            else if (Y.addEventListener) Y.addEventListener("DOMContentLoaded", we, !1), t.addEventListener("load", we, !1);
+            else if (Y.addEventListener) Y.addEventListener("DOMContentLoaded", we, !1), windows.addEventListener("load", we, !1);
             else {
-                Y.attachEvent("onreadystatechange", we), t.attachEvent("onload", we);
+                Y.attachEvent("onreadystatechange", we), windows.attachEvent("onload", we);
                 var i = !1;
                 try {
-                    i = null == t.frameElement && Y.documentElement
+                    i = null == windows.frameElement && Y.documentElement
                 } catch (n) {}
                 i && i.doScroll && ! function s() {
                     if (!le.isReady) {
@@ -885,13 +904,13 @@
             submit: !0,
             change: !0,
             focusin: !0
-        }) h.setAttribute(l = "on" + c, "t"), e[c + "Bubbles"] = l in t || h.attributes[l].expando === !1;
+        }) h.setAttribute(l = "on" + c, "t"), e[c + "Bubbles"] = l in windows || h.attributes[l].expando === !1;
         return h.style.backgroundClip = "content-box", h.cloneNode(!0).style.backgroundClip = "", e.clearCloneStyle = "content-box" === h.style.backgroundClip, le(function () {
             var i, n, s, r = "padding:0;margin:0;border:0;display:block;box-sizing:content-box;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;",
                 o = Y.getElementsByTagName("body")[0];
-            o && (i = Y.createElement("div"), i.style.cssText = "border:0;width:0;height:0;position:absolute;top:0;left:-9999px;margin-top:1px", o.appendChild(i).appendChild(h), h.innerHTML = "<table><tr><td></td><td>t</td></tr></table>", s = h.getElementsByTagName("td"), s[0].style.cssText = "padding:0;margin:0;border:0;display:none", u = 0 === s[0].offsetHeight, s[0].style.display = "", s[1].style.display = "none", e.reliableHiddenOffsets = u && 0 === s[0].offsetHeight, h.innerHTML = "", h.style.cssText = "box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;padding:1px;border:1px;display:block;width:4px;margin-top:1%;position:absolute;top:1%;", e.boxSizing = 4 === h.offsetWidth, e.doesNotIncludeMarginInBodyOffset = 1 !== o.offsetTop, t.getComputedStyle && (e.pixelPosition = "1%" !== (t.getComputedStyle(h, null) || {}).top, e.boxSizingReliable = "4px" === (t.getComputedStyle(h, null) || {
+            o && (i = Y.createElement("div"), i.style.cssText = "border:0;width:0;height:0;position:absolute;top:0;left:-9999px;margin-top:1px", o.appendChild(i).appendChild(h), h.innerHTML = "<table><tr><td></td><td>t</td></tr></table>", s = h.getElementsByTagName("td"), s[0].style.cssText = "padding:0;margin:0;border:0;display:none", u = 0 === s[0].offsetHeight, s[0].style.display = "", s[1].style.display = "none", e.reliableHiddenOffsets = u && 0 === s[0].offsetHeight, h.innerHTML = "", h.style.cssText = "box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;padding:1px;border:1px;display:block;width:4px;margin-top:1%;position:absolute;top:1%;", e.boxSizing = 4 === h.offsetWidth, e.doesNotIncludeMarginInBodyOffset = 1 !== o.offsetTop, windows.getComputedStyle && (e.pixelPosition = "1%" !== (windows.getComputedStyle(h, null) || {}).top, e.boxSizingReliable = "4px" === (windows.getComputedStyle(h, null) || {
                 width: "4px"
-            }).width, n = h.appendChild(Y.createElement("div")), n.style.cssText = h.style.cssText = r, n.style.marginRight = n.style.width = "0", h.style.width = "1px", e.reliableMarginRight = !parseFloat((t.getComputedStyle(n, null) || {}).marginRight)), typeof h.style.zoom !== K && (h.innerHTML = "", h.style.cssText = r + "width:1px;padding:1px;display:inline;zoom:1", e.inlineBlockNeedsLayout = 3 === h.offsetWidth, h.style.display = "block", h.innerHTML = "<div></div>", h.firstChild.style.width = "5px", e.shrinkWrapBlocks = 3 !== h.offsetWidth, e.inlineBlockNeedsLayout && (o.style.zoom = 1)), o.removeChild(i), i = h = s = n = null)
+            }).width, n = h.appendChild(Y.createElement("div")), n.style.cssText = h.style.cssText = r, n.style.marginRight = n.style.width = "0", h.style.width = "1px", e.reliableMarginRight = !parseFloat((windows.getComputedStyle(n, null) || {}).marginRight)), typeof h.style.zoom !== K && (h.innerHTML = "", h.style.cssText = r + "width:1px;padding:1px;display:inline;zoom:1", e.inlineBlockNeedsLayout = 3 === h.offsetWidth, h.style.display = "block", h.innerHTML = "<div></div>", h.firstChild.style.width = "5px", e.shrinkWrapBlocks = 3 !== h.offsetWidth, e.inlineBlockNeedsLayout && (o.style.zoom = 1)), o.removeChild(i), i = h = s = n = null)
         }), i = r = o = a = n = s = null, e
     }();
     var Ce = /(?:\{[\s\S]*\}|\[[\s\S]*\])$/,
@@ -1285,7 +1304,7 @@
             if (l = h = s = s || Y, 3 !== s.nodeType && 8 !== s.nodeType && !He.test(f + le.event.triggered) && (f.indexOf(".") >= 0 && (m = f.split("."), f = m.shift(), m.sort()), a = f.indexOf(":") < 0 && "on" + f, i = i[le.expando] ? i : new le.Event(f, "object" == typeof i && i), i.isTrigger = !0, i.namespace = m.join("."), i.namespace_re = i.namespace ? new RegExp("(^|\\.)" + m.join("\\.(?:.*\\.|)") + "(\\.|$)") : null, i.result = e, i.target || (i.target = s), n = null == n ? [i] : le.makeArray(n, [i]), c = le.event.special[f] || {}, r || !c.trigger || c.trigger.apply(s, n) !== !1)) {
                 if (!r && !c.noBubble && !le.isWindow(s)) {
                     for (u = c.delegateType || f, He.test(u + f) || (l = l.parentNode); l; l = l.parentNode) p.push(l), h = l;
-                    h === (s.ownerDocument || Y) && p.push(h.defaultView || h.parentWindow || t)
+                    h === (s.ownerDocument || Y) && p.push(h.defaultView || h.parentWindow || windows)
                 }
                 for (d = 0;
                      (l = p[d++]) && !i.isPropagationStopped();) i.type = d > 1 ? u : c.bindType || f, o = (le._data(l, "events") || {})[i.type] && le._data(l, "handle"), o && o.apply(l, n), o = a && l[a], o && le.acceptData(l) && o.apply && o.apply(l, n) === !1 && i.preventDefault();
@@ -2187,7 +2206,7 @@
                 }
                 return r
             }, C.pseudos.nth = C.pseudos.eq, C.filters = w.prototype = C.pseudos, C.setFilters = new w, I(), o.attr = le.attr, le.find = o, le.expr = o.selectors, le.expr[":"] = le.expr.pseudos, le.unique = o.uniqueSort, le.text = o.getText, le.isXMLDoc = o.isXML, le.contains = o.contains
-        }(t);
+        }(windows);
     var Be = /Until$/,
         ze = /^(?:parents|prev(?:Until|All))/,
         Re = /^.[^:#\[\.,]*$/,
@@ -2592,8 +2611,8 @@
             for (r in e) t.style[r] = o[r];
             return s
         }
-    }), t.getComputedStyle ? (ci = function (e) {
-        return t.getComputedStyle(e, null)
+    }), windows.getComputedStyle ? (ci = function (e) {
+        return windows.getComputedStyle(e, null)
     }, hi = function (t, i, n) {
         var s, r, o, a = n || ci(t),
             l = a ? a.getPropertyValue(i) || a[i] : e,
@@ -2779,7 +2798,7 @@
                 text: "responseText"
             },
             converters: {
-                "* text": t.String,
+                "* text": windows.String,
                 "text html": !0,
                 "text json": le.parseJSON,
                 "text xml": le.parseXML
@@ -2911,18 +2930,18 @@
         var r, o, a, l = i.jsonp !== !1 && (Ki.test(i.url) ? "url" : "string" == typeof i.data && !(i.contentType || "").indexOf("application/x-www-form-urlencoded") && Ki.test(i.data) && "data");
         return l || "jsonp" === i.dataTypes[0] ? (r = i.jsonpCallback = le.isFunction(i.jsonpCallback) ? i.jsonpCallback() : i.jsonpCallback, l ? i[l] = i[l].replace(Ki, "$1" + r) : i.jsonp !== !1 && (i.url += (Ni.test(i.url) ? "&" : "?") + i.jsonp + "=" + r), i.converters["script json"] = function () {
             return a || le.error(r + " was not called"), a[0]
-        }, i.dataTypes[0] = "json", o = t[r], t[r] = function () {
+        }, i.dataTypes[0] = "json", o = windows[r], windows[r] = function () {
             a = arguments
         }, s.always(function () {
-            t[r] = o, i[r] && (i.jsonpCallback = n.jsonpCallback, Ui.push(r)), a && le.isFunction(o) && o(a[0]), a = o = e
+            windows[r] = o, i[r] && (i.jsonpCallback = n.jsonpCallback, Ui.push(r)), a && le.isFunction(o) && o(a[0]), a = o = e
         }), "script") : void 0
     });
     var Yi, Xi, Gi = 0,
-        Qi = t.ActiveXObject && function () {
+        Qi = windows.ActiveXObject && function () {
             var t;
             for (t in Yi) Yi[t](e, !0)
         };
-    le.ajaxSettings.xhr = t.ActiveXObject ? function () {
+    le.ajaxSettings.xhr = windows.ActiveXObject ? function () {
         return !this.isLocal && $() || j()
     } : $, Xi = le.ajaxSettings.xhr(), le.support.cors = !! Xi && "withCredentials" in Xi, Xi = le.support.ajax = !! Xi, Xi && le.ajaxTransport(function (i) {
         if (!i.crossDomain || le.support.cors) {
@@ -2954,7 +2973,7 @@
                             s || r(-1, p)
                         }
                         h && r(a, c, h, u)
-                    }, i.async ? 4 === l.readyState ? setTimeout(n) : (o = ++Gi, Qi && (Yi || (Yi = {}, le(t).unload(Qi)), Yi[o] = n), l.onreadystatechange = n) : n()
+                    }, i.async ? 4 === l.readyState ? setTimeout(n) : (o = ++Gi, Qi && (Yi || (Yi = {}, le(windows).unload(Qi)), Yi[o] = n), l.onreadystatechange = n) : n()
                 },
                 abort: function () {
                     n && n(e, !0)
@@ -3197,7 +3216,7 @@
                 }, i, o ? s : e, o, null)
             }
         })
-    }), t.jQuery = t.$ = le, "function" == typeof define && define.amd && define.amd.jQuery && define("jquery", [], function () {
+    }), windows.jQuery = windows.$ = le, "function" == typeof define && define.amd && define.amd.jQuery && define("jquery", [], function () {
         return le
     })
 }(window),

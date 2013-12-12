@@ -86,13 +86,54 @@ IntelliJ idea  and Netbeans has javascript refactoring feature
 
 ### Template
 http://html5boilerplate.com
+
+### Flowplayer
+http://flowplayer.org
+flowpalyer.rtmp http://flash.flowplayer.org/plugins/streaming/rtmp.html
+http://www.wowza.com/
+Video streaming with basics
+http://flash.flowplayer.org/documentation/installation/index.html
+Content Delivery Networks ( CDN ) - 
+http://flash.flowplayer.org/documentation/installation/cdn.html
+lighttpd ( http://www.lighttpd.net/)  lighttpd is the perfect solution for every server that is suffering load problems
+nginx (http://nginx.org  ) nginx [engine x] is an HTTP and reverse proxy server, as well as a mail proxy server, written by Igor Sysoev.
+pseudostreaming - http://flash.flowplayer.org/plugins/streaming/pseudostreaming.html
+hddn ( http://www.maxcdn.com/hddn/ )
 =============================
 
 ### Inspectlet ( http://www.inspectlet.com/ )
+
+
+### How to get trailer 
+http://userscripts.org/scripts/show/169119
+
+### Yeoman http://yeoman.io/
+### backone.js  ( http://backbonejs.org/ )
+### https://trello.com/
+### SPA
+
+### Angularjs
+
+### Mongolab
+
+### Testacular ( Karma )
+### Jasmin
+
+###Node.js
 ### 12/11/2013
 Create project and make readme.md draft
 
+### Sass
 
+### Compass
+Compass is an open-source CSS Authoring Framework.
+
+### LiveReload
+chrome extention for reloading browser 
+
+QUnit
+
+bunyip for testing different device
 Examples
 =======
 
@@ -122,3 +163,6 @@ Numbered list:
 
 The rain---not the reign---in
 Spain.
+
+
+Stream not found, NetStream.Play.StreamNotFound, clip: '[Clip] 'mp4:mp4/mov_bbb.mp4'' 

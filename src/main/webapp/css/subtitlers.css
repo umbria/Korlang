@@ -109,8 +109,7 @@
 .ui-widget-content {
 	border: 1px solid #aaa;
 	background: #fff
-		/* url(//4.viki.io/assets/jquery-ui/ui-bg_flat_75_ffffff_40x100-a17c260bc73d50da2f88f0296c75b3f9.png) */
-		url(/ui-bg_flat_75_ffffff_40x100-a17c260bc73d50da2f88f0296c75b3f9.png)
+		url(//4.viki.io/assets/jquery-ui/ui-bg_flat_75_ffffff_40x100-a17c260bc73d50da2f88f0296c75b3f9.png)
 		50% 50% repeat-x;
 	color: #222
 }
@@ -122,8 +121,7 @@
 .ui-widget-header {
 	border: 1px solid #aaa;
 	background: #ccc
-		/* url(//4.viki.io/assets/jquery-ui/ui-bg_highlight-soft_75_cccccc_1x100-a45d51579bf82a5b02b940d86645be1e.png) */
-		url(/ui-bg_highlight-soft_75_cccccc_1x100-a45d51579bf82a5b02b940d86645be1e.png)
+		url(//4.viki.io/assets/jquery-ui/ui-bg_highlight-soft_75_cccccc_1x100-a45d51579bf82a5b02b940d86645be1e.png)
 		50% 50% repeat-x;
 	color: #222;
 	font-weight: bold
@@ -137,7 +135,8 @@
 	{
 	border: 1px solid #d3d3d3;
 	background: #e6e6e6
-		url(//3.local.io/assets/jquery-ui/ui-bg_glass_75_e6e6e6_1x400-a6f83694d2bf6a64340fd53bd585270d.png)
+		/* url(//3.viki.io/assets/jquery-ui/ui-bg_glass_75_e6e6e6_1x400-a6f83694d2bf6a64340fd53bd585270d.png) */
+		url(/assets/jquery-ui/ui-bg_glass_75_e6e6e6_1x400-a6f83694d2bf6a64340fd53bd585270d.png)
 		50% 50% repeat-x;
 	font-weight: normal;
 	color: #555
@@ -153,7 +152,8 @@
 	{
 	border: 1px solid #999;
 	background: #dadada
-		url(//4.local.io/assets/jquery-ui/ui-bg_glass_75_dadada_1x400-5ede149cc759e26b83734ce72cfa6c18.png)
+		url(/assets/jquery-ui/ui-bg_glass_75_dadada_1x400-5ede149cc759e26b83734ce72cfa6c18.png)
+		/* url(//4.viki.io/assets/jquery-ui/ui-bg_glass_75_dadada_1x400-5ede149cc759e26b83734ce72cfa6c18.png) */
 		50% 50% repeat-x;
 	font-weight: normal;
 	color: #212121
@@ -169,7 +169,8 @@
 	{
 	border: 1px solid #aaa;
 	background: #fff
-		url(//4.local.io/assets/jquery-ui/ui-bg_glass_65_ffffff_1x400-7ae4ff0cb55657d98ec8920ec905ec1e.png)
+		/* url(//4.viki.io/assets/jquery-ui/ui-bg_glass_65_ffffff_1x400-7ae4ff0cb55657d98ec8920ec905ec1e.png) */
+		url(/assets/jquery-ui/ui-bg_glass_65_ffffff_1x400-7ae4ff0cb55657d98ec8920ec905ec1e.png)
 		50% 50% repeat-x;
 	font-weight: normal;
 	color: #212121
@@ -184,7 +185,7 @@
 	{
 	border: 1px solid #fcefa1;
 	background: #fbf9ee
-		url(//3.local.io/assets/jquery-ui/ui-bg_glass_55_fbf9ee_1x400-dcb5b697d493c7b787c7162381e6ef74.png)
+		url(//3.viki.io/assets/jquery-ui/ui-bg_glass_55_fbf9ee_1x400-dcb5b697d493c7b787c7162381e6ef74.png)
 		50% 50% repeat-x;
 	color: #363636
 }
@@ -198,7 +199,7 @@
 	{
 	border: 1px solid #cd0a0a;
 	background: #fef1ec
-		url(//3.local.io/assets/jquery-ui/ui-bg_glass_95_fef1ec_1x400-88438eace1de38adc245321ab95259a0.png)
+		url(//3.viki.io/assets/jquery-ui/ui-bg_glass_95_fef1ec_1x400-88438eace1de38adc245321ab95259a0.png)
 		50% 50% repeat-x;
 	color: #cd0a0a
 }
@@ -243,37 +244,37 @@
 
 .ui-icon,.ui-widget-content .ui-icon {
 	background-image:
-		url(//3.local.io/assets/jquery-ui/ui-icons_222222_256x240-29c3cd52ace47e8aa26068699cba6281.png)
+		url(//3.viki.io/assets/jquery-ui/ui-icons_222222_256x240-29c3cd52ace47e8aa26068699cba6281.png)
 }
 
 .ui-widget-header .ui-icon {
 	background-image:
-		url(//3.local.io/assets/jquery-ui/ui-icons_222222_256x240-29c3cd52ace47e8aa26068699cba6281.png)
+		url(//3.viki.io/assets/jquery-ui/ui-icons_222222_256x240-29c3cd52ace47e8aa26068699cba6281.png)
 }
 
 .ui-state-default .ui-icon {
 	background-image:
-		url(//4.local.io/assets/jquery-ui/ui-icons_888888_256x240-c427a0ec883978acaae748d6e4d1954a.png)
+		url(//4.viki.io/assets/jquery-ui/ui-icons_888888_256x240-c427a0ec883978acaae748d6e4d1954a.png)
 }
 
 .ui-state-hover .ui-icon,.ui-state-focus .ui-icon {
 	background-image:
-		url(//4.local.io/assets/jquery-ui/ui-icons_454545_256x240-9d5e7fa056ec8fc9174d77c6d0b74712.png)
+		url(//4.viki.io/assets/jquery-ui/ui-icons_454545_256x240-9d5e7fa056ec8fc9174d77c6d0b74712.png)
 }
 
 .ui-state-active .ui-icon {
 	background-image:
-		url(//4.local.io/assets/jquery-ui/ui-icons_454545_256x240-9d5e7fa056ec8fc9174d77c6d0b74712.png)
+		url(//4.viki.io/assets/jquery-ui/ui-icons_454545_256x240-9d5e7fa056ec8fc9174d77c6d0b74712.png)
 }
 
 .ui-state-highlight .ui-icon {
 	background-image:
-		url(//4.local.io/assets/jquery-ui/ui-icons_2e83ff_256x240-1183af3462270425b028095e5d915a80.png)
+		url(//4.viki.io/assets/jquery-ui/ui-icons_2e83ff_256x240-1183af3462270425b028095e5d915a80.png)
 }
 
 .ui-state-error .ui-icon,.ui-state-error-text .ui-icon {
 	background-image:
-		url(//3.local.io/assets/jquery-ui/ui-icons_cd0a0a_256x240-161d4e6cfcecc852ada1a8409f5f7550.png)
+		url(//3.viki.io/assets/jquery-ui/ui-icons_cd0a0a_256x240-161d4e6cfcecc852ada1a8409f5f7550.png)
 }
 
 .ui-icon-blank {
@@ -994,7 +995,7 @@
 
 .ui-widget-overlay {
 	background: #aaa
-		url(//3.local.io/assets/jquery-ui/ui-bg_flat_0_aaaaaa_40x100-8336f3b64b15a6de3811e63e9465b6d5.png)
+		url(//3.viki.io/assets/jquery-ui/ui-bg_flat_0_aaaaaa_40x100-8336f3b64b15a6de3811e63e9465b6d5.png)
 		50% 50% repeat-x;
 	opacity: 0.3;
 	filter: Alpha(Opacity = 30)
@@ -1004,7 +1005,7 @@
 	margin: -8px 0 0 -8px;
 	padding: 8px;
 	background: #aaa
-		url(//3.local.io/assets/jquery-ui/ui-bg_flat_0_aaaaaa_40x100-8336f3b64b15a6de3811e63e9465b6d5.png)
+		url(//3.viki.io/assets/jquery-ui/ui-bg_flat_0_aaaaaa_40x100-8336f3b64b15a6de3811e63e9465b6d5.png)
 		50% 50% repeat-x;
 	opacity: 0.3;
 	filter: Alpha(Opacity = 30);
@@ -1654,7 +1655,7 @@ input.ui-button::-moz-focus-inner,button.ui-button::-moz-focus-inner {
 
 .ui-progressbar .ui-progressbar-overlay {
 	background:
-		url(//4.local.io/assets/jquery-ui/animated-overlay-19ad589604d6105e9ffe413a30aadb31.gif);
+		url(//4.viki.io/assets/jquery-ui/animated-overlay-19ad589604d6105e9ffe413a30aadb31.gif);
 	height: 100%;
 	filter: alpha(opacity = 25);
 	opacity: 0.25
@@ -3423,8 +3424,7 @@ a.video-title>a {
 
 .wrapper-tool-bordered {
 	background: #d5d7dc
-		/* url(//4.viki.io/assets/bg_diagonal-1fb6bbcf0afaf1d4bf44a19da7189b2d.png); */
-		url(/bg_diagonal-1fb6bbcf0afaf1d4bf44a19da7189b2d.png);
+		url(//4.viki.io/assets/bg_diagonal-1fb6bbcf0afaf1d4bf44a19da7189b2d.png);
 	padding: 10px
 }
 
@@ -5449,7 +5449,7 @@ div.vjs-loading-spinner .ball8 {
 	left: 37px;
 	width: 100%;
 	background:
-		url(//4.local.io/assets/timescale-dc20ce3140ec378b13d2308c02e1e634.png)
+		url(/assets/timescale-dc20ce3140ec378b13d2308c02e1e634.png)
 		repeat-x -70px top
 }
 
@@ -5464,7 +5464,7 @@ div.vjs-loading-spinner .ball8 {
 	text-align: center;
 	color: #fff;
 	text-indent: -99999px;
-	background: url(//3.local.io/images/loading.gif) no-repeat center
+	background: url(//3.viki.io/images/loading.gif) no-repeat center
 }
 
 #timeframe #waveform {
@@ -5498,7 +5498,7 @@ div.vjs-loading-spinner .ball8 {
 
 .timeframe-spinner .spinner {
 	background:
-		url(//3.local.io/assets/spinner_invert-952c8bcd6e6e9ab7a9aea73d783c81c3.gif)
+		url(/assets/spinner_invert-952c8bcd6e6e9ab7a9aea73d783c81c3.gif)
 		no-repeat left top;
 	color: #eee;
 	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande",
@@ -5559,7 +5559,7 @@ div.vjs-loading-spinner .ball8 {
 
 #segments .action a {
 	background:
-		url(//3.local.io/assets/subtitler/control_toolbar_sprites-d388d484de1f68361df3aac181690fc8.png)
+		url(//3.viki.io/assets/subtitler/control_toolbar_sprites-d388d484de1f68361df3aac181690fc8.png)
 		no-repeat;
 	height: 16px;
 	width: 18px;
@@ -5597,7 +5597,7 @@ div.vjs-loading-spinner .ball8 {
 	height: 50px;
 	top: 2px;
 	background:
-		url(//3.local.io/assets/bg_seg-a275df011015538d6c7604a33b417f45.png)
+		url(//3.viki.io/assets/bg_seg-a275df011015538d6c7604a33b417f45.png)
 		transparent;
 	border-left: 1px solid #ffad46;
 	border-right: 1px solid #ffad46;
@@ -5631,7 +5631,7 @@ div.vjs-loading-spinner .ball8 {
 	width: 15px;
 	height: 50px;
 	background:
-		url(//4.local.io/assets/subtitler/segment-handle-9ae57f8a84440591181544c1a71105b8.png)
+		url(//4.viki.io/assets/subtitler/segment-handle-9ae57f8a84440591181544c1a71105b8.png)
 		no-repeat top left;
 	display: block;
 	left: -9px;
@@ -5644,7 +5644,7 @@ div.vjs-loading-spinner .ball8 {
 	width: 15px;
 	height: 50px;
 	background:
-		url(//4.local.io/assets/subtitler/segment-handle-9ae57f8a84440591181544c1a71105b8.png)
+		url(//4.viki.io/assets/subtitler/segment-handle-9ae57f8a84440591181544c1a71105b8.png)
 		no-repeat top left;
 	display: block;
 	right: -9px;
@@ -5773,7 +5773,7 @@ div.vjs-loading-spinner .ball8 {
 	top: 2px;
 	background: #b9babd;
 	background:
-		url(//3.local.io/assets/bg_seg_disabled-8939859c2392e98b27d4bf72f219063c.png)
+		url(//3.viki.io/assets/bg_seg_disabled-8939859c2392e98b27d4bf72f219063c.png)
 		rgba(185, 186, 189, 0.37);
 	border-left: 1px solid rgba(185, 186, 189, 0.2);
 	border-right: 1px solid rgba(185, 186, 189, 0.2);
@@ -5932,7 +5932,7 @@ table.help-shortcuts-table .key {
 }
 
 .current_knob {
-	background: #d4d4d4 url("subtitler/control_toolbar_sprites.png")
+	background: #d4d4d4 url("/assets/subtitler/control_toolbar_sprites.png")
 		no-repeat -5px -20px;
 	font-size: 11px;
 	width: 9px;
@@ -6116,7 +6116,8 @@ a.player_controller:link.inactive,a.segment_controller:link.inactive,a.settings_
 
 a.player_controller:link i,a.segment_controller:link i,a.settings_controller:link i,a.player_controller:visited i,a.segment_controller:visited i,a.settings_controller:visited i
 	{
-	background: url("subtitler/control_toolbar_sprites.png") no-repeat 0 0;
+	/*http://4.viki.io/assets/subtitler/control_toolbar_sprites.png */
+	background: url("/assets/subtitler/control_toolbar_sprites.png") no-repeat 0 0;
 	display: inline-block;
 	height: 18px;
 	position: relative;
@@ -6325,7 +6326,7 @@ a.settings_menu:link.inactive i,a.settings_menu:visited.inactive i {
 
 .icn-controls {
 	background-image:
-		url(//3.local.io/assets/sprites/icon_small-6e5964306422085b73b875961d059833.png);
+		url(//3.viki.io/assets/sprites/icon_small-6e5964306422085b73b875961d059833.png);
 	display: inline-block;
 	height: 18px;
 	width: 18px
@@ -6336,7 +6337,7 @@ a.settings_menu:link.inactive i,a.settings_menu:visited.inactive i {
 }
 
 .beta-ribbon {
-	background: url(//3.local.io/images/ribbon.png) no-repeat 0 0;
+	background: url(//3.viki.io/images/ribbon.png) no-repeat 0 0;
 	display: inline-block;
 	height: 88px;
 	width: 94px
@@ -6515,13 +6516,13 @@ a.settings_menu:link.inactive i,a.settings_menu:visited.inactive i {
 	}
 	#segments .segment.selected em:before {
 		background:
-			url(//4.local.io/assets/subtitler/segment-handle-small-22c1c94433da096e3ad0d6f02c42106a.png)
+			url(//4.viki.io/assets/subtitler/segment-handle-small-22c1c94433da096e3ad0d6f02c42106a.png)
 			no-repeat top left;
 		height: 36px
 	}
 	#segments .segment.selected em:after {
 		background:
-			url(//4.local.io/assets/subtitler/segment-handle-small-22c1c94433da096e3ad0d6f02c42106a.png)
+			url(//4.viki.io/assets/subtitler/segment-handle-small-22c1c94433da096e3ad0d6f02c42106a.png)
 			no-repeat top left;
 		height: 36px
 	}

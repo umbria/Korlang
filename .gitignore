@@ -6,3 +6,5 @@
 *.ear
 /build
 /.settings
+/tmp
+/target

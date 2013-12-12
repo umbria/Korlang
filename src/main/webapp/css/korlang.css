@@ -51,8 +51,12 @@ html {
 	-webkit-font-smoothing: antialiased
 }
 
+@media ( min--moz-device-pixel-ratio : 1.5) , ( -o-min-device-pixel-ratio : 3 /
+		2) , ( -webkit-min-device-pixel-ratio : 1.5) , (
+		min-device-pixel-ratio : 1.5) , ( min-resolution : 1.5dppx) {
 html * {
 	max-height: 1000000px
+}
 }
 
 body {
@@ -496,22 +500,22 @@ article p,article li {
 }
 
 .mod-hd {
-	border-top: 5px solid #e6eaec;
-	padding-top: 5px;
+	border-top: 4px solid #e6eaec;
+	padding-top: 4px;
 	margin-bottom: 10px;
 	position: relative
 }
 
 .mod-hd h3,.mod-hd h4,.mod-hd h5,.mod-hd h6 {
 	color: #4d4d4d;
-	font-weight: 500
+	font-weight: bold
 }
 
 .mod-ft:before {
 	border-top: 1px solid #e6eaec;
 	content: '';
 	display: block;
-	padding-top: 5px
+	padding-top: 4px
 }
 
 .lt-ie9 .mod-ft:before {
@@ -778,6 +782,18 @@ article p,article li {
 
 .thumb-grid-dotted>li {
 	line-height: 0
+}
+
+.thumb-grid-bordered>li:hover img {
+	border-color: #c9d2d6
+}
+
+.thumb-grid-bordered>li img {
+	border: 1px solid #e6eaec;
+	display: block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
 }
 
 .thumbnail-wrapper {
@@ -1535,6 +1551,18 @@ img[class^="thumbnail-avatar"],img[class*="thumbnail-avatar"] {
 	border-bottom-color: #23a7cf
 }
 
+.tabs-flat-bordered {
+	border-top: 1px solid #e6eaec
+}
+
+.tabs-flat-bordered>li {
+	margin-top: -1px
+}
+
+.tabs-flat-bordered>li>a {
+	padding: 8px 5px 8px 5px
+}
+
 .tab-link.active {
 	color: #4d4d4d
 }
@@ -1542,13 +1570,11 @@ img[class^="thumbnail-avatar"],img[class*="thumbnail-avatar"] {
 .tab-link.active:hover {
 	color: #1c84a3
 }
-
 #Transition
 #http://www.w3schools.com/cssref/css3_pr_transition.asp
 #transition: property duration timing-function delay;
 #timing-function : http://www.w3schools.com/cssref/css3_pr_transition-timing-function.asp
-.menubar .brand>a,.menu>a,.menu>a .icon-caret-down,.menu>a .dropdown-menu-south,.menu>a .dropdown-menu-lang,.menu>a .btn-group .icon-btn-caret,.btn-group .menu>a .icon-btn-caret,.menu>a .btn-vslide-next,.menu-collapsible>a
-	{
+.menubar .brand>a,.menu>a,.menu-collapsible>a {
 	-webkit-transition: all 0.2s ease;
 	-moz-transition: all 0.2s ease;
 	-o-transition: all 0.2s ease;
@@ -1578,11 +1604,10 @@ img[class^="thumbnail-avatar"],img[class*="thumbnail-avatar"] {
 }
 
 .menubar {
-	background: #f1f1f1
-		url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDowMTgwMTE3NDA3MjA2ODExODIyQUVEMTMwMkYwN0MzRSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoyN0JGMjYwNDkzQUQxMUUyOTNGNUU1NkQ1MUQ4M0M2QiIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoyN0JGMjYwMzkzQUQxMUUyOTNGNUU1NkQ1MUQ4M0M2QiIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MDE4MDExNzQwNzIwNjgxMTgyMkFFRDEzMDJGMDdDM0UiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MDE4MDExNzQwNzIwNjgxMTgyMkFFRDEzMDJGMDdDM0UiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4lmtqxAAAAD0lEQVR42mJ48OABQIABAAVEAqHduuROAAAAAElFTkSuQmCC")
-		repeat-x 0 bottom;
+	background-color: #f1f1f1;
+	border-bottom: 1px solid #d9d9d9;
 	margin-bottom: 18px;
-	height: 42px;
+	height: 41px;
 	position: relative
 }
 
@@ -1643,22 +1668,19 @@ img[class^="thumbnail-avatar"],img[class*="thumbnail-avatar"] {
 	text-align: center
 }
 
-.menu>a .icon-caret-down,.menu>a .dropdown-menu-south,.menu>a .dropdown-menu-lang,.menu>a .btn-group .icon-btn-caret,.btn-group .menu>a .icon-btn-caret,.menu>a .btn-vslide-next
-	{
-	font-size: 13px;
-	vertical-align: middle
-}
-
 .menu-collapsible {
 	padding: 0 2px
 }
 
 .menu-collapsible>a {
-	border-bottom: 5px solid transparent;
+	border-bottom: 4px solid transparent;
+	color: #45bce0;
 	font-weight: 500;
-	height: 37px;
+	height: 38px;
 	line-height: 42px;
 	padding: 0 10px;
+	/** the below config set new red icon **/
+	position: relative;	
 	text-shadow: 0 1px 0 #fff;
 	text-transform: uppercase
 }
@@ -2878,22 +2900,28 @@ a.tag:hover,a.tag.is-active {
 	z-index: 2
 }
 
-.new-badge-text {
+ .new-badge-text {
 	font-size: 8px;
-	line-height: normal;
-	text-shadow: none
-}
+	 line-height: normal;
+	text-shadow: none 
+} 
 
-.menu-collapsible>a .new-badge-text {
+/* .menu-collapsible>a .new-badge-text {
 	position: absolute;
 	right: -6px;
 	top: 6px
-}
-.submenu-nav-list>a .new-badge-text {
+} */
+ .new-badge-text {
+	position: absolute;
+	right: -6px;
+	/* left: 5px; */
+	top: 6px
+} 
+/* .submenu-nav-list>a .new-badge-text {
 	left: -2px;
 	position: relative;
 	top: -8px
-}
+} */
 
 .page-footer .new-badge-text {
 	position: absolute;
@@ -5622,7 +5650,7 @@ hr {
 	color: #fff
 }
 
-.firm,.plans-index .start-trial {
+.firm,.new-badge-text,.plans-index .start-trial {
 	color: #ed7a44
 }
 
@@ -5671,7 +5699,7 @@ a:hover .contrast {
 	color: #e6e6e6
 }
 
-a:hover .firm,a:hover .plans-index .start-trial,.plans-index a:hover .start-trial
+a:hover .firm,a:hover .new-badge-text,a:hover .plans-index .start-trial,.plans-index a:hover .start-trial
 	{
 	color: #e85916
 }
@@ -5953,7 +5981,7 @@ a:hover .info {
 	transition: 0.2s ease
 }
 
-.info-tooltip-wrapper.invisible,.thumbnail-wrapper .info-tooltip-wrapper.thumb-play,.thumbnail-wrapper .info-tooltip-wrapper.thumb-play-large,.thumbnail-wrapper .info-tooltip-wrapper.thumbnail-tooltip-lang,.thumbnail-wrapper .info-tooltip-wrapper.thumb-play-poster,.thumbnail .info-tooltip-wrapper.thumb-play,.thumbnail .info-tooltip-wrapper.thumb-play-large,.thumbnail .info-tooltip-wrapper.thumbnail-tooltip-lang,.thumbnail .info-tooltip-wrapper.thumb-play-poster,.thumbnail-tiny .info-tooltip-wrapper.thumb-play,.thumbnail-tiny .info-tooltip-wrapper.thumb-play-large,.thumbnail-tiny .info-tooltip-wrapper.thumbnail-tooltip-lang,.thumbnail-tiny .info-tooltip-wrapper.thumb-play-poster,.thumbnail-small .info-tooltip-wrapper.thumb-play,.thumbnail-small .info-tooltip-wrapper.thumb-play-large,.thumbnail-small .info-tooltip-wrapper.thumbnail-tooltip-lang,.thumbnail-small .info-tooltip-wrapper.thumb-play-poster,.thumbnail-medium .info-tooltip-wrapper.thumb-play,.thumbnail-medium .info-tooltip-wrapper.thumb-play-large,.thumbnail-medium .info-tooltip-wrapper.thumbnail-tooltip-lang,.thumbnail-medium .info-tooltip-wrapper.thumb-play-poster,.thumbnail-large .info-tooltip-wrapper.thumb-play,.thumbnail-large .info-tooltip-wrapper.thumb-play-large,.thumbnail-large .info-tooltip-wrapper.thumbnail-tooltip-lang,.thumbnail-large .info-tooltip-wrapper.thumb-play-poster,.carousel .info-tooltip-wrapper.thumb-play,.carousel .info-tooltip-wrapper.thumb-play-large,.carousel .info-tooltip-wrapper.thumbnail-tooltip-lang,.carousel .info-tooltip-wrapper.thumb-play-poster,.info-tooltip-wrapper.mega-menu,.character-field .info-tooltip-wrapper.delete-btn,.role-field .info-tooltip-wrapper.delete-btn
+.info-tooltip-wrapper.invisible,.thumbnail-wrapper .info-tooltip-wrapper.thumb-play,.thumbnail-wrapper .info-tooltip-wrapper.thumb-play-large,.thumbnail-wrapper .info-tooltip-wrapper.thumbnail-tooltip-lang,.thumbnail-wrapper .info-tooltip-wrapper.thumb-play-poster,.thumbnail .info-tooltip-wrapper.thumb-play,.thumbnail .info-tooltip-wrapper.thumb-play-large,.thumbnail .info-tooltip-wrapper.thumbnail-tooltip-lang,.thumbnail .info-tooltip-wrapper.thumb-play-poster,.thumbnail-tiny .info-tooltip-wrapper.thumb-play,.thumbnail-tiny .info-tooltip-wrapper.thumb-play-large,.thumbnail-tiny .info-tooltip-wrapper.thumbnail-tooltip-lang,.thumbnail-tiny .info-tooltip-wrapper.thumb-play-poster,.thumbnail-small .info-tooltip-wrapper.thumb-play,.thumbnail-small .info-tooltip-wrapper.thumb-play-large,.thumbnail-small .info-tooltip-wrapper.thumbnail-tooltip-lang,.thumbnail-small .info-tooltip-wrapper.thumb-play-poster,.thumbnail-medium .info-tooltip-wrapper.thumb-play,.thumbnail-medium .info-tooltip-wrapper.thumb-play-large,.thumbnail-medium .info-tooltip-wrapper.thumbnail-tooltip-lang,.thumbnail-medium .info-tooltip-wrapper.thumb-play-poster,.thumbnail-large .info-tooltip-wrapper.thumb-play,.thumbnail-large .info-tooltip-wrapper.thumb-play-large,.thumbnail-large .info-tooltip-wrapper.thumbnail-tooltip-lang,.thumbnail-large .info-tooltip-wrapper.thumb-play-poster,.carousel .info-tooltip-wrapper.thumb-play,.carousel .info-tooltip-wrapper.thumb-play-large,.carousel .info-tooltip-wrapper.thumbnail-tooltip-lang,.carousel .info-tooltip-wrapper.thumb-play-poster,.info-tooltip-wrapper.mega-menu,.character-field .info-tooltip-wrapper.delete-btn,.role-field .info-tooltip-wrapper.delete-btn,.plans-show .info-tooltip-wrapper.menubar-fixed.with-shadow
 	{
 	z-index: -1
 }
